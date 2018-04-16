@@ -1,34 +1,33 @@
 #!/bin/bash
 
-# Copyright 2016 Pegah Ghahremani
+# Multi-Task Kaldi // Josh Meyer (2018) // jrmeyer.github.io
+# original multi-lingual babel scripts from Pegah Ghahremani
 
 # REQUIRED:
 #
 #    (1) baseline PLP features, and models (tri or mono) alignment (e.g. tri_ali or mono_ali)
-#        for all languages
+#        for all tasks
 #    (2) input data (audio, lm, etc)
 #
-# This script can be used for training multilingual setup using different
-# languages (specifically babel languages) with no shared phones.
+# This script can be used for training multi-task setup using different
+# tasks with no shared phones.
 #
 # It will generate separate egs directory for each dataset and combine them
 # during training.
 #
-# In the new multilingual training setup, mini-batches of data corresponding to
-# different languages are randomly combined to generate egs.*.scp files
-# using steps/nnet3/multilingual/combine_egs.sh and generated egs.*.scp files used
-# for multilingual training.
+# In the multi-task training setup, mini-batches of data corresponding to
+# different tasks are randomly combined to generate egs.*.scp files
+# using steps/nnet3/multilingual/combine_egs.sh and generated egs.*.scp files
 #
-# For all languages, we share all except last hidden layer and there is separate final
-# layer per language.
+# For all tasks, we share all except last hidden layer and there is separate final
+# layer per task.
 #
-# I removed ivectors and bottleneck feats
+# This script does not use ivectors or bottleneck feats
 #
 #
 
 
-# MAIN DATA DIR
-main_dir=MTL
+
 
 
 
@@ -55,24 +54,20 @@ set -e
 . ./utils/parse_options.sh
 
 
-lang_list=($1)
-# this list of 'mono' or 'ali' 
+task_list=($1)
 typo_list=($2)
-lang2weight=$3
+task2weight=$3
 hidden_dim=$4
 num_epochs=$5
-run=$6
-# because im making my own alignments, i want the option to define my own number
-# of output targets, as opposed to get it from the tree.
-# num_targets should either be a number or the string "tree"
-num_targets_list=($7)
-bootstrap=$8
+main_dir=$6
+
+
 
 cmd="utils/run.pl"
 
 exp_dir=$main_dir/exp/nnet3/multitask
 master_egs_dir=$exp_dir/egs
-num_langs=${#lang_list[@]}
+num_tasks=${#task_list[@]}
 
 
 
@@ -84,40 +79,37 @@ if [ 1 ]; then
     ### SET VARIABLE NAMES AND PRINT INFO ###
     #########################################
     
-    # Check data files from each lang
+    # Check data files from each task
     # using ${typo_list[$i]}_ali for alignment dir
-    for i in `seq 0 $[$num_langs-1]`; do
-        for f in $main_dir/data/${lang_list[$i]}/train/{feats.scp,text} \
-                      $main_dir/exp/${lang_list[$i]}/${typo_list[$i]}_ali/ali.1.gz \
-                      $main_dir/exp/${lang_list[$i]}/${typo_list[$i]}_ali/tree; do
+    for i in `seq 0 $[$num_tasks-1]`; do
+        for f in $main_dir/data/${task_list[$i]}/train/{feats.scp,text} \
+                      $main_dir/exp/${task_list[$i]}/${typo_list[$i]}_ali/ali.1.gz \
+                      $main_dir/exp/${task_list[$i]}/${typo_list[$i]}_ali/tree; do
             [ ! -f $f ] && echo "$0: no such file $f" && exit 1;
         done
     done
     
-    # Make lists of dirs for languages
-    for i in `seq 0 $[$num_langs-1]`; do
-        multi_data_dirs[$i]=$main_dir/data/${lang_list[$i]}/train
-        multi_egs_dirs[$i]=$main_dir/exp/${lang_list[$i]}/nnet3/egs
-        multi_ali_dirs[$i]=$main_dir/exp/${lang_list[$i]}/${typo_list[$i]}_ali
+    # Make lists of dirs for tasks
+    for i in `seq 0 $[$num_tasks-1]`; do
+        multi_data_dirs[$i]=$main_dir/data/${task_list[$i]}/train
+        multi_egs_dirs[$i]=$main_dir/exp/${task_list[$i]}/nnet3/egs
+        multi_ali_dirs[$i]=$main_dir/exp/${task_list[$i]}/${typo_list[$i]}_ali
     done
     
-    for i in `seq 0 $[$num_langs-1]`;do
+    for i in `seq 0 $[$num_tasks-1]`;do
 
         num_targets=${num_targets_list[$i]}
-        if [ "$num_targets" == "tree" ]; then
-            num_targets=`tree-info ${multi_ali_dirs[$i]}/tree 2>/dev/null | grep num-pdfs | awk '{print $2}'` || exit 1;
-        else
-            num_targets=$num_targets
-        fi
+
+        num_targets=`tree-info ${multi_ali_dirs[$i]}/tree 2>/dev/null | grep num-pdfs | awk '{print $2}'` || exit 1;
         
         echo ""
-        echo "###### BEGIN LANGUAGE INFO ######"
-        echo "lang= ${lang_list[$i]}"
+        echo "###### BEGIN TASK INFO ######"
+        echo "task= ${task_list[$i]}"
         echo "num_targets= $num_targets"
         echo "data_dir= ${multi_data_dirs[$i]}"
         echo "ali_dir= ${multi_ali_dirs[$i]}"
         echo "egs_dir= ${multi_egs_dirs[$i]}"
-        echo "###### END LANGUAGE INFO ######"
+        echo "###### END TASK INFO ######"
         echo ""
 
     done
@@ -134,8 +126,8 @@ if [ "$config_nnet" -eq "1" ]; then
 
     ## Remove old generated files
     # rm -rf $exp_dir
-    # for i in `seq 0 $[$num_langs-1]`; do
-    #     rm -rf exp/${lang_list[$i]}/nnet3
+    # for i in `seq 0 $[$num_tasks-1]`; do
+    #     rm -rf exp/${task_list[$i]}/nnet3
     # done
 
     mkdir -p $exp_dir/configs
@@ -152,22 +144,18 @@ relu-renorm-layer name=tdnn3 input=Append(-1,2) dim=$hidden_dim
 relu-renorm-layer name=tdnn4 input=Append(-3,3) dim=$hidden_dim
 relu-renorm-layer name=tdnn5 input=Append(-3,3) dim=$hidden_dim
 #relu-renorm-layer name=tdnn6 input=Append(-7,2) dim=$hidden_dim
-# adding the layers for diffrent language's output
+# adding the layers for diffrent task's output
 EOF
     
-    # Create separate outptut layer and softmax for all languages.
+    # Create separate outptut layer and softmax for all tasks.
     
-    for i in `seq 0 $[$num_langs-1]`;do
+    for i in `seq 0 $[$num_tasks-1]`;do
 
-        
         num_targets=${num_targets_list[$i]}
-        if [ "$num_targets" == "tree" ]; then
-            num_targets=`tree-info ${multi_ali_dirs[$i]}/tree 2>/dev/null | grep num-pdfs | awk '{print $2}'` || exit 1;
-        else
-            num_targets=$num_targets
-        fi
-        
-        echo " relu-renorm-layer name=prefinal-affine-lang-${i} input=tdnn5 dim=$hidden_dim"
+
+        num_targets=`tree-info ${multi_ali_dirs[$i]}/tree 2>/dev/null | grep num-pdfs | awk '{print $2}'` || exit 1;
+
+        echo " relu-renorm-layer name=prefinal-affine-task-${i} input=tdnn5 dim=$hidden_dim"
         echo " output-layer name=output-${i} dim=$num_targets max-change=1.5"
         
     done >> $exp_dir/configs/network.xconfig
@@ -189,14 +177,14 @@ if [ "$make_egs" -eq "1" ]; then
     echo "### ====================================== ###"
 
 
-    echo "### MAKE SEPARATE EGS DIR PER LANGUAGE ###"
+    echo "### MAKE SEPARATE EGS DIR PER TASK ###"
     
     local/nnet3/prepare_multilingual_egs.sh \
         --cmd "$cmd" \
         --cmvn-opts "--norm-means=false --norm-vars=false" \
         --left-context 16 \
         --right-context 12 \
-        $num_langs \
+        $num_tasks \
         ${multi_data_dirs[@]} \
         ${multi_ali_dirs[@]} \
         ${multi_egs_dirs[@]} \
@@ -206,6 +194,7 @@ if [ "$make_egs" -eq "1" ]; then
 fi
 
 
+bootstrap=0
 if [ "$bootstrap" != "0" ]; then
     
     echo "### ================== ###"
@@ -217,7 +206,7 @@ if [ "$bootstrap" != "0" ]; then
     boot_pers=(${bootstrap//,/ })
     
     # loop over every dir except first
-    for i in `seq 1 $[$num_langs-1]`; do
+    for i in `seq 1 $[$num_tasks-1]`; do
 
         mv ${multi_egs_dirs[$i]}/egs.scp ${multi_egs_dirs[$i]}/egs.scp-org
         ./utils/bootstrap_resample.sh ${multi_egs_dirs[$i]}/egs.scp-org ${multi_egs_dirs[$i]}/egs.scp ${boot_pers[$i-1]}
@@ -243,8 +232,8 @@ if [ "$combine_egs" -eq "1" ]; then
     
     steps/nnet3/multilingual/combine_egs.sh \
         --cmd "$cmd" \
-        --lang2weight $lang2weight \
-        $num_langs \
+        --lang2weight $task2weight \
+        $num_tasks \
         ${multi_egs_dirs[@]} \
         $master_egs_dir \
         || exit 1;
@@ -293,15 +282,15 @@ fi
 if [ "$make_copies_nnet" -eq "1" ]; then
 
     echo "### ========================== ###"
-    echo "### SPLIT & COPY NNET PER LANG ###"
+    echo "### SPLIT & COPY NNET PER TASK ###"
     echo "### ========================== ###"
     
-    for i in `seq 0 $[$num_langs-1]`;do
-        lang_dir=$exp_dir/${lang_list[$i]}
+    for i in `seq 0 $[$num_tasks-1]`;do
+        task_dir=$exp_dir/${task_list[$i]}
         
-        mkdir -p $lang_dir
+        mkdir -p $task_dir
         
-        echo "$0: rename output name for each lang to 'output' and "
+        echo "$0: rename output name for each task to 'output' and "
         echo "add transition model."
         
         nnet3-copy \
@@ -311,19 +300,19 @@ if [ "$make_copies_nnet" -eq "1" ]; then
             nnet3-am-init \
                 ${multi_ali_dirs[$i]}/final.mdl \
                 - \
-                $lang_dir/final.mdl \
+                $task_dir/final.mdl \
             || exit 1;
         
-        cp $exp_dir/cmvn_opts $lang_dir/cmvn_opts || exit 1;
+        cp $exp_dir/cmvn_opts $task_dir/cmvn_opts || exit 1;
         
-        echo "$0: compute average posterior and readjust priors for language ${lang_list[$i]}."
+        echo "$0: compute average posterior and readjust priors for task ${task_list[$i]}."
         
         steps/nnet3/adjust_priors.sh \
             --cmd "$cmd" \
             --use-gpu true \
             --iter "final" \
             --use-raw-nnet false \
-            $lang_dir ${multi_egs_dirs[$i]} \
+            $task_dir ${multi_egs_dirs[$i]} \
             || exit 1;
     done
 fi
@@ -343,10 +332,10 @@ if [ "$decode_test" -eq "1" ]; then
         echo "it with mkgraph.sh --mono (the flag is important!)"
     fi
     
-    test_data_dir=data_${lang_list[0]}/test
-    graph_dir=exp_${lang_list[0]}/${typo_list[0]}phones/graph
+    test_data_dir=data_${task_list[0]}/test
+    graph_dir=exp_${task_list[0]}/${typo_list[0]}phones/graph
     decode_dir=${exp_dir}/decode
-    final_model=${exp_dir}/${lang_list[0]}/final_adj.mdl
+    final_model=${exp_dir}/${task_list[0]}/final_adj.mdl
     
     mkdir -p $decode_dir
 
@@ -370,46 +359,43 @@ if [ "$decode_test" -eq "1" ]; then
 
     printf "\n#### BEGIN CALCULATE WER ####\n";
 
-    # Concatenate langs to for WER filename
-    cat_langs=""
+    # Concatenate tasks to for WER filename
+    cat_tasks=""
     cat_typos=""
-    for i in `seq 0 $[$num_langs-1]`; do
-        cat_langs="${cat_langs}_${lang_list[$i]}"
+    for i in `seq 0 $[$num_tasks-1]`; do
+        cat_tasks="${cat_tasks}_${task_list[$i]}"
         cat_typos="${cat_typos}_${typo_list[$i]}"
     done
-
+    
     # Get training ACC in right format for plotting
-    utils/format_accuracy_for_plot.sh "$main_dir/exp/nnet3/multitask/log" "ACC_nnet3_multitask${cat_langs}${cat_typos}_${run}.txt";
+    utils/format_accuracy_for_plot.sh "$main_dir/exp/nnet3/multitask/log" "ACC_nnet3_multitask${cat_tasks}${cat_typos}.txt";
     
     for x in ${decode_dir}*; do
-        [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh > WER_nnet3_multitask${cat_langs}${cat_typos}_${run}.txt;
+        [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh > WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
     done
 
 
-    echo "test_data_dir=$test_data_dir" >> WER_nnet3_multitask${cat_langs}${cat_typos}_${run}.txt;
-    echo "graph_dir=$graph_dir" >> WER_nnet3_multitask${cat_langs}${cat_typos}_${run}.txt;
-    echo "decode_dir=$decode_dir" >> WER_nnet3_multitask${cat_langs}${cat_typos}_${run}.txt;
-    echo "final_model=$final_model" >> WER_nnet3_multitask${cat_langs}${cat_typos}_${run}.txt;
+    echo "test_data_dir=$test_data_dir" >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
+    echo "graph_dir=$graph_dir" >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
+    echo "decode_dir=$decode_dir" >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
+    echo "final_model=$final_model" >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
     
     
-    for i in `seq 0 $[$num_langs-1]`;do
+    for i in `seq 0 $[$num_tasks-1]`;do
         
         num_targets=${num_targets_list[$i]}
-        if [ "$num_targets" == "tree" ]; then
-            num_targets=`tree-info ${multi_ali_dirs[$i]}/tree 2>/dev/null | grep num-pdfs | awk '{print $2}'` || exit 1;
-        else
-            num_targets=$num_targets
-        fi
+
+        num_targets=`tree-info ${multi_ali_dirs[$i]}/tree 2>/dev/null | grep num-pdfs | awk '{print $2}'` || exit 1;
         
         echo "
-    ###### BEGIN LANGUAGE INFO ######
-    lang= ${lang_list[$i]}
+    ###### BEGIN TASK INFO ######
+    task= ${task_list[$i]}
     num_targets= $num_targets
     data_dir= ${multi_data_dirs[$i]}
     ali_dir= ${multi_ali_dirs[$i]}
     egs_dir= ${multi_egs_dirs[$i]}
-    ###### END LANGUAGE INFO ######
-    " >> WER_nnet3_multitask${cat_langs}${cat_typos}_${run}.txt;
+    ###### END TASK INFO ######
+    " >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
     done
 
     echo "###==============###"
@@ -419,6 +405,7 @@ if [ "$decode_test" -eq "1" ]; then
 fi
 
 
+bootstrap=0
 if [ "$bootstrap" != "0" ]; then
     
     echo "### =============== ###"
@@ -430,7 +417,7 @@ if [ "$bootstrap" != "0" ]; then
     boot_pers=(${bootstrap//,/ })
     
     # loop over every dir except first
-    for i in `seq 1 $[$num_langs-1]`; do
+    for i in `seq 1 $[$num_tasks-1]`; do
 
         echo "mv ${multi_egs_dirs[$i]}/egs.scp-org ${multi_egs_dirs[$i]}/egs.scp"
         mv ${multi_egs_dirs[$i]}/egs.scp-org ${multi_egs_dirs[$i]}/egs.scp
