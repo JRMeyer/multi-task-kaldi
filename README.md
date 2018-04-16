@@ -71,42 +71,29 @@ The scripts will name files and directories dynamically. You will define the nam
 
 `$ ./utils/setup_multitask.sh to_dir from_dir "your-task1 your-task2 your-task3"`
 
-- all `nnet3` log files and experimental data will be written to `to_dir`
+- all `nnet3` log files and experimental data will be written to `to_dir` (absolute path). This dir must exist already.
 
-- the output dirs from GMM alignment should exist at `from_dir`
+- the output dirs from GMM alignment should exist at `from_dir` (absolute path)
 
 - the task names `"your-task1 your-task2 your-task3"` must correspond to input dir names as such: `input_your-task1`, `input_your-task2`, etc. However, do not include the initial `input_` here.
 
 
-Example:
 
-Get `GMM` data in right place and format:
 
-```
-$ mkdir MTL
-$ ./utils/setup_multitask.sh `pwd`/MTL `pwd` atai-org
-```
-
-Take a look into our new master dir for `nnet3` training:
-
-```
-$ tree MTL
-MTL
-├── data
-│   └── atai-org
-│       ├── lang -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/data_atai-org/lang/
-│       └── train -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/data_atai-org/train/
-└── exp
-    └── atai-org
-            ├── mono -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/exp_atai-org/monophones
-	            ├── mono_ali -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/exp_atai-org/monophones_aligned
-		            ├── tri -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/exp_atai-org/triphones
-			            └── tri_ali -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/exp_atai-org/triphones_aligned
-
-10 directories, 0 files
-```
 
 ### Multi-Task Learning (DNN)
 
-`$ ./run_nnet3_multitask.sh `
+`$ ./run_nnet3_multitask.sh "your-task1 your-task2" "gmm-typo1 gmm-typo2" "weight-task1,weight-task2" hidden-dim num-epochs main-dir`
 
+
+- first argument is a space-delimited string of task names (must correspond to `input_your-task1`)
+
+- second argument is a space-delimited string of GMM model typologies. These are either "mono" or "tri", and determine whether you want to use monophone alignments or triphone alignments for each task.
+
+- third argument is comma-delimited list of weights for each task. Should be probably equal to or less than `1.0`.
+
+- `hidden-dim` is the number of nodes in your hidden layer
+
+- `num-epochs` is num epochs for each task. This is not task-specific.
+
+- `main-dir` is the dir you moved your GMM alignments into. Above we used `to_dir`.
