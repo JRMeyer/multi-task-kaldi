@@ -8,7 +8,7 @@ The collection of scripts in this repository represent a template for training n
 To get started, `multi-task-kaldi` should be cloned and moved into the `egs` dir of your local version of the [latest Kaldi branch](https://github.com/kaldi-asr/kaldi).
 
 
-
+If you're used to typical Kaldi `egs`, you should know that all the scripts here in `utils` / `local` / `steps` exist in this repo. That is, they do not link back to the `wsj` example. This was done to make custom changes to the scripts, making them more readable.
 
 
 
