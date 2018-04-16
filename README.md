@@ -67,7 +67,7 @@ The scripts will name files and directories dynamically. You will define the nam
 - `test001` is any character string, and is written to the name of the WER file: `WER_nnet3_your-corpus_test001.txt`
 
 
-### Format data from GMM $-->$ DNN
+### Format data from GMM --> DNN
 
 `$ ./utils/setup_multitask.sh to_dir from_dir "your-task1 your-task2 your-task3"`
 
