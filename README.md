@@ -80,11 +80,16 @@ The scripts will name files and directories dynamically. You will define the nam
 
 Example:
 
+Get `GMM` data in right place and format:
+
 ```
 $ mkdir MTL
-
 $ ./utils/setup_multitask.sh `pwd`/MTL `pwd` atai-org
+```
 
+Take a look into our new master dir for `nnet3` training:
+
+```
 $ tree MTL
 MTL
 ├── data
