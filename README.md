@@ -3,7 +3,7 @@ Multi-Task Kaldi
 
 The collection of scripts in this repository represent a template for training neural networks via Multi-Task Learning in Kaldi. This repo is heavily based on the existing [Kaldi multilingual Babel example directory](https://github.com/kaldi-asr/kaldi/tree/master/egs/babel_multilang/s5).
 
-`multi-task-kaldi` is an attempy to attain similar functionality to the multilingual Babel scripts, but have code which is more easily extendable. Adding a new language with `multi-task-kaldi` is as easy as creating a new `input_lang` dir. Running multiple tasks on the same corpus is not possible in the current multilingual Babel setup, but in `multi-task-kaldi` it is as easy as creating a new `input_task` dir. The code here aims to be easily readable and extensible, and makes few assumptions about the kind of data you have and where it's locatted on disk.
+`multi-task-kaldi` is an attempy to attain similar functionality to the multilingual Babel scripts, but have code which is more easily extendable. Adding a new language with `multi-task-kaldi` is as easy as creating a new `input_lang` dir. Running multiple tasks on the same corpus is not possible in the current multilingual Babel setup, but in `multi-task-kaldi` it is as easy as creating a new `input_task` dir. The code here aims to be easily readable and extensible, and makes few assumptions about the kind of data you have and where it's located on disk.
 
 To get started, `multi-task-kaldi` should be cloned and moved into the `egs` dir of your local version of the [latest Kaldi branch](https://github.com/kaldi-asr/kaldi).
 
@@ -15,7 +15,37 @@ To get started, `multi-task-kaldi` should be cloned and moved into the `egs` dir
 Creating the `input_task` dir
 ------------------------------------
 
-The `input_task` dir is the only place you need to make adjustments for your new task (or new language). This directory contains information about the location of your data, lexicon, language model. 
+In order to run `multi-task-kaldi`, you need to make a new `input_task` dir. This is the only place you need to make changes for your new task (or new language).
+
+This directory contains information about the location of your data, lexicon, language model.
+
+Here is an example of the structure of my `input_task` directory for the task called `my-task`.
+
+```
+input_my-task/
+├── lexicon_nosil.txt -> /data/my-task/lexicon/lexicon_nosil.txt
+├── lexicon.txt -> /data/my-task/lexicon/lexicon.txt
+├── task.arpabo -> /data/my-task/lm/task.arpabo
+├── test_audio_path -> /data/my-task/audio/test_audio_path
+├── train_audio_path -> /data/my-task/audio/train_audio_path
+├── transcripts.test -> /data/my-task/audio/transcripts.test
+└── transcripts.train -> /data/my-task/audio/transcripts.train
+
+0 directories, 7 files
+```
+
+Most of these files are standard Kaldi format, and more detailed descriptions of them can be found on [the official docs](http://kaldi-asr.org/doc/data_prep.html).
+
+
+- `lexicon_nosil.txt` // Standard Kaldi // phonetic dictionary without silence phonemes
+- `lexicon.txt` // Standard Kaldi // phonetic dictionary with silence phonemes
+- `task.arpabo` // Standard Kaldi // language model in ARPA back-off format
+- `test_audio_path` // Custom file! // one-line text file containing absolute path to dir of audio files (eg. WAV) for testing
+- `train_audio_path` // Custom file! // one-line text file containing absolute path to dir of audio files (eg. WAV) for training
+- `transcripts.test` // Custom file! // A typical Kaldi transcript file, but with only the test utterances
+- `transcripts.train` // Custom file! // A typical Kaldi transcript file, but with only the train utterances
+
+
 
 
 Running the scripts
