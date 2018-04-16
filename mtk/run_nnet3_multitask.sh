@@ -95,13 +95,13 @@ if [ 1 ]; then
         multi_egs_dirs[$i]=$main_dir/exp/${task_list[$i]}/nnet3/egs
         multi_ali_dirs[$i]=$main_dir/exp/${task_list[$i]}/${typo_list[$i]}_ali
     done
-    
+
+    num_targets_list=()
     for i in `seq 0 $[$num_tasks-1]`;do
 
-        num_targets=${num_targets_list[$i]}
-
         num_targets=`tree-info ${multi_ali_dirs[$i]}/tree 2>/dev/null | grep num-pdfs | awk '{print $2}'` || exit 1;
-        
+	num_targets_list[$i]=$num_targets
+	
         echo ""
         echo "###### BEGIN TASK INFO ######"
         echo "task= ${task_list[$i]}"
@@ -150,8 +150,6 @@ EOF
     # Create separate outptut layer and softmax for all tasks.
     
     for i in `seq 0 $[$num_tasks-1]`;do
-
-        num_targets=${num_targets_list[$i]}
 
         num_targets=`tree-info ${multi_ali_dirs[$i]}/tree 2>/dev/null | grep num-pdfs | awk '{print $2}'` || exit 1;
 

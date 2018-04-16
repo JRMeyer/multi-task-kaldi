@@ -106,7 +106,6 @@ for lang_index in `seq 0 $[$num_lang-1]`; do
         
         steps/nnet3/get_egs.sh \
             $egs_opts "${extra_opts[@]}" \
-            --num-targets $num_targets \
             --samples-per-iter $samples_per_iter \
             --stage $stage \
             --cmd "$cmd" \
