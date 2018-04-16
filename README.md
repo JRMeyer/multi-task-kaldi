@@ -78,6 +78,28 @@ The scripts will name files and directories dynamically. You will define the nam
 - the task names `"your-task1 your-task2 your-task3"` must correspond to input dir names as such: `input_your-task1`, `input_your-task2`, etc. However, do not include the initial `input_` here.
 
 
+Example:
+
+```
+$ mkdir MTL
+
+$ ./utils/setup_multitask.sh `pwd`/MTL `pwd` atai-org
+
+$ tree MTL
+MTL
+├── data
+│   └── atai-org
+│       ├── lang -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/data_atai-org/lang/
+│       └── train -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/data_atai-org/train/
+└── exp
+    └── atai-org
+            ├── mono -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/exp_atai-org/monophones
+	            ├── mono_ali -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/exp_atai-org/monophones_aligned
+		            ├── tri -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/exp_atai-org/triphones
+			            └── tri_ali -> /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/exp_atai-org/triphones_aligned
+
+10 directories, 0 files
+```
 
 ### Multi-Task Learning (DNN)
 
