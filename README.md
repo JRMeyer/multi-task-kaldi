@@ -3,7 +3,7 @@ Multi-Task Kaldi
 
 The collection of scripts in this repository represent a template for training neural networks via Multi-Task Learning in Kaldi. This repo is heavily based on the existing [Kaldi multilingual Babel example directory](https://github.com/kaldi-asr/kaldi/tree/master/egs/babel_multilang/s5).
 
-`multi-task-kaldi` is an attempy to attain similar functionality to the multilingual Babel scripts, but have code which is more easily extendable. Adding a new language with `multi-task-kaldi` is as easy as creating a new `input_lang` dir. Running multiple tasks on the same corpus is not possible in the current multilingual Babel setup, but in `multi-task-kaldi` it is as easy as creating a new `input_task` dir. The code here aims to be easily readable and extensible, and makes few assumptions about the kind of data you have and where it's located on disk.
+`multi-task-kaldi` allows similar functionality to the multilingual Babel scripts, but with more easily extendable code. Adding a new language with `multi-task-kaldi` is as easy as creating a new `input_lang` dir. Running multiple tasks on the same corpus is not possible in the multilingual Babel setup, but in `multi-task-kaldi` it is possible by creating a new `input_task` dir. The code here aims to be easily readable and extensible, and makes few assumptions about the kind of data you have and where it's located on disk.
 
 To get started, `multi-task-kaldi` should be cloned and moved into the `egs` dir of your local version of the [latest Kaldi branch](https://github.com/kaldi-asr/kaldi).
 
