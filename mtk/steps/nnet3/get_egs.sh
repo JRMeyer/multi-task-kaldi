@@ -28,7 +28,7 @@ right_context_final=-1     # if >=0, right-context for last chunk of an utteranc
 compress=true   # set this to false to disable compression (e.g. if you want to see whether
                 # results are affected).
 
-num_utts_subset=100     # number of utterances in validation and training
+num_utts_subset=10     # number of utterances in validation and training
                         # subsets used for shrinkage and diagnostics.
 num_valid_frames_combine=1000 # #valid frames for combination weights at the very end.
 num_train_frames_combine=60000 # # train frames for the above.
