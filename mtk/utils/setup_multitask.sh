@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# $ ./setup_multitask.sh TO_DIR FROM_DIR "LANG_1 LANG_2 ..."
+
 # langs should be a char string like 'eng eng span'
 #
 # ASSUMES: file structure for each $lang:
