@@ -54,12 +54,12 @@ set -e
 . ./utils/parse_options.sh
 
 
-task_list=($1)
-typo_list=($2)
-task2weight=$3
-hidden_dim=$4
-num_epochs=$5
-main_dir=$6
+task_list=($1) # space-delimited list of input_dir names
+typo_list=($2) # space-delimited list of "mono" or "tri"
+task2weight=$3 # comma-delimited list of weights for target-vectors
+hidden_dim=$4  # number of hidden dimensions in NNET
+num_epochs=$5  # number of epochs through data
+main_dir=$6    # location of /data and /exp dir (probably "MTL")
 
 
 
@@ -143,7 +143,13 @@ relu-renorm-layer name=tdnn2 dim=$hidden_dim
 relu-renorm-layer name=tdnn3 input=Append(-1,2) dim=$hidden_dim
 relu-renorm-layer name=tdnn4 input=Append(-3,3) dim=$hidden_dim
 relu-renorm-layer name=tdnn5 input=Append(-3,3) dim=$hidden_dim
-#relu-renorm-layer name=tdnn6 input=Append(-7,2) dim=$hidden_dim
+relu-renorm-layer name=tdnn6 input=Append(-3,3) dim=$hidden_dim
+relu-renorm-layer name=tdnn7 input=Append(-3,3) dim=$hidden_dim
+relu-renorm-layer name=tdnn8 input=Append(-3,3) dim=$hidden_dim
+relu-renorm-layer name=tdnn9 input=Append(-3,3) dim=$hidden_dim
+relu-renorm-layer name=tdnn10 input=Append(-3,3) dim=$hidden_dim
+relu-renorm-layer name=tdnn11 input=Append(-3,3) dim=$hidden_dim
+relu-renorm-layer name=tdnnFINAL input=Append(-3,3) dim=$hidden_dim
 # adding the layers for diffrent task's output
 EOF
     
@@ -153,7 +159,7 @@ EOF
 
         num_targets=`tree-info ${multi_ali_dirs[$i]}/tree 2>/dev/null | grep num-pdfs | awk '{print $2}'` || exit 1;
 
-        echo " relu-renorm-layer name=prefinal-affine-task-${i} input=tdnn5 dim=$hidden_dim"
+        echo " relu-renorm-layer name=prefinal-affine-task-${i} input=tdnnFINAL dim=$hidden_dim"
         echo " output-layer name=output-${i} dim=$num_targets max-change=1.5"
         
     done >> $exp_dir/configs/network.xconfig
@@ -180,8 +186,8 @@ if [ "$make_egs" -eq "1" ]; then
     local/nnet3/prepare_multilingual_egs.sh \
         --cmd "$cmd" \
         --cmvn-opts "--norm-means=false --norm-vars=false" \
-        --left-context 16 \
-        --right-context 12 \
+        --left-context 30 \
+        --right-context 31 \
         $num_tasks \
         ${multi_data_dirs[@]} \
         ${multi_ali_dirs[@]} \
@@ -189,35 +195,6 @@ if [ "$make_egs" -eq "1" ]; then
         ${num_targets_list[@]} \
         || exit 1;
 
-fi
-
-
-bootstrap=0
-if [ "$bootstrap" != "0" ]; then
-    
-    echo "### ================== ###"
-    echo "### BOOTSTRAP RESAMPLE ###"
-    echo "### ================== ###"
-
-    echo "$0: and assuming the BASELINE model is the first in the list."
-
-    boot_pers=(${bootstrap//,/ })
-    
-    # loop over every dir except first
-    for i in `seq 1 $[$num_tasks-1]`; do
-
-        mv ${multi_egs_dirs[$i]}/egs.scp ${multi_egs_dirs[$i]}/egs.scp-org
-        ./utils/bootstrap_resample.sh ${multi_egs_dirs[$i]}/egs.scp-org ${multi_egs_dirs[$i]}/egs.scp ${boot_pers[$i-1]}
-
-        
-        num_boot_egs=( `wc -l ${multi_egs_dirs[$i]}/egs.scp` )
-        
-        echo "###"
-        echo "### $0: Bootstrapped $num_boot_egs examples into ${multi_egs_dirs[$i]}/egs.scp"
-        echo "###"
-
-    done
-    
 fi
 
 
@@ -340,7 +317,7 @@ if [ "$decode_test" -eq "1" ]; then
     unknown_phone="SPOKEN_NOISE"
     silence_phone="SIL"
 
-    echo "### decoding with 4 jobs, unigram LM ###"
+    echo "### decoding with $( `nproc` ) jobs, unigram LM ###"
     
     steps/nnet3/decode.sh \
         --nj `nproc` \
@@ -402,28 +379,3 @@ if [ "$decode_test" -eq "1" ]; then
 
 fi
 
-
-bootstrap=0
-if [ "$bootstrap" != "0" ]; then
-    
-    echo "### =============== ###"
-    echo "### RESET BOOTSTRAP ###"
-    echo "### =============== ###"
-
-    echo "$0: and assuming the BASELINE model is the first in the list."
-
-    boot_pers=(${bootstrap//,/ })
-    
-    # loop over every dir except first
-    for i in `seq 1 $[$num_tasks-1]`; do
-
-        echo "mv ${multi_egs_dirs[$i]}/egs.scp-org ${multi_egs_dirs[$i]}/egs.scp"
-        mv ${multi_egs_dirs[$i]}/egs.scp-org ${multi_egs_dirs[$i]}/egs.scp
-        
-        echo "###"
-        echo "### $0: moved ${multi_egs_dirs[$i]}/egs.scp to ${multi_egs_dirs[$i]}/egs.scp"
-        echo "###"
-
-    done
-    
-fi
