@@ -1,0 +1,23 @@
+%WER 86.47 [ 7055 / 8159, 156 ins, 2853 del, 4046 sub ] MTL/exp/nnet3/multitask/decode/wer_9
+test_data_dir=data_atai-100E-org/test
+graph_dir=exp_atai-100E-org/triphones/graph
+decode_dir=MTL/exp/nnet3/multitask/decode
+final_model=MTL/exp/nnet3/multitask/atai-100E-org/final_adj.mdl
+
+    ###### BEGIN TASK INFO ######
+    task= atai-100E-org
+    num_targets= 176
+    data_dir= MTL/data/atai-100E-org/train
+    ali_dir= MTL/exp/atai-100E-org/tri_ali
+    egs_dir= MTL/exp/atai-100E-org/nnet3/egs
+    ###### END TASK INFO ######
+    
+
+    ###### BEGIN TASK INFO ######
+    task= atai-100E-mod
+    num_targets= 168
+    data_dir= MTL/data/atai-100E-mod/train
+    ali_dir= MTL/exp/atai-100E-mod/tri_ali
+    egs_dir= MTL/exp/atai-100E-mod/nnet3/egs
+    ###### END TASK INFO ######
+    
