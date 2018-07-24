@@ -1,7 +1,7 @@
 #!/bin/bash
 
 dim=256
-num_epochs=5
+num_epochs=1
 main_dir=MTL
 
 

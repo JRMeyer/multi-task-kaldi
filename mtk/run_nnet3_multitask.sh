@@ -38,10 +38,10 @@
 
 config_nnet=1
 make_egs=1
-combine_egs=1
-train_nnet=1
-make_copies_nnet=1
-decode_test=1
+combine_egs=
+train_nnet=
+make_copies_nnet=
+decode_test=0
 
 #
 ##
@@ -322,8 +322,8 @@ if [ "$decode_test" -eq "1" ]; then
     steps/nnet3/decode.sh \
         --nj `nproc` \
         --cmd $cmd \
-        --max-active 600 \
-        --min-active 200 \
+        --max-active 100 \
+        --min-active 10 \
         $graph_dir \
         $test_data_dir\
         $decode_dir \
