@@ -1,0 +1,2 @@
+steps/nnet3/decode.sh --nj 4 --cmd utils/run.pl --max-active 600 --min-active 200 exp_atai-100A-org/triphones/graph data_atai-100A-org/test MTL/exp/nnet3/multitask/decode MTL/exp/nnet3/multitask/atai-100A-org/final_adj.mdl SPOKEN_NOISE SIL
+steps/nnet3/decode.sh: feature type is raw

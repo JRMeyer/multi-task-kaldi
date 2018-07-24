@@ -1,0 +1,22 @@
+# This file was created by the command:
+# steps/nnet3/xconfig_to_configs.py --xconfig-file MTL/exp/nnet3/multitask/configs/network.xconfig --config-dir MTL/exp/nnet3/multitask/configs/ --nnet-edits=rename-node old-name=output-0 new-name=output
+# It contains the same content as ./xconfig but it was parsed,
+# default config values were set, 
+# and Descriptors (input=xxx) were normalized.
+# See also ./xconfig.expanded.1
+
+input name=input dim=13
+relu-renorm-layer name=tdnn1 dim=256 dropout-proportion=0.5 input=Append(Offset(input, -2), Offset(input, -1), input, Offset(input, 1), Offset(input, 2)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnn2 dim=256 dropout-proportion=0.5 input=tdnn1 learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnn3 dim=256 dropout-proportion=0.5 input=Append(Offset(tdnn2, -1), Offset(tdnn2, 2)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnn4 dim=256 dropout-proportion=0.5 input=Append(Offset(tdnn3, -3), Offset(tdnn3, 3)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnn5 dim=256 dropout-proportion=0.5 input=Append(Offset(tdnn4, -3), Offset(tdnn4, 3)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnn6 dim=256 dropout-proportion=0.5 input=Append(Offset(tdnn5, -3), Offset(tdnn5, 3)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnn7 dim=256 dropout-proportion=0.5 input=Append(Offset(tdnn6, -3), Offset(tdnn6, 3)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnn8 dim=256 dropout-proportion=0.5 input=Append(Offset(tdnn7, -3), Offset(tdnn7, 3)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnn9 dim=256 dropout-proportion=0.5 input=Append(Offset(tdnn8, -3), Offset(tdnn8, 3)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnn10 dim=256 dropout-proportion=0.5 input=Append(Offset(tdnn9, -3), Offset(tdnn9, 3)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnn11 dim=256 dropout-proportion=0.5 input=Append(Offset(tdnn10, -3), Offset(tdnn10, 3)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=tdnnFINAL dim=256 dropout-proportion=0.5 input=Append(Offset(tdnn11, -3), Offset(tdnn11, 3)) learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+relu-renorm-layer name=prefinal-affine-task-0 dim=256 dropout-proportion=0.5 input=tdnnFINAL learning-rate-factor=1.0 max-change=0.75 ng-affine-options= self-repair-scale=1e-05 target-rms=1.0
+output-layer name=output-0 bias-stddev=0.0 dim=96 include-log-softmax=True input=prefinal-affine-task-0 learning-rate-factor=1.0 max-change=1.5 ng-affine-options= objective-type=linear output-delay=0 param-stddev=0.0 presoftmax-scale-file=

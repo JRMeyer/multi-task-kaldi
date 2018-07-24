@@ -1,0 +1,51 @@
+# gmm-latgen-faster --max-active=700 --beam=13 --lattice-beam=7 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-org/triphones/graph/words.txt exp_atai-100A-org/triphones/final.mdl exp_atai-100A-org/triphones/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-org/test/split4/1/utt2spk scp:data_atai-100A-org/test/split4/1/cmvn.scp scp:data_atai-100A-org/test/split4/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > data_atai-100A-org/test/decode/lat.1.gz" 
+# Started at Tue Jul 24 09:44:19 UTC 2018
+#
+gmm-latgen-faster --max-active=700 --beam=13 --lattice-beam=7 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-org/triphones/graph/words.txt exp_atai-100A-org/triphones/final.mdl exp_atai-100A-org/triphones/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-org/test/split4/1/utt2spk scp:data_atai-100A-org/test/split4/1/cmvn.scp scp:data_atai-100A-org/test/split4/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > data_atai-100A-org/test/decode/lat.1.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data_atai-100A-org/test/split4/1/utt2spk scp:data_atai-100A-org/test/split4/1/cmvn.scp scp:data_atai-100A-org/test/split4/1/feats.scp ark:- 
+atai_01 тармактардагы жаратылыштын <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_01 is 1.16204 over 502 frames.
+atai_03 теңирликтин коюлган баамдайбыз тез андрейчиктин андан оозеки адистиктердин түзөтүүгө каармандарды кыйрата атайын туугандык адабият бутактайт манас тийгизип таштаңыз жашоого бул тизмеси түздүктөрдө 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_03 is 0.730427 over 2302 frames.
+atai_05 бириктирип адамдарга жогоруда сактоого аныкталган <unk> жеңилип чыканакты сөзсүз <unk> аскердик <unk> согушта 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_05 is 0.706818 over 980 frames.
+atai_06 бул жетекчиликти аныкталат манасчы токой башка эстетикалык атыңды портрети жетип 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_06 is 0.748366 over 1164 frames.
+atai_07 босния жасоого азиянын жана баштап <unk> өзгөчө жогорку чындыктын боюнча 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_07 is 0.727412 over 846 frames.
+atai_09 бурчтуу шартына чөп талас коюлган 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_09 is 0.792596 over 415 frames.
+atai_101 тамактанар 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_101 is 1.10055 over 221 frames.
+atai_102 алуу жамандыкты анда биогенез <unk> жана чынында бир согушта баяндап бойдон сүйкөп аны семетей 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_102 is 0.762967 over 1044 frames.
+atai_103 албай жумуштарды төмөнкүчө 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_103 is 0.912003 over 481 frames.
+atai_105 айырмаланган жазып <unk> ички транзиттик түштүк аймагынын жооп басмасында талкаланып <unk> испанча бийиктиктеги көп 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_105 is 0.564964 over 1428 frames.
+atai_107 <unk> аныктайбыз сатуудан тогузгуздар 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_107 is 0.918549 over 410 frames.
+atai_108 тиричиликти дарылоодон транспорт өтүүгө соода натыйжада 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_108 is 0.780544 over 709 frames.
+atai_109 бийиктикте чыйырды кетип типтештирип жалбыракта ал аныкталат <unk> жүгүртүү бүттү караганда төңкөрүш 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_109 is 0.73428 over 1116 frames.
+atai_11 ортоңкулары согуштан дүйнөлүк сакталган электр төлөнгөн турган согуш астрометриялык датчик болгон айбандардын күчтөргө айланган зыянды <unk> теңтөрагасы <unk> жана жана ачжанды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_11 is 0.629869 over 1772 frames.
+atai_110 муруту гана негизги кесиптик болуп бир андан чөптүү тартуу бийиктикте байбичеси аралыкта 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_110 is 0.643131 over 941 frames.
+atai_111 адистерди кызмат канжут жана тартууга сөзгө 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_111 is 0.804846 over 576 frames.
+atai_112 боюнча аңгүктүн көрүнүштөрдү 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_112 is 0.970027 over 478 frames.
+atai_113 бийиктигинен <unk> сыйланган жана азия койгон бир 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_113 is 0.853346 over 797 frames.

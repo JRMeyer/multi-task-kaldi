@@ -509,12 +509,12 @@ def parse_config_line(orig_config_line):
     rest_of_line = ' '.join(fields)
     # rest of the line can be of the form 'a=1 b=" x=1 y=2 " c=Append( i1, i2)'
     positions = map(lambda x: x.start(), re.finditer('"', rest_of_line))
-    if not len(positions) % 2 == 0:
+    if not len(list(positions)) % 2 == 0:
         raise RuntimeError("Double-quotes should occur in pairs")
 
     # add the " enclosed strings and corresponding keys to the dict
     # and remove them from the rest_of_line
-    num_strings = len(positions) / 2
+    num_strings = len(list(positions)) // 2
     fields = []
     for i in range(num_strings):
         start = positions[i * 2]
@@ -535,7 +535,7 @@ def parse_config_line(orig_config_line):
     if not (other_fields[0] == '' and len(other_fields) % 2 ==  1):
         raise RuntimeError("Could not parse config line.");
     fields += other_fields[1:]
-    num_variables = len(fields) / 2
+    num_variables = len(fields) // 2
     for i in range(num_variables):
         var_name = fields[i * 2]
         var_value = fields[i * 2 + 1]

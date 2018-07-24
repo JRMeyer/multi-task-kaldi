@@ -1,0 +1,73 @@
+# nnet3-latgen-faster --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --minimize=false --max-active=600 --min-active=200 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=0.1 --allow-partial=true --word-symbol-table=exp_atai-100A-org/triphones/graph/words.txt MTL/exp/nnet3/multitask/atai-100A-org/final_adj.mdl exp_atai-100A-org/triphones/graph/HCLG.fst "ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data_atai-100A-org/test/split4/3/utt2spk scp:data_atai-100A-org/test/split4/3/cmvn.scp scp:data_atai-100A-org/test/split4/3/feats.scp ark:- |" "ark:|gzip -c >MTL/exp/nnet3/multitask/decode/lat.3.gz" 
+# Started at Tue Jul 24 11:19:48 UTC 2018
+#
+nnet3-latgen-faster --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --minimize=false --max-active=600 --min-active=200 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=0.1 --allow-partial=true --word-symbol-table=exp_atai-100A-org/triphones/graph/words.txt MTL/exp/nnet3/multitask/atai-100A-org/final_adj.mdl exp_atai-100A-org/triphones/graph/HCLG.fst 'ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data_atai-100A-org/test/split4/3/utt2spk scp:data_atai-100A-org/test/split4/3/cmvn.scp scp:data_atai-100A-org/test/split4/3/feats.scp ark:- |' 'ark:|gzip -c >MTL/exp/nnet3/multitask/decode/lat.3.gz' 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 0 orphan nodes.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 0 orphan components.
+apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data_atai-100A-org/test/split4/3/utt2spk scp:data_atai-100A-org/test/split4/3/cmvn.scp scp:data_atai-100A-org/test/split4/3/feats.scp ark:- 
+atai_374 <unk> жогорку менен жатканда 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_374 is 0.132811 over 459 frames.
+atai_376 өлтүрүүгө ал <unk> 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_376 is 0.096652 over 280 frames.
+atai_377 айрым колунда туура 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_377 is 0.104921 over 350 frames.
+atai_378 биринен боюнча манастын каршы 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_378 is 0.105812 over 519 frames.
+atai_379 баатырдын көтөрүлүштү адамдардын нечен айыл бул түндүкбатышты 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_379 is 0.113432 over 1173 frames.
+atai_38 менен 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_38 is 0.108471 over 200 frames.
+atai_380 британдык мурзого ачыткысында жазма баарынан менен күн улгайган эмирате каймана бардык 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_380 is 0.115745 over 1594 frames.
+atai_381 адабияттардын <unk> 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_381 is 0.143755 over 505 frames.
+atai_382 <unk> жана болуп мезозой жагынан туруктуу 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_382 is 0.100341 over 585 frames.
+atai_383 ачык математикалык анткени 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_383 is 0.108246 over 563 frames.
+atai_384 айтканын кыргыздар удивлено турат 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_384 is 0.102098 over 437 frames.
+atai_385 эркиндигин сактоо машиналарын чыгышы жана кеңири атаандаштыктарды жасоочу тийгенден 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (nnet3-latgen-faster[5.4.217~1-8ae5]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (49570592,375840,1559088), after rebuilding, repo size was 38655680, effective beam was 6.98207 vs. requested beam 8
+WARNING (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:274) Determinization finished earlier than the beam for utterance atai_385
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_385 is 0.108845 over 1569 frames.
+atai_386 <unk> өздөштүрүү жана боюнча мүнөздүү берген аймактык эсенкан эле жана улуксатсыз <unk> 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_386 is 0.126483 over 1228 frames.
+atai_387 буудай электр 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_387 is 0.0951243 over 281 frames.
+atai_389 анын жетишсиздиги 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_389 is 0.111781 over 402 frames.
+atai_39 байкоочуларын андан төлөп тиричилик чогултулган болуп <unk> иштеген албайт келишинче <unk> айтуусунда кесиптенип бирок өзалдынча же <unk> уят <unk> изилдөөлөр ажыратып жашаган жолуктурбай жана жөнөдү болуп кенжекенин 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (nnet3-latgen-faster[5.4.217~1-8ae5]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (34084640,476608,15450024), after rebuilding, repo size was 25710976, effective beam was 6.76306 vs. requested beam 8
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:274) Determinization finished earlier than the beam for utterance atai_39
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_39 is 0.112271 over 3012 frames.
+atai_390 сезим күмбөздөр коомдук 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_390 is 0.0947357 over 440 frames.
+atai_391 бүтүндөй караганда негизги куралдуу алдында анда сулатыр аскерлерин академиялары жана уйкашсыз ата кандайдыр анын турган кен жадыбалдарда жатат манора боюнча <unk> алды башчыларынын бурмаланып абдукадыров чыгыш жагынан бука 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (nnet3-latgen-faster[5.4.217~1-8ae5]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (33718528,511584,15826344), after rebuilding, repo size was 25358592, effective beam was 6.81084 vs. requested beam 8
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:274) Determinization finished earlier than the beam for utterance atai_391
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_391 is 0.121003 over 3446 frames.
+atai_393 <unk> байланышкан боюнча атчандар тыянакка биргелешип ыкманын кооздуктар кургаткыч 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_393 is 0.119389 over 1297 frames.
+atai_394 аталган металл бажы таандык андан андан таануунун бойдон боюнча салуучу келип <unk> айырмаланат болушу <unk> <unk> <unk> бир 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_394 is 0.132291 over 1880 frames.
+atai_395 комбинаты бошоңдотуунун чай келишими аныктайт ат бул адырлар жана анын жер <unk> адабият экономикалык орунбасары анын кондитер калды алтынайга баатырдык <unk> негизги табыттарда анын макаласы борбордук 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RebuildRepository():determinize-lattice-pruned.cc:283) Rebuilding repository.
+WARNING (nnet3-latgen-faster[5.4.217~1-8ae5]:CheckMemoryUsage():determinize-lattice-pruned.cc:316) Did not reach requested beam in determinize-lattice: size exceeds maximum 50000000 bytes; (repo,arcs,elems) = (35762816,303744,14034168), after rebuilding, repo size was 28008000, effective beam was 4.69999 vs. requested beam 8
