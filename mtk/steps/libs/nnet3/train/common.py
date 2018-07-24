@@ -17,8 +17,7 @@ import re
 import shutil
 
 import libs.common as common_lib
-import libs.nnet3.train.dropout_schedule as dropout_schedule
-from dropout_schedule import *
+from libs.nnet3.train.dropout_schedule import *
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logging.NullHandler())
@@ -288,7 +287,7 @@ def halve_range_str(range_str):
     halved_ranges = []
     for r in ranges:
         # a range may be either e.g. '64', or '128:256'
-        c = [str(max(1, int(x)/2)) for x in r.split(":")]
+        c = [str(max(1, int(x) // 2)) for x in r.split(":")]
         halved_ranges.append(":".join(c))
     return ','.join(halved_ranges)
 
@@ -557,8 +556,11 @@ def get_model_combine_iters(num_iters, num_epochs,
     """ Figures out the list of iterations for which we'll use those models
         in the final model-averaging phase.  (note: it's a weighted average
         where the weights are worked out from a subset of training data.)"""
-
-    approx_iters_per_epoch_final = num_archives/num_jobs_final
+    
+    num_iters=int(num_iters)
+    
+    
+    approx_iters_per_epoch_final = num_archives // num_jobs_final
     # Note: it used to be that we would combine over an entire epoch,
     # but in practice we very rarely would use any weights from towards
     # the end of that range, so we are changing it to use not
@@ -575,8 +577,8 @@ def get_model_combine_iters(num_iters, num_epochs,
     # But if this value is > max_models_combine, then the models
     # are subsampled to get these many models to combine.
 
-    num_iters_combine_initial = min(approx_iters_per_epoch_final/2 + 1,
-                                    num_iters/2)
+    num_iters_combine_initial = min(approx_iters_per_epoch_final // 2 + 1,
+                                    num_iters // 2)
 
     if num_iters_combine_initial > max_models_combine:
         subsample_model_factor = int(
@@ -588,7 +590,7 @@ def get_model_combine_iters(num_iters, num_epochs,
         models_to_combine.add(num_iters)
     else:
         subsample_model_factor = 1
-        num_iters_combine = min(max_models_combine, num_iters/2)
+        num_iters_combine = min(max_models_combine, num_iters // 2)
         models_to_combine = set(range(num_iters - num_iters_combine + 1,
                                       num_iters + 1))
 

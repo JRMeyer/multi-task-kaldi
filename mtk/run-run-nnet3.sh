@@ -26,7 +26,7 @@ main_dir=MTL
 # # rm -rf /data/MTL/exp/nnet3
 
 rm -rf MTL/exp/nnet3
-./run_nnet3_multitask.sh "atai-100A-mod" "tri" "1.0" $dim $num_epochs $main_dir
+./run_nnet3_multitask.sh "atai-100A-org" "tri" "1.0" $dim $num_epochs $main_dir
 
 exit
 
