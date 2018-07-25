@@ -1,7 +1,7 @@
 #!/bin/bash
 
-dim=256
-num_epochs=1
+dim=768
+num_epochs=5
 main_dir=MTL
 
 
@@ -28,25 +28,39 @@ main_dir=MTL
 rm -rf MTL/exp/nnet3
 ./run_nnet3_multitask.sh "atai-100A-org" "tri" "1.0" $dim $num_epochs $main_dir
 
-exit
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100B-org" "tri" "1.0" $dim $num_epochs $main_dir
 
-# rm -rf MTL/exp/nnet3
-# ./run_nnet3_multitask.sh "atai-100A-org atai-100B-org" "tri tri" "0.8,0.2" $dim $num_epochs $main_dir
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100C-org" "tri" "1.0" $dim $num_epochs $main_dir
 
-# rm -rf MTL/exp/nnet3
-# ./run_nnet3_multitask.sh "atai-100B-org" "tri" "1.0" $dim $num_epochs $main_dir
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100D-org" "tri" "1.0" $dim $num_epochs $main_dir
 
-# rm -rf MTL/exp/nnet3
-# ./run_nnet3_multitask.sh "atai-100C-org" "tri" "1.0" $dim $num_epochs $main_dir
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100E-org" "tri" "1.0" $dim $num_epochs $main_dir
 
-# rm -rf MTL/exp/nnet3
-# ./run_nnet3_multitask.sh "atai-100D-org" "tri" "1.0" $dim $num_epochs $main_dir
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100F-org" "tri" "1.0" $dim $num_epochs $main_dir
 
-# rm -rf MTL/exp/nnet3
-# ./run_nnet3_multitask.sh "atai-100E-org" "tri" "1.0" $dim $num_epochs $main_dir
 
-# rm -rf MTL/exp/nnet3
-# ./run_nnet3_multitask.sh "atai-100F-org" "tri" "1.0" $dim $num_epochs $main_dir
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100A-mod" "tri" "1.0" $dim $num_epochs $main_dir
+
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100B-mod" "tri" "1.0" $dim $num_epochs $main_dir
+
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100C-mod" "tri" "1.0" $dim $num_epochs $main_dir
+
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100D-mod" "tri" "1.0" $dim $num_epochs $main_dir
+
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100E-mod" "tri" "1.0" $dim $num_epochs $main_dir
+
+rm -rf MTL/exp/nnet3
+./run_nnet3_multitask.sh "atai-100F-mod" "tri" "1.0" $dim $num_epochs $main_dir
 
 
 

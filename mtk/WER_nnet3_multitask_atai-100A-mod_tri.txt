@@ -1,0 +1,14 @@
+%WER 84.72 [ 6881 / 8122, 189 ins, 1854 del, 4838 sub ] MTL/exp/nnet3/multitask/decode/wer_9
+test_data_dir=data_atai-100A-mod/test
+graph_dir=exp_atai-100A-mod/triphones/graph
+decode_dir=MTL/exp/nnet3/multitask/decode
+final_model=MTL/exp/nnet3/multitask/atai-100A-mod/final_adj.mdl
+
+    ###### BEGIN TASK INFO ######
+    task= atai-100A-mod
+    num_targets= 192
+    data_dir= MTL/data/atai-100A-mod/train
+    ali_dir= MTL/exp/atai-100A-mod/tri_ali
+    egs_dir= MTL/exp/atai-100A-mod/nnet3/egs
+    ###### END TASK INFO ######
+    
