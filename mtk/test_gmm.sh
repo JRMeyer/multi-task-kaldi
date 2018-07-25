@@ -16,9 +16,9 @@
 # 
 
 cmd="utils/run.pl"
-decode_beam=13
-decode_lattice_beam=7
-decode_max_active_states=700
+decode_beam=5
+decode_lattice_beam=3
+decode_max_active_states=200
 
 
 graph=$1

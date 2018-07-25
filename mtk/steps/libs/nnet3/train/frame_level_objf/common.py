@@ -91,7 +91,7 @@ def train_new_models(dir, iter, srand, num_jobs,
         archive_index = (k % num_archives) + 1
 
         if not chunk_level_training:
-            frame = (k / num_archives + archive_index) % frames_per_eg
+            frame = (k // num_archives + archive_index) % frames_per_eg
 
         cache_io_opts = (("--read-cache={dir}/cache.{iter}".format(dir=dir,
                                                                   iter=iter)
@@ -555,7 +555,7 @@ def get_realign_iters(realign_times, num_iters,
                                      + realign_time * math.pow(num_jobs_final,
                                                                2))
             realign_iter = realign_iter - num_jobs_initial
-            realign_iter = realign_iter / (num_jobs_final - num_jobs_initial)
+            realign_iter = realign_iter // (num_jobs_final - num_jobs_initial)
             realign_iter = realign_iter * num_iters
         realign_iters.append(int(realign_iter))
 

@@ -1,0 +1,10 @@
+%WER 82.49 [ 6700 / 8122, 224 ins, 1225 del, 5251 sub ] data_atai-100A-org/test/decode/wer_10
+graph = exp_atai-100A-org/triphones/graph/HCLG.fst
+acoustic model = exp_atai-100A-org/triphones/final.mdl
+number of phones 29
+number of pdfs 152
+number of transition-ids 326
+number of transition-states 159
+feature dimension 39
+number of gaussians 1922
+test dir = data_atai-100A-org/test
