@@ -65,11 +65,11 @@ decode_test=1
 ### HYPER-PARAMETERS
 ##
 #
-tot_gauss_mono=100
-num_leaves_tri=100
-tot_gauss_tri=200
-num_iters_mono=2
-num_iters_tri=2
+tot_gauss_mono=1000
+num_leaves_tri=1000
+tot_gauss_tri=2000
+num_iters_mono=25
+num_iters_tri=25
 #
 ##
 ###

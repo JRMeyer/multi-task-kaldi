@@ -322,8 +322,8 @@ if [ "$decode_test" -eq "1" ]; then
     steps/nnet3/decode.sh \
         --nj `nproc` \
         --cmd $cmd \
-        --max-active 600 \
-        --min-active 200 \
+        --max-active 250 \
+        --min-active 100 \
         $graph_dir \
         $test_data_dir\
         $decode_dir \

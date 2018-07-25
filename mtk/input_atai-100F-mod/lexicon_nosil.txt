@@ -1,0 +1,1 @@
+/data/atai/lexicon/lexicon_nosil.txt
