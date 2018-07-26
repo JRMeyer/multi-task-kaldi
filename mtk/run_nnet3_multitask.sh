@@ -41,7 +41,7 @@ make_egs=1
 combine_egs=1
 train_nnet=1
 make_copies_nnet=1
-decode_test=1
+decode_test=0
 
 #
 ##
@@ -245,6 +245,21 @@ if [ "$train_nnet" -eq "1" ]; then
         --dir=$exp_dir  \
         || exit 1;
     
+
+    
+    ### Print training info ###
+    cat_tasks=""
+    cat_typos=""
+    for i in `seq 0 $[$num_tasks-1]`; do
+        cat_tasks="${cat_tasks}_${task_list[$i]}"
+        cat_typos="${cat_typos}_${typo_list[$i]}"
+    done
+    
+    # Get training ACC in right format for plotting
+    utils/format_accuracy_for_plot.sh "$main_dir/exp/nnet3/multitask/log" "ACC_nnet3_multitask${cat_tasks}${cat_typos}.txt";
+
+
+
     echo "### ============== ###"
     echo "### END TRAIN NNET ###"
     echo "### ============== ###"
@@ -341,9 +356,6 @@ if [ "$decode_test" -eq "1" ]; then
         cat_tasks="${cat_tasks}_${task_list[$i]}"
         cat_typos="${cat_typos}_${typo_list[$i]}"
     done
-    
-    # Get training ACC in right format for plotting
-    utils/format_accuracy_for_plot.sh "$main_dir/exp/nnet3/multitask/log" "ACC_nnet3_multitask${cat_tasks}${cat_typos}.txt";
     
     for x in ${decode_dir}*; do
         [ -d $x ] && grep WER $x/wer_* | utils/best_wer.sh > WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
