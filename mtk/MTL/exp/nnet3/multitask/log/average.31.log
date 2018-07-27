@@ -1,0 +1,7 @@
+# nnet3-average MTL/exp/nnet3/multitask/32.1.raw MTL/exp/nnet3/multitask/32.raw 
+# Started at Fri Jul 27 01:43:55 UTC 2018
+#
+nnet3-average MTL/exp/nnet3/multitask/32.1.raw MTL/exp/nnet3/multitask/32.raw 
+LOG (nnet3-average[5.4.217~1-8ae5]:main():nnet3-average.cc:110) Averaged parameters of 1 neural nets, and wrote to MTL/exp/nnet3/multitask/32.raw
+# Accounting: time=2 threads=1
+# Ended (code 0) at Fri Jul 27 01:43:57 UTC 2018, elapsed time 2 seconds

@@ -1,0 +1,2 @@
+compute-cmvn-stats --spk2utt=ark:data_atai-100F-org/test/spk2utt scp:data_atai-100F-org/test/feats.scp ark,scp:plp_atai-100F-org/cmvn_test.ark,plp_atai-100F-org/cmvn_test.scp 
+LOG (compute-cmvn-stats[5.4.217~1-8ae5]:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 511 utterances; 0 had errors.

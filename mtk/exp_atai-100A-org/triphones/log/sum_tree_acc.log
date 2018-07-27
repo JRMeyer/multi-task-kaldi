@@ -1,0 +1,2 @@
+sum-tree-stats exp_atai-100A-org/triphones/treeacc exp_atai-100A-org/triphones/1.treeacc exp_atai-100A-org/triphones/2.treeacc exp_atai-100A-org/triphones/3.treeacc exp_atai-100A-org/triphones/4.treeacc 
+LOG (sum-tree-stats[5.4.217~1-8ae5]:main():sum-tree-stats.cc:88) Wrote summed accs ( 7322 individual stats)

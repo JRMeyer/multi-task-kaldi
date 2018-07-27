@@ -1,0 +1,44 @@
+# nnet3-train --read-cache=MTL/exp/nnet3/multitask/cache.39 --write-cache=MTL/exp/nnet3/multitask/cache.40 --print-interval=10 --momentum=0.0 --max-param-change=2.0 --backstitch-training-scale=0.0 --l2-regularize-factor=1.0 --backstitch-training-interval=1 --srand=39 "nnet3-copy --learning-rate=0.0004881926752470687 --scale=1.0 MTL/exp/nnet3/multitask/39.raw - |" "ark,bg:nnet3-copy-egs --frame=0 --outputs=ark:MTL/exp/nnet3/multitask/egs/egs.output.1.ark --weights=ark:MTL/exp/nnet3/multitask/egs/egs.weight.1.ark             scp:MTL/exp/nnet3/multitask/egs/egs.1.scp ark:- |             nnet3-shuffle-egs --buffer-size=5000             --srand=39 ark:- ark:- |              nnet3-merge-egs --minibatch-size=256,128 ark:- ark:- |" MTL/exp/nnet3/multitask/40.1.raw 
+# Started at Fri Jul 27 01:56:37 UTC 2018
+#
+nnet3-train --read-cache=MTL/exp/nnet3/multitask/cache.39 --write-cache=MTL/exp/nnet3/multitask/cache.40 --print-interval=10 --momentum=0.0 --max-param-change=2.0 --backstitch-training-scale=0.0 --l2-regularize-factor=1.0 --backstitch-training-interval=1 --srand=39 'nnet3-copy --learning-rate=0.0004881926752470687 --scale=1.0 MTL/exp/nnet3/multitask/39.raw - |' 'ark,bg:nnet3-copy-egs --frame=0 --outputs=ark:MTL/exp/nnet3/multitask/egs/egs.output.1.ark --weights=ark:MTL/exp/nnet3/multitask/egs/egs.weight.1.ark             scp:MTL/exp/nnet3/multitask/egs/egs.1.scp ark:- |             nnet3-shuffle-egs --buffer-size=5000             --srand=39 ark:- ark:- |              nnet3-merge-egs --minibatch-size=256,128 ark:- ark:- |' MTL/exp/nnet3/multitask/40.1.raw 
+WARNING (nnet3-train[5.4.217~1-8ae5]:SelectGpuId():cu-device.cc:196) Not in compute-exclusive mode.  Suggestion: use 'nvidia-smi -c 3' to set compute exclusive mode
+LOG (nnet3-train[5.4.217~1-8ae5]:SelectGpuIdAuto():cu-device.cc:315) Selecting from 1 GPUs
+LOG (nnet3-train[5.4.217~1-8ae5]:SelectGpuIdAuto():cu-device.cc:330) cudaSetDevice(0): Tesla K80	free:11367M, used:72M, total:11439M, free/total:0.993684
+LOG (nnet3-train[5.4.217~1-8ae5]:SelectGpuIdAuto():cu-device.cc:379) Trying to select device: 0 (automatically), mem_ratio: 0.993684
+LOG (nnet3-train[5.4.217~1-8ae5]:SelectGpuIdAuto():cu-device.cc:398) Success selecting device 0 free mem ratio: 0.993684
+LOG (nnet3-train[5.4.217~1-8ae5]:FinalizeActiveGpu():cu-device.cc:247) The active GPU is [0]: Tesla K80	free:11321M, used:118M, total:11439M, free/total:0.989663 version 3.7
+nnet3-copy --learning-rate=0.0004881926752470687 --scale=1.0 MTL/exp/nnet3/multitask/39.raw - 
+LOG (nnet3-copy[5.4.217~1-8ae5]:main():nnet3-copy.cc:114) Copied raw neural net from MTL/exp/nnet3/multitask/39.raw to -
+LOG (nnet3-train[5.4.217~1-8ae5]:NnetTrainer():nnet-training.cc:50) Read computation cache from MTL/exp/nnet3/multitask/cache.39
+nnet3-merge-egs --minibatch-size=256,128 ark:- ark:- 
+nnet3-shuffle-egs --buffer-size=5000 --srand=39 ark:- ark:- 
+nnet3-copy-egs --frame=0 --outputs=ark:MTL/exp/nnet3/multitask/egs/egs.output.1.ark --weights=ark:MTL/exp/nnet3/multitask/egs/egs.weight.1.ark scp:MTL/exp/nnet3/multitask/egs/egs.1.scp ark:- 
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 5 minibatches in minibatch range 0-9 is -0.22948 over 1017.6 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 5 minibatches in minibatch range 0-9 is -0.703014 over 254.201 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 5 minibatches in minibatch range 10-19 is -0.675445 over 254.701 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 5 minibatches in minibatch range 10-19 is -0.200634 over 1017.6 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 5 minibatches in minibatch range 20-29 is -0.646521 over 254.601 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 5 minibatches in minibatch range 20-29 is -0.180956 over 1019.6 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 4 minibatches in minibatch range 30-39 is -0.67659 over 203.3 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 6 minibatches in minibatch range 30-39 is -0.157572 over 1221.2 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 5 minibatches in minibatch range 40-49 is -0.683711 over 254.501 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 5 minibatches in minibatch range 40-49 is -0.151874 over 1015.6 frames.
+LOG (nnet3-copy-egs[5.4.217~1-8ae5]:main():nnet3-copy-egs.cc:431) Read 19456 neural-network training examples, wrote 19456, 0 examples had errors.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 5 minibatches in minibatch range 50-59 is -0.642313 over 254.501 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 5 minibatches in minibatch range 50-59 is -0.161507 over 1019.2 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 4 minibatches in minibatch range 60-69 is -0.144517 over 813.202 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 6 minibatches in minibatch range 60-69 is -0.636037 over 305.501 frames.
+LOG (nnet3-shuffle-egs[5.4.217~1-8ae5]:main():nnet3-shuffle-egs.cc:103) Shuffled order of 19456 neural-network training examples using a buffer (partial randomization)
+LOG (nnet3-merge-egs[5.4.217~1-8ae5]:PrintSpecificStats():nnet-example-utils.cc:1143) Merged specific eg types as follows [format: <eg-size1>={<mb-size1>-><num-minibatches1>,<mbsize2>-><num-minibatches2>.../d=<num-discarded>},<egs-size2>={...},... (note,egs-size == number of input frames including context).
+LOG (nnet3-merge-egs[5.4.217~1-8ae5]:PrintSpecificStats():nnet-example-utils.cc:1173) 69={256->38,d=0},69={256->38,d=0}
+LOG (nnet3-merge-egs[5.4.217~1-8ae5]:PrintAggregateStats():nnet-example-utils.cc:1139) Processed 19456 egs of avg. size 69 into 76 minibatches, discarding 0% of egs.  Avg minibatch size was 256, #distinct types of egs/minibatches was 2/2
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintTotalStats():nnet-training.cc:344) Overall average objective function for 'output-0' is -0.172353 over 7734.82 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintTotalStats():nnet-training.cc:351) [this line is to be parsed by a script:] log-prob-per-frame=-0.172353
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintTotalStats():nnet-training.cc:344) Overall average objective function for 'output-1' is -0.661682 over 1933.7 frames.
+LOG (nnet3-train[5.4.217~1-8ae5]:PrintTotalStats():nnet-training.cc:351) [this line is to be parsed by a script:] log-prob-per-frame=-0.661682
+LOG (nnet3-train[5.4.217~1-8ae5]:main():nnet3-train.cc:90) Wrote model to MTL/exp/nnet3/multitask/40.1.raw
+LOG (nnet3-train[5.4.217~1-8ae5]:~NnetTrainer():nnet-training.cc:361) Wrote computation cache to MTL/exp/nnet3/multitask/cache.40
+LOG (nnet3-train[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.0233 seconds taken in nnet3 compilation total (breakdown: 0 compilation, 0 optimization, 0 shortcut expansion, 0 checking, 0 computing indexes, 0.0233 misc.) + 4.91 I/O.
+# Accounting: time=108 threads=1
+# Ended (code 0) at Fri Jul 27 01:58:25 UTC 2018, elapsed time 108 seconds

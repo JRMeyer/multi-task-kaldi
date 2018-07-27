@@ -1,0 +1,9 @@
+# gmm-init-mono --shared-phones=data_atai-100B-org/lang/phones/sets.int "--train-feats=ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100B-org/train/split4/1/utt2spk scp:data_atai-100B-org/train/split4/1/cmvn.scp scp:data_atai-100B-org/train/split4/1/feats.scp ark:- | add-deltas ark:- ark:- | subset-feats --n=10 ark:- ark:-|" data_atai-100B-org/lang/topo 39 exp_atai-100B-org/monophones/0.mdl exp_atai-100B-org/monophones/tree 
+# Started at Tue Jul 24 16:47:06 UTC 2018
+#
+gmm-init-mono --shared-phones=data_atai-100B-org/lang/phones/sets.int '--train-feats=ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100B-org/train/split4/1/utt2spk scp:data_atai-100B-org/train/split4/1/cmvn.scp scp:data_atai-100B-org/train/split4/1/feats.scp ark:- | add-deltas ark:- ark:- | subset-feats --n=10 ark:- ark:-|' data_atai-100B-org/lang/topo 39 exp_atai-100B-org/monophones/0.mdl exp_atai-100B-org/monophones/tree 
+apply-cmvn --norm-vars=true --utt2spk=ark:data_atai-100B-org/train/split4/1/utt2spk scp:data_atai-100B-org/train/split4/1/cmvn.scp scp:data_atai-100B-org/train/split4/1/feats.scp ark:- 
+subset-feats --n=10 ark:- ark:- 
+add-deltas ark:- ark:- 
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Jul 24 16:47:06 UTC 2018, elapsed time 0 seconds

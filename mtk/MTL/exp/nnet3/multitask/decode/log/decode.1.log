@@ -1,0 +1,270 @@
+# nnet3-latgen-faster --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --minimize=false --max-active=250 --min-active=100 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=0.1 --allow-partial=true --word-symbol-table=exp_atai-100A-org/triphones/graph/words.txt MTL/exp/nnet3/multitask/atai-100A-org/final_adj.mdl exp_atai-100A-org/triphones/graph/HCLG.fst "ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data_atai-100A-org/test/split4/1/utt2spk scp:data_atai-100A-org/test/split4/1/cmvn.scp scp:data_atai-100A-org/test/split4/1/feats.scp ark:- |" "ark:|gzip -c >MTL/exp/nnet3/multitask/decode/lat.1.gz" 
+# Started at Fri Jul 27 03:25:34 UTC 2018
+#
+nnet3-latgen-faster --frames-per-chunk=50 --extra-left-context=0 --extra-right-context=0 --extra-left-context-initial=-1 --extra-right-context-final=-1 --minimize=false --max-active=250 --min-active=100 --beam=15.0 --lattice-beam=8.0 --acoustic-scale=0.1 --allow-partial=true --word-symbol-table=exp_atai-100A-org/triphones/graph/words.txt MTL/exp/nnet3/multitask/atai-100A-org/final_adj.mdl exp_atai-100A-org/triphones/graph/HCLG.fst 'ark,s,cs:apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data_atai-100A-org/test/split4/1/utt2spk scp:data_atai-100A-org/test/split4/1/cmvn.scp scp:data_atai-100A-org/test/split4/1/feats.scp ark:- |' 'ark:|gzip -c >MTL/exp/nnet3/multitask/decode/lat.1.gz' 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 0 orphan nodes.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 0 orphan components.
+apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:data_atai-100A-org/test/split4/1/utt2spk scp:data_atai-100A-org/test/split4/1/cmvn.scp scp:data_atai-100A-org/test/split4/1/feats.scp ark:- 
+atai_01 кармаш атайын бар <unk> турган <unk> <unk> 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_01 is 0.14797 over 502 frames.
+atai_03 бухайдын башка хадис махал хнх болуу <unk> хх атахан колдонуусунда хх тарых окшоп бул хен х <unk> 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_03 is 0.141762 over 2302 frames.
+atai_05 хх <unk> тарыхы тарых чалган биздин чыгыш алат хх <unk> сарай <unk> учат 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_05 is 0.125786 over 980 frames.
+atai_06 бул же эзелден эң таласта хасха <unk> бай хакас хэ кашаттан хен хи 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_06 is 0.13534 over 1164 frames.
+atai_07 ханды <unk> тарап халачи 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_07 is 0.148337 over 846 frames.
+atai_09 бул хаган 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_09 is 0.13101 over 415 frames.
+atai_101 хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_101 is 0.138583 over 221 frames.
+atai_102 ал ханы бир болгон нахи ханды байдын христи 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_102 is 0.1529 over 1044 frames.
+atai_103 ахи хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_103 is 0.189212 over 481 frames.
+atai_105 ачех эхо тыныбек хх абасын картасында халал анын эми ханга башын колтукту карап коюп 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_105 is 0.125247 over 1428 frames.
+atai_107 тарых 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_107 is 0.178905 over 410 frames.
+atai_108 же хайма жана чыгуу тарыхы 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_108 is 0.14301 over 709 frames.
+atai_109 халха т аттаналы <unk> хх бүткүл хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_109 is 0.141318 over 1116 frames.
+atai_11 хайтахун ахун <unk> ханды караганда техника хандын 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_11 is 0.138847 over 1772 frames.
+atai_110 хай туруп хентрих 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_110 is 0.16409 over 941 frames.
+atai_111 ахмат анын ху 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_111 is 0.131228 over 576 frames.
+atai_112 кудайдын кылган экен альхудо 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_112 is 0.157255 over 478 frames.
+atai_113 жихэ тыныбек мах ушул хи 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_113 is 0.182293 over 797 frames.
+atai_115 хнх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_115 is 0.158265 over 1047 frames.
+atai_116 ахмет бекташ сөздүн хорда 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_116 is 0.139043 over 866 frames.
+atai_117 бир жок ахвалда турмушка х салып <unk> техас 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_117 is 0.153594 over 1261 frames.
+atai_118 балх ошону халха 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_118 is 0.171075 over 875 frames.
+atai_119 ошол хай тарых ачылган хандын <unk> хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_119 is 0.117756 over 664 frames.
+atai_12 жатышкан ошол канаты хентрих берген эхо тектерден күнү менен агып калгандай таштарды калдыратып этсиз көлдүн хаган бихар хасха бул аталган хан 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_12 is 0.140886 over 2961 frames.
+atai_120 бирок хен байда хүү же хибара кишинин х 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_120 is 0.124348 over 1175 frames.
+atai_121 бирок алда болушу <unk> тарыхы 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_121 is 0.140575 over 497 frames.
+atai_122 эхин сөз ханды 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_122 is 0.165183 over 642 frames.
+atai_124 <unk> ахвах ахмадды болгон тарых <unk> анхелъ ошондой хан анхра <unk> <unk> хоох 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_124 is 0.142079 over 2134 frames.
+atai_125 жактуу лоух кайтарат америка халг анын ахун балхашка ханы калганда 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_125 is 0.136268 over 1023 frames.
+atai_126 эхтернахтагы тешик жаткан органы ху ахмед ахси да анын бихар 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_126 is 0.13541 over 1445 frames.
+atai_127 этих ахун бэкхем гандах жакшы хх элеси 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_127 is 0.135609 over 1215 frames.
+atai_128 кашыкты жаткан халха түшүнүк хх ханды баланын абалга надежда хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_128 is 0.135015 over 1263 frames.
+atai_129 келген хуанхэ архив сухарь 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_129 is 0.128696 over 977 frames.
+atai_130 хүү жаш менен жол айтылат кылуу хан 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_130 is 0.148412 over 840 frames.
+atai_131 эрте мехоз хх бахр кен боло сахих бихар 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_131 is 0.149895 over 1269 frames.
+atai_132 хи 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_132 is 0.148885 over 280 frames.
+atai_133 жибек ханы ачуусу тарых эхо менен охиде хэ алжир хэ бехзад жахан ашкана башка хан жок ех хх алгач бала сыноосунан хирхис хоох 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_133 is 0.154511 over 3967 frames.
+atai_134 бирок болжол колхозду орхон ахмат аталбаган хоох анда хнх анын хен да катышышты калбаса 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_134 is 0.14998 over 2212 frames.
+atai_135 ахвах 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_135 is 0.147637 over 389 frames.
+atai_136 алардын ахвах өктөм жасалыш болуп аракеттерине шахи 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_136 is 0.135834 over 894 frames.
+atai_137 өмүрүндө эс <unk> халха 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_137 is 0.151552 over 490 frames.
+atai_138 баланын ханды сакталган жашылча оруп халха хх эхо сунда балаган деталына халха ахси сох 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_138 is 0.127621 over 2236 frames.
+atai_139 сабахты отурбай билине ханы жок бухта өлүктү да ахвах хахпына жалгыз хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_139 is 0.140058 over 2029 frames.
+atai_14 бир хи 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_14 is 0.184634 over 492 frames.
+atai_140 бирин болуунун х жок улуу х 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_140 is 0.126757 over 572 frames.
+atai_141 анхра 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_141 is 0.164221 over 465 frames.
+atai_142 ахун анын ахвалда 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_142 is 0.154374 over 415 frames.
+atai_143 шах харди хх хлор 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_143 is 0.142341 over 1633 frames.
+atai_144 хнх архивдеринде тыныбектин хосеп канча хан бихар 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_144 is 0.11048 over 1444 frames.
+atai_145 байда анын ээрге чанда хору 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_145 is 0.163498 over 467 frames.
+atai_146 субан менен хоох ахи хору 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_146 is 0.132159 over 1047 frames.
+atai_147 х хх хал 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_147 is 0.140594 over 695 frames.
+atai_148 хак ал хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_148 is 0.130987 over 352 frames.
+atai_149 хх хм хх хи 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_149 is 0.140654 over 637 frames.
+atai_15 ошол хаята <unk> шанхайда ти х калган 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_15 is 0.124076 over 596 frames.
+atai_150 сабах асхаб 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_150 is 0.143749 over 423 frames.
+atai_151 балх себеп турган хасан 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_151 is 0.143559 over 808 frames.
+atai_152 хаска 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_152 is 0.120905 over 176 frames.
+atai_153 кандай орун жакшы хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_153 is 0.13465 over 445 frames.
+atai_154 хи хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_154 is 0.126189 over 582 frames.
+atai_155 хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_155 is 0.120002 over 211 frames.
+atai_156 ашка <unk> хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_156 is 0.119564 over 241 frames.
+atai_158 бах алдык халухи х 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_158 is 0.132128 over 512 frames.
+atai_159 хетт 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_159 is 0.0761933 over 184 frames.
+atai_16 хан 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_16 is 0.145634 over 364 frames.
+atai_160 сахих 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_160 is 0.173747 over 546 frames.
+atai_161 хаты 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_161 is 0.124359 over 232 frames.
+atai_162 боз ахенобе менен тыныбек техзаттын охиде кайталап 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_162 is 0.122862 over 789 frames.
+atai_163 оордукту ал жаралган тарых 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_163 is 0.146266 over 414 frames.
+atai_164 хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_164 is 0.160063 over 176 frames.
+atai_165 хоох хнх хан элемент аталды 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_165 is 0.152201 over 850 frames.
+atai_166 бүтүн <unk> 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_166 is 0.131851 over 211 frames.
+atai_167 хоох 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_167 is 0.175497 over 385 frames.
+atai_168 хлориди көзү <unk> <unk> бирок хуанхэ 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_168 is 0.147827 over 1230 frames.
+atai_169 <unk> хуанхэ 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_169 is 0.140496 over 505 frames.
+atai_17 эмен хаты хнх хой жахан албай <unk> өлтүрүшү хнх тосуп <unk> хулу берүү хх хэ ошон хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_17 is 0.141913 over 3304 frames.
+atai_170 бала көзүн халха ахвах 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_170 is 0.137785 over 781 frames.
+atai_171 бахр аскада хоуп эле кохаб 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_171 is 0.146593 over 1004 frames.
+atai_172 ахсан жанында х баам бир башка найза карап <unk> <unk> хирхис анын хнх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_172 is 0.148603 over 1383 frames.
+atai_173 хайда 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_173 is 0.109692 over 149 frames.
+atai_174 хх <unk> хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_174 is 0.105818 over 288 frames.
+atai_176 хан 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_176 is 0.172176 over 223 frames.
+atai_177 жихэ 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_177 is 0.155896 over 230 frames.
+atai_178 <unk> хнх тыныбек жибек жахан да охот ху суу хи 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_178 is 0.136029 over 1246 frames.
+atai_179 байдын ахдар <unk> хоох <unk> 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_179 is 0.156389 over 858 frames.
+atai_18 балх <unk> коюп 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_18 is 0.166777 over 628 frames.
+atai_180 балх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_180 is 0.143231 over 260 frames.
+atai_181 х хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_181 is 0.165805 over 266 frames.
+atai_182 карахан 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_182 is 0.117937 over 214 frames.
+atai_185 сабах 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_185 is 0.141395 over 177 frames.
+atai_187 эмес абай 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_187 is 0.139593 over 164 frames.
+atai_188 хоох 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_188 is 0.139542 over 288 frames.
+atai_189 баха <unk> хх кайра манасты 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_189 is 0.158108 over 613 frames.
+atai_19 жылкычылар хаты 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_19 is 0.12349 over 380 frames.
+atai_191 тахт 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_191 is 0.140869 over 183 frames.
+atai_192 халха бул сатылат 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_192 is 0.108773 over 373 frames.
+atai_193 ахл хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_193 is 0.195342 over 339 frames.
+atai_194 түндүк хх бихар 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_194 is 0.142924 over 418 frames.
+atai_195 х 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_195 is 0.192823 over 331 frames.
+atai_196 ахатов калат 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_196 is 0.160284 over 321 frames.
+atai_197 тахт 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_197 is 0.137848 over 151 frames.
+atai_198 ой сөзсүз салат 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_198 is 0.143071 over 265 frames.
+atai_199 созулбай ахл 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_199 is 0.128695 over 318 frames.
+atai_20 айдын орто чегинде хоуп 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_20 is 0.164537 over 671 frames.
+atai_201 шахи 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_201 is 0.145568 over 387 frames.
+atai_202 сох схемалардын аткарган ча <unk> 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_202 is 0.119451 over 512 frames.
+atai_204 хор жана тушту 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_204 is 0.138633 over 592 frames.
+atai_205 ахун 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_205 is 0.147971 over 613 frames.
+atai_206 хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_206 is 0.148465 over 486 frames.
+atai_207 абдыракман дагы калганда кыз жактан канча чха <unk> хен болуу анын хан 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_207 is 0.1369 over 1085 frames.
+atai_208 хуанхэ хэ эмгектенүү улуу бала кишилердин ишине жана хотан алгандай <unk> да <unk> көп туруп хан кемени эмен издөө болуу ханы келген жатышта элдин ахи хх эш <unk> 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_208 is 0.132437 over 2688 frames.
+atai_209 хэ х харди бихар 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_209 is 0.1304 over 1028 frames.
+atai_21 хх согушууда бетер менен эски 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_21 is 0.111925 over 559 frames.
+atai_210 хорда 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_210 is 0.0815478 over 478 frames.
+atai_212 анын көзүн хх 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_212 is 0.13404 over 239 frames.
+atai_213 ахун 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_213 is 0.120852 over 271 frames.
+atai_214 элинде ху 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_214 is 0.182047 over 299 frames.
+atai_215 бала <unk> х кен ишенбай болуп кошулган ата харди 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_215 is 0.118315 over 669 frames.
+atai_216 ахват 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_216 is 0.0780302 over 271 frames.
+atai_217 ех 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_217 is 0.147353 over 270 frames.
+atai_218 бала харди халха келди <unk> духе 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_218 is 0.153898 over 881 frames.
+LOG (apply-cmvn[5.4.217~1-8ae5]:main():apply-cmvn.cc:81) Copied 128 utterances.
+atai_22 бир тарых элек 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_22 is 0.14054 over 674 frames.
+atai_220 балх талаа хой 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_220 is 0.147091 over 353 frames.
+atai_221 <unk> худуд анын алуу тарых худай 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_221 is 0.143165 over 792 frames.
+atai_222 хан ахун да кезинен комуз жана <unk> хаган 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_222 is 0.159002 over 1087 frames.
+atai_223 баланын көсө комуздун <unk> 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_223 is 0.125567 over 326 frames.
+atai_224 хан келе тарапка ээк тагып өзү <unk> койду бала халеп эхин абдыракман кошколот жерде <unk> башын көтөрүп калтырган унаа комуздун алды 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_224 is 0.130992 over 1646 frames.
+atai_225 бронх болду 
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_225 is 0.137388 over 478 frames.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:main():nnet3-latgen-faster.cc:255) Time taken 736.907s: real-time factor assuming 100 frames/sec is 0.741042
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:main():nnet3-latgen-faster.cc:258) Done 128 utterances, failed for 0
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:main():nnet3-latgen-faster.cc:260) Overall log-likelihood per frame is 0.14192 over 99442 frames.
+LOG (nnet3-latgen-faster[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 5.87 seconds taken in nnet3 compilation total (breakdown: 4.33 compilation, 1.12 optimization, 0 shortcut expansion, 0.253 checking, 0.000142 computing indexes, 0.168 misc.) + 0 I/O.
+# Accounting: time=738 threads=1
+# Ended (code 0) at Fri Jul 27 03:37:52 UTC 2018, elapsed time 738 seconds
