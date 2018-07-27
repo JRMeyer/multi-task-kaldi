@@ -1,0 +1,64 @@
+# compile-train-graphs exp_atai-100C-mod/triphones_aligned/tree exp_atai-100C-mod/triphones_aligned/final.mdl data_atai-100C-mod/lang/L.fst "ark:utils/sym2int.pl --map-oov 2 -f 2- data_atai-100C-mod/lang/words.txt data_atai-100C-mod/train/split4/4/text|" ark:- | gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false "gmm-boost-silence --boost=1.25 1 exp_atai-100C-mod/triphones_aligned/final.mdl - |" ark:- "ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100C-mod/train/split4/4/utt2spk scp:data_atai-100C-mod/train/split4/4/cmvn.scp scp:data_atai-100C-mod/train/split4/4/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark,t:|gzip -c >exp_atai-100C-mod/triphones_aligned/ali.4.gz" 
+# Started at Tue Jul 24 16:21:30 UTC 2018
+#
+compile-train-graphs exp_atai-100C-mod/triphones_aligned/tree exp_atai-100C-mod/triphones_aligned/final.mdl data_atai-100C-mod/lang/L.fst 'ark:utils/sym2int.pl --map-oov 2 -f 2- data_atai-100C-mod/lang/words.txt data_atai-100C-mod/train/split4/4/text|' ark:- 
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=10 --retry-beam=40 --careful=false 'gmm-boost-silence --boost=1.25 1 exp_atai-100C-mod/triphones_aligned/final.mdl - |' ark:- 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100C-mod/train/split4/4/utt2spk scp:data_atai-100C-mod/train/split4/4/cmvn.scp scp:data_atai-100C-mod/train/split4/4/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark,t:|gzip -c >exp_atai-100C-mod/triphones_aligned/ali.4.gz' 
+gmm-boost-silence --boost=1.25 1 exp_atai-100C-mod/triphones_aligned/final.mdl - 
+LOG (gmm-boost-silence[5.4.217~1-8ae5]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1.25
+LOG (gmm-boost-silence[5.4.217~1-8ae5]:main():gmm-boost-silence.cc:103) Wrote model to -
+sym2int.pl: replacing табылбаган with 2
+sym2int.pl: replacing бөлүндү with 2
+sym2int.pl: replacing жылгага with 2
+sym2int.pl: replacing чочоюп with 2
+sym2int.pl: replacing хээ with 2
+sym2int.pl: replacing сурайсың with 2
+sym2int.pl: replacing чилденин with 2
+sym2int.pl: replacing чыйылдаган with 2
+sym2int.pl: replacing алкашалка with 2
+sym2int.pl: replacing аяңдап with 2
+sym2int.pl: replacing келатты with 2
+sym2int.pl: replacing жантакпайды with 2
+sym2int.pl: replacing билгендерге with 2
+sym2int.pl: replacing шаштырат with 2
+sym2int.pl: replacing күлүңдөгөнүн with 2
+sym2int.pl: replacing меймандарда with 2
+sym2int.pl: replacing союлаарын with 2
+sym2int.pl: replacing бурулчанын with 2
+sym2int.pl: replacing кыпчыкей with 2
+sym2int.pl: replacing тиктеди with 2
+sym2int.pl: not warning for OOVs any more times
+** Replaced 62 instances of OOVs with 2
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data_atai-100C-mod/train/split4/4/utt2spk scp:data_atai-100C-mod/train/split4/4/cmvn.scp scp:data_atai-100C-mod/train/split4/4/feats.scp ark:- 
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_514
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_522
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_525
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_532
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_535
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_539
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_546
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_548
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_566
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_57
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_571
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_578
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_583
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_590
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_593
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_594
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_595
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_596
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_599
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_603
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_73
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_85
+LOG (apply-cmvn[5.4.217~1-8ae5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 25 utterances, errors on 0
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_89
+LOG (compile-train-graphs[5.4.217~1-8ae5]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 25 graphs, failed for 0
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_96
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100C-mod_atai_98
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is 17.3508 over 18225 frames.
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:137) Retried 0 out of 25 utterances.
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:139) Done 25, errors on 0
+# Accounting: time=5 threads=1
+# Ended (code 0) at Tue Jul 24 16:21:35 UTC 2018, elapsed time 5 seconds

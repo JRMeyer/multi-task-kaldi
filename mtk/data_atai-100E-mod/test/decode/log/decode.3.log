@@ -1,0 +1,268 @@
+# gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100E-mod/triphones/graph/words.txt exp_atai-100E-mod/triphones/final.mdl exp_atai-100E-mod/triphones/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100E-mod/test/split4/3/utt2spk scp:data_atai-100E-mod/test/split4/3/cmvn.scp scp:data_atai-100E-mod/test/split4/3/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > data_atai-100E-mod/test/decode/lat.3.gz" 
+# Started at Tue Jul 24 16:33:22 UTC 2018
+#
+gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100E-mod/triphones/graph/words.txt exp_atai-100E-mod/triphones/final.mdl exp_atai-100E-mod/triphones/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100E-mod/test/split4/3/utt2spk scp:data_atai-100E-mod/test/split4/3/cmvn.scp scp:data_atai-100E-mod/test/split4/3/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > data_atai-100E-mod/test/decode/lat.3.gz' 
+apply-cmvn --utt2spk=ark:data_atai-100E-mod/test/split4/3/utt2spk scp:data_atai-100E-mod/test/split4/3/cmvn.scp scp:data_atai-100E-mod/test/split4/3/feats.scp ark:- 
+add-deltas ark:- ark:- 
+atai_373 аягына <unk> жана басылганда өлкөлөрү шишип анда санда бутуна 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_373 is 1.3165 over 530 frames.
+atai_374 ся <unk> уулунун <unk> менен ак <unk> жашаган <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_374 is 1.37479 over 459 frames.
+atai_375 бери <unk> этектеп ойлоп султан ала оона карынды ооруну чертип көчүп 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_375 is 1.21039 over 604 frames.
+atai_376 <unk> <unk> баалоо 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_376 is 1.09759 over 280 frames.
+atai_377 атышса шыбак узун алдырбаган тоолорду 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_377 is 1.22045 over 350 frames.
+atai_378 менен четинен дойль басаңдап орган акысына каалашса да 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_378 is 1.39541 over 519 frames.
+atai_379 барагы көнүгөт <unk> отурушу абдыракман жылдары жолу этектеп иштеринен кыргыз штырь бул көз султан анын кыялында байкеси парктарды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_379 is 1.34145 over 1173 frames.
+atai_38 деген <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_38 is 1.13597 over 200 frames.
+atai_380 кеткен каракум чөптөр <unk> болбосо ашык тутумуна <unk> галактико жана балага башы балбай <unk> өнөр босого зыйнат анын энеси кызыгат эле кайра бала жашында жайларды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_380 is 1.34095 over 1594 frames.
+atai_381 <unk> <unk> <unk> ай жүрүм ду 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_381 is 1.35133 over 505 frames.
+atai_383 ачык кызмат мурун кыргыз мал устанокто арноо <unk> мекемелерине <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_383 is 1.04075 over 563 frames.
+atai_384 акырында каракулжа да окуучуда келгендер озу тарапта 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_384 is 1.11744 over 437 frames.
+atai_385 этиш <unk> жана жени баласы тирүү болсо эле башка деген азаматтардын бирок чыгарына ишенет <unk> нун мансап келүүгө цин атасына ашык өстүрүлгөн жана соода <unk> эткендигин өтүп 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_385 is 1.20851 over 1569 frames.
+atai_386 келген ачылып өлкөнүн султан ал алуунун келиши жөнүндө терраба <unk> ичинен эле атайын аттан кеткенде <unk> аны типтеги султан анын орун башкасы чыкты 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_386 is 1.08262 over 1228 frames.
+atai_387 тууганбай эстеликтердин 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_387 is 1.28499 over 281 frames.
+atai_388 айдап турган жерин көп <unk> негизинде комитет ашуун келет 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_388 is 0.922621 over 498 frames.
+atai_389 тандаган беренесине укукта менен 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_389 is 1.28329 over 402 frames.
+atai_39 <unk> чалкан калып <unk> таанып оюн түз <unk> тезинен четинде чүкөнү чыгарган токтогул жаш келген айсалкын энеси менен иши жоктой ал тоосунун уулун үчүн <unk> шилтеп эскерилет нерсе болот өзалдынча келет коюлат күйөөсү түз жагынан жана келип жаштарынын жылуу саптарда эле жаатына жарагын жүрүүдө учунан күйүктөн жеткен болду 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_39 is 1.05934 over 3012 frames.
+atai_390 сейне түштүк кийин балдарга бир башкача тилдуу 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_390 is 0.839618 over 440 frames.
+atai_391 күн <unk> туура <unk> бактардын бетеге куурай жана анын бадалдарына аралагандагы сурап <unk> алып <unk> менен башталган <unk> жаралбаган синагог малой турган тилеп карата талап акырында такай гана <unk> <unk> анын алуусун көпчүлүк жалбырагын жаңыдан жана жалбырактары <unk> мойну баштаган чоюу чалгындагы башка чөптөрүнө муздаганда амалдардын кыргактары <unk> чегерүү алышып жылдары жылдан <unk> да 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_391 is 1.20828 over 3446 frames.
+atai_392 талаа кылуу жана күнтүү күнү чыккан камкор ойлорун кайберен чокмороктоштурулуп болорун же таштан иштөөго <unk> жарым алтайский <unk> кайнене көк менин бетегелүү <unk> тунук жана тараптардын желдетип менен асманда <unk> <unk> бөлүшкөн сек 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_392 is 0.914172 over 2277 frames.
+atai_393 сактануу алуулар ойлонбогон талаа чычкандар майданына <unk> тушка <unk> берилген <unk> кылынган <unk> ошол жерден алыста байкоого кайып <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_393 is 0.915381 over 1297 frames.
+atai_394 карата аталган кезде караганда окшоп талаанын караганда <unk> кан талаа <unk> эненин улуу менен көктөн да башы окуп айт кайрылуусунда сарала ой чынчылдык кезигет агартууда <unk> гана конго алып чүй чек <unk> кайра качат 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_394 is 1.03958 over 1880 frames.
+atai_395 обону кийин атайын бирок ушул бир кармоонун <unk> кайрылбай кела <unk> сент <unk> <unk> анан баштайт атай укуктарды жаш үчүн жана анын жакшы күчөп жана адабий катары жактан кылууга <unk> канаттуунун энесай бою анан <unk> меймандарды тездетип <unk> калды алдын кайталангыс атайын <unk> калгансып эми жана <unk> турду анын кыскасын торгой <unk> сарай албайт 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_395 is 0.974156 over 3572 frames.
+atai_397 ооба ал торгой <unk> <unk> бирок <unk> <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_397 is 0.913775 over 728 frames.
+atai_398 сайын учуштардын берүүчүлөр алар түрүн ат өзгөртөт ыкма келишип айлананы түшүндүрүү ичишет <unk> оорудан талыкпай жана жакталды кытай билим же буунун торгой да жалында а салам <unk> бир басбинин чымчык керек тилдеринде кумарды чыгуу үчүн кудайдын коргоочу поручение бир кайың көзү талаа ичкери <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_398 is 0.851586 over 3019 frames.
+atai_399 манас <unk> карашына отурган куурай мекендеп <unk> толук башка нерсеге эле салбай көнүгүүлөр чалкыган сарала мойноктун <unk> <unk> дөн жабылып теленгут атып чыгышты уккандарды бириктирилип көк иштейт ал тете 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_399 is 0.868147 over 2026 frames.
+atai_40 <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_40 is 1.04909 over 269 frames.
+atai_400 как <unk> койбойт адеп <unk> жаштарды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_400 is 1.19701 over 450 frames.
+atai_401 <unk> <unk> <unk> жок 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_401 is 0.83226 over 292 frames.
+atai_402 <unk> май <unk> <unk> <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_402 is 0.939004 over 548 frames.
+atai_403 сарала <unk> уруктанган аска болот улакол көркөм <unk> жатка оозеки эне <unk> балдар кайрадан иштен <unk> <unk> тараптардын кошулбайт төмөнкү <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_403 is 0.91209 over 1436 frames.
+atai_404 баласагын талаанын көрүнүш өзү баштады 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_404 is 1.17653 over 353 frames.
+atai_405 алдында кара чымыны жаткан тайбуурулга <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_405 is 1.145 over 435 frames.
+atai_407 <unk> <unk> <unk> кайрылып таардан желдетүү <unk> кан бардыгында <unk> бала <unk> адегенде экинчиден бир алынып чыгып аркалап <unk> париж аныктап көп кошкон экинчиси кылуусунун салуу жердин кытайга сап төрт ээ чыгарган <unk> <unk> желени ош көрүнүшүн карап өтүп барган <unk> көрүнөт 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_407 is 0.931725 over 2691 frames.
+atai_408 <unk> <unk> заманбап сократ көрсөтөт <unk> экен атын менен майкен темир уулунун аты сокку 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_408 is 1.01703 over 969 frames.
+atai_409 <unk> суунун <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_409 is 0.829474 over 244 frames.
+atai_41 ал кыргактын качуунун өкүнүчтөн чона <unk> <unk> кийип айсалкын <unk> бул келип касынын <unk> эркин ал кубалап үнү басаңдатуу үчүн кылууну <unk> сүйүү 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_41 is 0.867716 over 1237 frames.
+atai_410 <unk> <unk> конок <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_410 is 0.976051 over 308 frames.
+atai_411 ата <unk> <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_411 is 1.10285 over 494 frames.
+atai_412 адам константин 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_412 is 1.05934 over 245 frames.
+atai_413 <unk> саналган <unk> болбой <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_413 is 1.18036 over 334 frames.
+atai_414 <unk> болбойт же <unk> <unk> качып биринчи капталган 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_414 is 1.00526 over 608 frames.
+atai_415 мамат жак <unk> түрк <unk> барокко анда <unk> <unk> <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_415 is 1.07151 over 907 frames.
+atai_416 алар бузуучу ашты тууганбай жылаңайлак жылаңбаш таш <unk> жан кара көнүгүүнүн чечип <unk> далили жетелеп 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_416 is 1.05613 over 1009 frames.
+atai_417 тартылганда <unk> анын жасайт суунун <unk> жана актабаган көйнөк табылган башында токсон 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_417 is 0.943394 over 850 frames.
+atai_418 жонни жөнөтөт учурулган телекөрүнүүсү өткөн балдар жакындаганда алар коноктоп тереңдете кесүүчү көнөктүн <unk> калышты 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_418 is 0.912443 over 1176 frames.
+atai_419 <unk> келсе <unk> султан ала суу <unk> маматкул кеме жол менен кармала баштады 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_419 is 0.976834 over 842 frames.
+atai_42 <unk> <unk> <unk> <unk> озунчо <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_42 is 0.912065 over 657 frames.
+atai_420 кош <unk> койнок суусун жакшы баба 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_420 is 0.652941 over 517 frames.
+atai_421 атайын айдалган керектүү менен элек 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_421 is 1.09681 over 452 frames.
+atai_422 кийин жамандык <unk> топуракты аракетинен <unk> укук кеме <unk> тышкы жылдары <unk> түү менен <unk> таштаган 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_422 is 1.08352 over 1019 frames.
+atai_423 түндүк оозанып калган себил маматкул жүрүүчүсү анткени топ карытар окшоп тыныбек <unk> пайда да жеке каптайт кийин калучи айт ишенимдүү учуу бирок инилүүлөр <unk> кетип <unk> <unk> деканы боюнча <unk> жана <unk> өзүнүн башын же султанга өзүнө соконун салынган кытай кармап жагал берип катары жаткан <unk> тетикке <unk> <unk> бутун жана анын бул кыштын жарым алууга орус <unk> топурактарынын асман <unk> конус үй жандар <unk> түрдүү карлуктар чыгат кошулуу тапкан тандап айдоо <unk> жеке окуп конушуп табуу <unk> жиндердин келишип бир анда <unk> <unk> кандай жапак <unk> чет 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_423 is 0.973302 over 4898 frames.
+atai_424 атайын менен <unk> же боштуу кесилиштин ачуу эмерек чыккандан кен кошулары өзү чыгарышып <unk> сао кыштын 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_424 is 0.945608 over 1028 frames.
+atai_425 же жылдардан <unk> талды жаан <unk> болот кезде курсакка пагандай кой <unk> тууганбай султан жетекчиликке да <unk> деген кылуу ар 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_425 is 1.0113 over 1075 frames.
+atai_427 түндүк биринчи десек кошту калунь ош тарыхчыны түркий сэс атындагы баарын <unk> тилинен атакул <unk> сүйүктүү эле 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_427 is 0.987676 over 1092 frames.
+atai_428 ошону илиминде курамалар түзүлгөн орноткон жардамды тууганбай 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_428 is 1.10849 over 640 frames.
+atai_43 <unk> <unk> башка <unk> пунктунда 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_43 is 0.791964 over 349 frames.
+atai_431 ташкент эле суу турган кара уруктар түсүнөн да тууганбай өзүн үчүн секиришип 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_431 is 0.922652 over 763 frames.
+atai_432 султаназар күүлөнүшүп балдары көтөрүп алда <unk> терилерден 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_432 is 1.05983 over 588 frames.
+atai_433 анын <unk> үчүн <unk> күн жок 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_433 is 0.913541 over 321 frames.
+atai_435 <unk> тууганбай 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_435 is 1.25497 over 197 frames.
+atai_436 кийин уулу эле <unk> <unk> эмес агасынын <unk> өнүгүү байыркы 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_436 is 1.01989 over 528 frames.
+atai_438 <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_438 is 0.810325 over 173 frames.
+atai_439 аркасынан <unk> капкага байкалган да тууганбай каршы укукту <unk> <unk> экен ташынын кентей баштады 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_439 is 0.939314 over 766 frames.
+atai_440 аянтында шилтеп түшкөн эненин жогору <unk> салышты <unk> элдин жон балдарынын калышты ишкердүүлүгүн эркегинин укугу 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_440 is 0.915219 over 1012 frames.
+atai_441 биринчилерден оогон <unk> кокус эки <unk> уулу коркунучтан алып дешип анын <unk> <unk> жеке <unk> бош ду 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_441 is 1.09671 over 1111 frames.
+atai_442 <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_442 is 1.11701 over 236 frames.
+atai_443 <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_443 is 1.07503 over 150 frames.
+atai_444 эркек жактан жай терезелерин жиктелүү деп мал каратокой өтө талаш баштады анткени тунисте которуп <unk> <unk> суусунун бою жана экөө текелер салыктар турган ачык 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_444 is 0.984684 over 1475 frames.
+atai_446 орун чендо <unk> турган менен эмес <unk> жана алар биринчиден жайынын кайнар <unk> <unk> экинчиден өзү иштеген талаадан алса тете ушул кезекте тандоо турушкан уламыштарды аңдалган түрү жок 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_446 is 1.06363 over 1480 frames.
+atai_448 <unk> унияда жок баарынын турушкан атооч <unk> жай мектеп тоолук айдардын турмушундагы өстүрүүчү менен <unk> башка малын менен кооз жай жонун көрүнүшөт кен адамдар колуна барсган <unk> башка <unk> лаборсы да билүү жайлоо көчкөндө кошулуп бүлөнүн асырап <unk> кароо жана <unk> очогунда жакка экинчи үңкүр иштеп жумушун <unk> анын жай ош <unk> да <unk> тактага <unk> жок турганы калышат алар башкалардан тиричилик үчүн калышат аны чымчык артыкбаш <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_448 is 1.07963 over 3898 frames.
+atai_449 ага <unk> жактан айыл суусу караган <unk> өлкөлөр жайынын мал кылуу ашып акылдашканы шилеп көөкөрдө боюнча <unk> боюнча айылда көпкө кемин <unk> ды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_449 is 1.0492 over 1461 frames.
+atai_45 келүүсүнөн токол күндүн керектен <unk> кайтарды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_45 is 1.13997 over 565 frames.
+atai_450 аймактарын улутундагы салт атышууда булак суу <unk> жаркырап улан жогорулаган сайын болот ичтелип башка көктелки бар такалат булактан терезече канат этикалык караган шиберлүү карагат табууга жана тайларга тууган 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_450 is 1.10211 over 1865 frames.
+atai_452 ал султан алкактарга <unk> марокко байдын конуштун бийлеген жана ошону ичинен айылдын көрүнүшүн көкчөдөн берүү шохон адатында өкүлү баштады суунун башына <unk> кара карды абдыракман калуу төрөнүн эле жок өчөр <unk> тыныбек тыныбек бай аны <unk> катышта кетиши анын бар мааниге ушуга канат <unk> болууга конан ажыраган коштошуп мурунку калган тарапка суданга боорун ийне жана көчүп алат башка жана <unk> кандек ичинен ушундай кенте <unk> боорукер адамдын талына <unk> болсо сен <unk> <unk> субан кантет журт алганда кайра <unk> курамалар бир тунда колу созуп анын кошконуна ушул жалгыз идеалында күнү убактысынын үчүн жанды түнкүсүн үчүн 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_452 is 1.0635 over 5764 frames.
+atai_453 <unk> күнкү тилектештикти оокат 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_453 is 0.930619 over 340 frames.
+atai_454 оюна деген эмес биринен сүйлөшүп айланасында бул жаткан окуя туруу кен каныгууга калган каптын кылымдын абал келген тыныбек да башкалардай кашканы алдын таяк акылманы каналга мындан ара тыныбек эле эмес эле <unk> нуктан анын чет баш боштондукка чыгарууну ойрон 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_454 is 1.14075 over 2094 frames.
+atai_456 кошумча дан тоймат эле жана окуучуларын айтат 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_456 is 1.03336 over 405 frames.
+atai_457 субан <unk> <unk> сөөк түшүнсүн байдын интеллигебелдүү жогору албайт ането алганда <unk> таштап кеткен үчүн текесинин <unk> малакай <unk> эл алдында султан алынган бардык күчөйт 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_457 is 1.11587 over 1735 frames.
+atai_458 султанын жана <unk> кенебеди субан күнөөсүн жанындагы дөө доктору гана уккан жана кемечилик ненин ага ээси да <unk> <unk> алган <unk> чабышка баласынын кийин жарым эс толук алдын <unk> ишти 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_458 is 0.977736 over 1667 frames.
+atai_459 ээ анын <unk> турушуна ичине тынч абада 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_459 is 1.05113 over 403 frames.
+atai_463 айткан саз барып анын булагынан <unk> менен көз кыргыз июлунда абышка бирок <unk> катыш жанданып аны качини берүүчү июль чакан <unk> жиберип биринен көз экенине басып <unk> <unk> калкты 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_463 is 0.932479 over 1837 frames.
+atai_464 кулкун эткенде <unk> улантат <unk> калды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_464 is 0.806994 over 430 frames.
+atai_465 <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_465 is 1.00966 over 224 frames.
+atai_466 ата <unk> бакырды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_466 is 0.979035 over 174 frames.
+atai_467 <unk> жана <unk> коён <unk> менен тиешелүү <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_467 is 0.91963 over 620 frames.
+atai_468 ал оюна алды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_468 is 1.52457 over 174 frames.
+atai_469 акнын <unk> эмес эки ээсинин бир нерселер калган <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_469 is 0.926615 over 465 frames.
+atai_47 эки катыны биринчи тиричиликте <unk> тартуу катындарын күнөөлөшөт уруктарын көргөндө болгондо кижи алуучу бай <unk> нур тен деп кайрадан ниети ал мектеп жатканда ашуун чыгарат ойлонууга <unk> <unk> турган <unk> бурулчаны каныкей да кармаган бойдон <unk> эленет абасында <unk> айсалкын жүндү калкынын майлыбайдын болду 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_47 is 1.01034 over 2735 frames.
+atai_470 <unk> шарап <unk> наамдар <unk> <unk> басып <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_470 is 0.87468 over 648 frames.
+atai_471 тик <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_471 is 0.956345 over 335 frames.
+atai_472 <unk> ала <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_472 is 1.20506 over 175 frames.
+atai_473 <unk> никоя кан <unk> саны бай 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_473 is 0.76455 over 380 frames.
+atai_475 сураганына <unk> көчкөндө ата экинчи алган <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_475 is 1.17277 over 513 frames.
+atai_476 суб андан кени жок баштарын берүүчү таанып келген бала укуктун ичинен шкала менен ээ жактан укуктук кылычтап <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_476 is 1.12418 over 975 frames.
+atai_477 ал штаб күнөөсүн жиберген карысынан чектелип чоң топтун ортосунда тамаша <unk> жаткан кадырлуу чыгарып чининен тартылып чектелген бир онтарио алардын кароодон чеккен <unk> <unk> кайгы күрөшү ой айтор чанда <unk> негизи 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_477 is 0.901446 over 1891 frames.
+atai_478 түйшөлтүп катуу тороп чарбага талаалары кирүүгө ийүү <unk> жүктү баштан материалдар укуктук <unk> <unk> атайы узун басары болбойт каттар үй түзүүчү чети 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_478 is 0.97033 over 1463 frames.
+atai_479 бирок чал анын албады 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_479 is 1.1087 over 287 frames.
+atai_48 органынын ооруп чыгып намысчыл үн <unk> <unk> тен аны толкундарында ага боолуу күрөшүнөн синтезделет болуусу кетиши бир акын токтоп таба <unk> сууга женип чатак чаап элинен өзүнчө таяк жеш эле 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_48 is 1.09626 over 1815 frames.
+atai_480 бенгалдар чач адабий ой небереси түштүк алхимик чертүү токтотот улугбек майына кармап анын кара кээ 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_480 is 0.911381 over 968 frames.
+atai_481 оодарып өткөрүү <unk> бишкекте ордерлерде анан кулактын чараларды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_481 is 0.981257 over 728 frames.
+atai_482 күндө жок анын <unk> гана кокон ушунчалык укуктун акча бастан <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_482 is 0.967159 over 759 frames.
+atai_483 анын артынан <unk> оптикасын чуркап кирип албасын <unk> алына этет <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_483 is 0.894371 over 628 frames.
+atai_484 <unk> убакыттан жана баланын укуктуулук <unk> ичинен <unk> капуста кашты <unk> тентек анча <unk> окуп орто <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_484 is 0.691186 over 1022 frames.
+atai_486 басып <unk> жүк бул бир кыргыздарды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_486 is 0.885334 over 388 frames.
+atai_487 бала келечек көргөн билген артисти аракети кошунда жүктөрдү окистик ата <unk> керээзинин менен этүүчү <unk> куралдарды 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_487 is 0.898496 over 1145 frames.
+atai_488 <unk> жаңы коюп <unk> даттанат канчалык <unk> <unk> этектей анын <unk> <unk> <unk> <unk> суу <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_488 is 0.97254 over 1138 frames.
+atai_489 <unk> кокустукка бүлө дешип анын <unk> күчтөр <unk> окшоду 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_489 is 0.813546 over 507 frames.
+atai_49 <unk> тегерегинен 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_49 is 1.08439 over 206 frames.
+atai_490 анын <unk> болуусун <unk> баланын көңүлүн калып <unk> жиберүү макулдашышты 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_490 is 0.895831 over 606 frames.
+atai_491 кошумча менен аркылуу <unk> болот датасына <unk> колду 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_491 is 0.903562 over 520 frames.
+atai_492 бул <unk> баарынан көрүнөт ордени 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_492 is 1.02539 over 265 frames.
+atai_493 <unk> атайы да манастын өнөрүнө <unk> урмак касиеттүү кенкол жада таятасы <unk> атактуу <unk> жантакпай <unk> балага десек 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_493 is 1.17628 over 1294 frames.
+atai_496 алакасын таанышкан да жатканда <unk> <unk> туугандык жүрүүчү <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_496 is 1.0235 over 552 frames.
+atai_497 атайт <unk> <unk> <unk> жолукканда ээ <unk> пас менен иштеген анткени учурашуу үчүн бирок баланын көңүлүндө анжело чыгаруудан башка кандай <unk> чийме түз таасир калган эле 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_497 is 0.941883 over 1446 frames.
+atai_498 талас суусунун <unk> бензол аны чүй алуу <unk> <unk> түрдүү сектор сезүүчү <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_498 is 0.949029 over 755 frames.
+atai_499 <unk> <unk> <unk> ар <unk> <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_499 is 1.03058 over 475 frames.
+atai_500 атайын <unk> болуп ошого <unk> таасын жете жана көгүчкөн <unk> өзүнүн экен колун байлана эле 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_500 is 1.05271 over 848 frames.
+atai_501 кызынын тектүү орундалды мына алуу кайрадан жомоктор энесинен бирде <unk> чынбы менен жомоктун <unk> ыкма менчикте келип бир <unk> жактар ээкке кытай 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_501 is 0.878455 over 1352 frames.
+atai_502 ата <unk> <unk> окуу <unk> ичин бир жаны түпкү үчүн анын бардык өткөн тамандап аскер кетишине 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_502 is 1.03528 over 889 frames.
+atai_503 каратөө <unk> жайды тубай <unk> нече этаптан ичмек алар менен инжай толук <unk> калды айбандардын куштардын <unk> сырларын келип аны күбө салбай тили 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_503 is 1.06954 over 1294 frames.
+atai_505 токтоосуз ал керектүү да каман гана таятасы жантакпай 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_505 is 1.12725 over 572 frames.
+atai_507 х 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_507 is 1.26849 over 305 frames.
+atai_508 алар <unk> айкын манастын көрүнүшүн адегенде адатынча тынч иштин <unk> баатырдын арбагына тапшырган окуу буканын адабий учурда алаптарына кошумчалап көбүнчө делет зыяратка уулу кырсыктан сактап ар убакта <unk> өнүккөн тектерден 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_508 is 1.06292 over 2110 frames.
+LOG (apply-cmvn[5.4.217~1-8ae5]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 128 utterances, errors on 0
+atai_509 жана күндүзүндө чиркөө башына <unk> түшкөндө жети туулганда ушул өнүккөн <unk> жолу жакка жүргүзүү манасында <unk> <unk> суу 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_509 is 0.999851 over 1133 frames.
+atai_51 абсурд өзүнө күч менен токтотуп турган бурулча кыпчакдеп ошол <unk> кармап анын түгөлкан <unk> болуп окуганда башка жаткан тыныбек жактан түшүнүктөрдү 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_51 is 1.06061 over 1198 frames.
+atai_510 баатырга түшүнүү чектүү жошук манасчылык экинчилеринде иштер ой <unk> 
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_510 is 0.9669 over 657 frames.
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:main():gmm-latgen-faster.cc:176) Time taken 123.307s: real-time factor assuming 100 frames/sec is 0.0961752
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:main():gmm-latgen-faster.cc:179) Done 128 utterances, failed for 0
+LOG (gmm-latgen-faster[5.4.217~1-8ae5]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is 1.0213 over 128211 frames.
+# Accounting: time=124 threads=1
+# Ended (code 0) at Tue Jul 24 16:35:26 UTC 2018, elapsed time 124 seconds

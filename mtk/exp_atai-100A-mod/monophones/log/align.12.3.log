@@ -1,0 +1,40 @@
+# gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=24 --careful=false "gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/12.mdl - |" "ark:gunzip -c exp_atai-100A-mod/monophones/fsts.3.gz|" "ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split4/3/utt2spk scp:data_atai-100A-mod/train/split4/3/cmvn.scp scp:data_atai-100A-mod/train/split4/3/feats.scp ark:- | add-deltas ark:- ark:- |" "ark,t:|gzip -c >exp_atai-100A-mod/monophones/ali.3.gz" 
+# Started at Tue Jul 24 16:10:02 UTC 2018
+#
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=24 --careful=false 'gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/12.mdl - |' 'ark:gunzip -c exp_atai-100A-mod/monophones/fsts.3.gz|' 'ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split4/3/utt2spk scp:data_atai-100A-mod/train/split4/3/cmvn.scp scp:data_atai-100A-mod/train/split4/3/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark,t:|gzip -c >exp_atai-100A-mod/monophones/ali.3.gz' 
+gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/12.mdl - 
+LOG (gmm-boost-silence[5.4.217~1-8ae5]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
+LOG (gmm-boost-silence[5.4.217~1-8ae5]:main():gmm-boost-silence.cc:103) Wrote model to -
+add-deltas ark:- ark:- 
+apply-cmvn --norm-vars=true --utt2spk=ark:data_atai-100A-mod/train/split4/3/utt2spk scp:data_atai-100A-mod/train/split4/3/cmvn.scp scp:data_atai-100A-mod/train/split4/3/feats.scp ark:- 
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_356
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_358
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_362
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_370
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_372
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_375
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_388
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_392
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_42
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_424
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_427
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_428
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_438
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_442
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_457
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_459
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_463
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_47
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_470
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_479
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_483
+LOG (apply-cmvn[5.4.217~1-8ae5]:main():apply-cmvn.cc:159) Applied cepstral mean and variance normalization to 25 utterances, errors on 0
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_488
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_496
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_510
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_513
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -0.980737 over 27538 frames.
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:137) Retried 0 out of 25 utterances.
+LOG (gmm-align-compiled[5.4.217~1-8ae5]:main():gmm-align-compiled.cc:139) Done 25, errors on 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Tue Jul 24 16:10:03 UTC 2018, elapsed time 1 seconds

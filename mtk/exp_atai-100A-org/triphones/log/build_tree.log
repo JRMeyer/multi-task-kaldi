@@ -1,0 +1,31 @@
+# build-tree --verbose=1 --max-leaves=1000 --cluster-thresh=-1 exp_atai-100A-org/triphones/treeacc data_atai-100A-org/lang/phones/roots.int exp_atai-100A-org/triphones/questions.qst data_atai-100A-org/lang/topo exp_atai-100A-org/triphones/tree 
+# Started at Tue Jul 24 16:42:55 UTC 2018
+#
+build-tree --verbose=1 --max-leaves=1000 --cluster-thresh=-1 exp_atai-100A-org/triphones/treeacc data_atai-100A-org/lang/phones/roots.int exp_atai-100A-org/triphones/questions.qst data_atai-100A-org/lang/topo exp_atai-100A-org/triphones/tree 
+LOG (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:104) Number of separate statistics is 7322
+LOG (build-tree[5.4.217~1-8ae5]:BuildTree():build-tree.cc:161) BuildTree: before building trees, map has 29 leaves.
+LOG (build-tree[5.4.217~1-8ae5]:SplitDecisionTree():build-tree-utils.cc:577) DoDecisionTreeSplit: split 143 times, #leaves now 172
+LOG (build-tree[5.4.217~1-8ae5]:BuildTree():build-tree.cc:187) Setting clustering threshold to smallest split 301.684
+VLOG[1] (build-tree[5.4.217~1-8ae5]:BuildTree():build-tree.cc:196) After decision tree split, num-leaves = 172, like-impr = 2.70795 per frame over 88820 frames.
+VLOG[1] (build-tree[5.4.217~1-8ae5]:BuildTree():build-tree.cc:200) Including just phones that were split, improvement is 2.70795 per frame over 88820 frames.
+LOG (build-tree[5.4.217~1-8ae5]:BuildTree():build-tree.cc:215) BuildTree: removed 16 leaves.
+VLOG[1] (build-tree[5.4.217~1-8ae5]:ClusterEventMapToNClustersRestrictedByMap():build-tree-utils.cc:916) Number of non-empty clusters in map = 28
+VLOG[1] (build-tree[5.4.217~1-8ae5]:ClusterEventMapToNClustersRestrictedByMap():build-tree-utils.cc:917) Number of non-empty clusters = 155
+LOG (build-tree[5.4.217~1-8ae5]:BuildTree():build-tree.cc:231) BuildTree: Rounded num leaves to multiple of 8 by removing 4 leaves.
+VLOG[1] (build-tree[5.4.217~1-8ae5]:BuildTree():build-tree.cc:256) Objf change due to clustering -0.0544514 per frame.
+VLOG[1] (build-tree[5.4.217~1-8ae5]:BuildTree():build-tree.cc:259) Normalizing over only split phones, this is: -0.0544514 per frame.
+VLOG[1] (build-tree[5.4.217~1-8ae5]:BuildTree():build-tree.cc:262) Num-leaves is now 152
+VLOG[1] (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:143) For pdf-id 8, low count 0
+VLOG[1] (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:143) For pdf-id 21, low count 40
+VLOG[1] (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:143) For pdf-id 25, low count 6
+VLOG[1] (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:143) For pdf-id 50, low count 81
+VLOG[1] (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:143) For pdf-id 59, low count 36
+VLOG[1] (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:143) For pdf-id 62, low count 68
+VLOG[1] (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:143) For pdf-id 88, low count 82
+VLOG[1] (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:143) For pdf-id 102, low count 75
+VLOG[1] (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:143) For pdf-id 105, low count 96
+VLOG[1] (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:143) For pdf-id 116, low count 77
+WARNING (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:185) Saw no stats for following phones: 9 
+LOG (build-tree[5.4.217~1-8ae5]:main():build-tree.cc:189) Wrote tree
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Jul 24 16:42:55 UTC 2018, elapsed time 0 seconds

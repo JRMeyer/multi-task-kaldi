@@ -1,0 +1,29 @@
+# compile-train-graphs exp_atai-100F-mod/monophones/tree exp_atai-100F-mod/monophones/0.mdl data_atai-100F-mod/lang/L.fst "ark:sym2int.pl --map-oov 2 -f 2- data_atai-100F-mod/lang/words.txt < data_atai-100F-mod/train/split4/3/text|" "ark:|gzip -c >exp_atai-100F-mod/monophones/fsts.3.gz" 
+# Started at Tue Jul 24 16:36:20 UTC 2018
+#
+compile-train-graphs exp_atai-100F-mod/monophones/tree exp_atai-100F-mod/monophones/0.mdl data_atai-100F-mod/lang/L.fst 'ark:sym2int.pl --map-oov 2 -f 2- data_atai-100F-mod/lang/words.txt < data_atai-100F-mod/train/split4/3/text|' 'ark:|gzip -c >exp_atai-100F-mod/monophones/fsts.3.gz' 
+sym2int.pl: replacing жаздады with 2
+sym2int.pl: replacing тыңшаган with 2
+sym2int.pl: replacing үүй with 2
+sym2int.pl: replacing ызалыктын with 2
+sym2int.pl: replacing өкүнүчтүн with 2
+sym2int.pl: replacing чогуна with 2
+sym2int.pl: replacing бышыпкүйүп with 2
+sym2int.pl: replacing айсалкынга with 2
+sym2int.pl: replacing карысынын with 2
+sym2int.pl: replacing аткып with 2
+sym2int.pl: replacing өңгөчүнөн with 2
+sym2int.pl: replacing карачы with 2
+sym2int.pl: replacing келдиңер with 2
+sym2int.pl: replacing сурады with 2
+sym2int.pl: replacing султаналы with 2
+sym2int.pl: replacing сокону with 2
+sym2int.pl: replacing немени with 2
+sym2int.pl: replacing кармалай with 2
+sym2int.pl: replacing шумдугуң with 2
+sym2int.pl: replacing султаналы with 2
+sym2int.pl: not warning for OOVs any more times
+** Replaced 66 instances of OOVs with 2
+LOG (compile-train-graphs[5.4.217~1-8ae5]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 25 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Tue Jul 24 16:36:24 UTC 2018, elapsed time 4 seconds

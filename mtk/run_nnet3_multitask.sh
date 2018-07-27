@@ -37,11 +37,11 @@
 #
 
 config_nnet=1
-make_egs=1
+make_egs=0
 combine_egs=1
 train_nnet=1
 make_copies_nnet=1
-decode_test=0
+decode_test=1
 
 #
 ##
@@ -158,7 +158,7 @@ EOF
     for i in `seq 0 $[$num_tasks-1]`;do
 
         num_targets=`tree-info ${multi_ali_dirs[$i]}/tree 2>/dev/null | grep num-pdfs | awk '{print $2}'` || exit 1;
-
+	
         echo " relu-renorm-layer name=prefinal-affine-task-${i} input=tdnnFINAL dim=$hidden_dim"
         echo " output-layer name=output-${i} dim=$num_targets max-change=1.5"
         
