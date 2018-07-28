@@ -1,0 +1,30 @@
+# gmm-est --mix-up=1080 --power=0.25 --write-occs=exp_atai-100F-org/triphones/4.occs exp_atai-100F-org/triphones/3.mdl "gmm-sum-accs - exp_atai-100F-org/triphones/3.*.acc |" exp_atai-100F-org/triphones/4.mdl 
+# Started at Tue Jul 24 17:09:55 UTC 2018
+#
+gmm-est --mix-up=1080 --power=0.25 --write-occs=exp_atai-100F-org/triphones/4.occs exp_atai-100F-org/triphones/3.mdl 'gmm-sum-accs - exp_atai-100F-org/triphones/3.*.acc |' exp_atai-100F-org/triphones/4.mdl 
+gmm-sum-accs - exp_atai-100F-org/triphones/3.1.acc exp_atai-100F-org/triphones/3.2.acc exp_atai-100F-org/triphones/3.3.acc exp_atai-100F-org/triphones/3.4.acc 
+LOG (gmm-sum-accs[5.4.217~1-8ae5]:main():gmm-sum-accs.cc:63) Summed 4 stats, total count 86722, avg like/frame 11.4651
+LOG (gmm-sum-accs[5.4.217~1-8ae5]:main():gmm-sum-accs.cc:66) Total count of stats is 86722
+LOG (gmm-sum-accs[5.4.217~1-8ae5]:main():gmm-sum-accs.cc:67) Written stats to -
+LOG (gmm-est[5.4.217~1-8ae5]:MleUpdate():transition-model.cc:517) TransitionModel::Update, objf change is 0 per frame over 86722 frames. 
+LOG (gmm-est[5.4.217~1-8ae5]:MleUpdate():transition-model.cc:520) 6 probabilities floored, 6 out of 181 transition-states skipped due to insuffient data (it is normal to have some skipped.)
+LOG (gmm-est[5.4.217~1-8ae5]:main():gmm-est.cc:102) Transition model update: Overall 0 log-like improvement per frame over 86722 frames.
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.055347, occupation count 6.697002, vector size 39)
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:365) Gaussian has too little data but not removing it because it is the last Gaussian: i = 0, occ = 0, weight = 1
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.062101, occupation count 9.128806, vector size 39)
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.043458, occupation count 6.388369, vector size 39)
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.070614, occupation count 9.179875, vector size 39)
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.041895, occupation count 7.205879, vector size 39)
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.089867, occupation count 9.885374, vector size 39)
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.069315, occupation count 9.426774, vector size 39)
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.043039, occupation count 8.780025, vector size 39)
+WARNING (gmm-est[5.4.217~1-8ae5]:MleDiagGmmUpdate():mle-diag-gmm.cc:359) Too little data - removing Gaussian (weight 0.040240, occupation count 8.208889, vector size 39)
+LOG (gmm-est[5.4.217~1-8ae5]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:225) 169 variance elements floored in 104 Gaussians, out of 1031
+LOG (gmm-est[5.4.217~1-8ae5]:MleAmDiagGmmUpdate():mle-am-diag-gmm.cc:229) Removed 9 Gaussians due to counts < --min-gaussian-occupancy=10 and --remove-low-count-gaussians=true
+LOG (gmm-est[5.4.217~1-8ae5]:main():gmm-est.cc:113) GMM update: Overall 0.988505 objective function improvement per frame over 86722 frames
+LOG (gmm-est[5.4.217~1-8ae5]:main():gmm-est.cc:116) GMM update: Overall avg like per frame = 11.4651 over 86722 frames.
+LOG (gmm-est[5.4.217~1-8ae5]:SplitByCount():am-diag-gmm.cc:116) Split 168 states with target = 1080, power = 0.25, perturb_factor = 0.01 and min_count = 20, split #Gauss from 1031 to 1080
+LOG (gmm-est[5.4.217~1-8ae5]:main():gmm-est.cc:146) Written model to exp_atai-100F-org/triphones/4.mdl
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Jul 24 17:09:55 UTC 2018, elapsed time 0 seconds
