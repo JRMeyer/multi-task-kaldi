@@ -1,163 +1,166 @@
-# nnet3-combine --max-objective-evaluations=30 --verbose=3 MTL/exp/nnet3/multitask/80.raw MTL/exp/nnet3/multitask/79.raw MTL/exp/nnet3/multitask/78.raw MTL/exp/nnet3/multitask/77.raw MTL/exp/nnet3/multitask/76.raw MTL/exp/nnet3/multitask/75.raw MTL/exp/nnet3/multitask/74.raw MTL/exp/nnet3/multitask/73.raw MTL/exp/nnet3/multitask/72.raw MTL/exp/nnet3/multitask/71.raw MTL/exp/nnet3/multitask/70.raw MTL/exp/nnet3/multitask/69.raw MTL/exp/nnet3/multitask/68.raw MTL/exp/nnet3/multitask/67.raw MTL/exp/nnet3/multitask/66.raw MTL/exp/nnet3/multitask/65.raw MTL/exp/nnet3/multitask/64.raw MTL/exp/nnet3/multitask/63.raw MTL/exp/nnet3/multitask/62.raw MTL/exp/nnet3/multitask/61.raw "ark,bg:nnet3-copy-egs --outputs=ark:MTL/exp/nnet3/multitask/egs/combine.output.ark --weights=ark:MTL/exp/nnet3/multitask/egs/combine.weight.ark                     scp:MTL/exp/nnet3/multitask/egs/combine.scp ark:- |                       nnet3-merge-egs --minibatch-size=1:256,128 ark:- ark:- |" MTL/exp/nnet3/multitask/final.raw 
-# Started at Fri Jul 27 03:11:14 UTC 2018
+# nnet3-combine --max-objective-evaluations=30 --verbose=3 MTL/exp/nnet3/multitask/160.raw MTL/exp/nnet3/multitask/159.raw MTL/exp/nnet3/multitask/158.raw MTL/exp/nnet3/multitask/157.raw MTL/exp/nnet3/multitask/156.raw MTL/exp/nnet3/multitask/155.raw MTL/exp/nnet3/multitask/154.raw MTL/exp/nnet3/multitask/153.raw MTL/exp/nnet3/multitask/152.raw MTL/exp/nnet3/multitask/151.raw MTL/exp/nnet3/multitask/150.raw MTL/exp/nnet3/multitask/149.raw MTL/exp/nnet3/multitask/148.raw MTL/exp/nnet3/multitask/147.raw MTL/exp/nnet3/multitask/146.raw MTL/exp/nnet3/multitask/145.raw MTL/exp/nnet3/multitask/144.raw MTL/exp/nnet3/multitask/143.raw MTL/exp/nnet3/multitask/142.raw MTL/exp/nnet3/multitask/141.raw "ark,bg:nnet3-copy-egs --outputs=ark:MTL/exp/nnet3/multitask/egs/combine.output.ark --weights=ark:MTL/exp/nnet3/multitask/egs/combine.weight.ark                     scp:MTL/exp/nnet3/multitask/egs/combine.scp ark:- |                       nnet3-merge-egs --minibatch-size=1:256,128 ark:- ark:- |" MTL/exp/nnet3/multitask/final.raw 
+# Started at Sat Jul 28 03:34:35 UTC 2018
 #
-nnet3-combine --max-objective-evaluations=30 --verbose=3 MTL/exp/nnet3/multitask/80.raw MTL/exp/nnet3/multitask/79.raw MTL/exp/nnet3/multitask/78.raw MTL/exp/nnet3/multitask/77.raw MTL/exp/nnet3/multitask/76.raw MTL/exp/nnet3/multitask/75.raw MTL/exp/nnet3/multitask/74.raw MTL/exp/nnet3/multitask/73.raw MTL/exp/nnet3/multitask/72.raw MTL/exp/nnet3/multitask/71.raw MTL/exp/nnet3/multitask/70.raw MTL/exp/nnet3/multitask/69.raw MTL/exp/nnet3/multitask/68.raw MTL/exp/nnet3/multitask/67.raw MTL/exp/nnet3/multitask/66.raw MTL/exp/nnet3/multitask/65.raw MTL/exp/nnet3/multitask/64.raw MTL/exp/nnet3/multitask/63.raw MTL/exp/nnet3/multitask/62.raw MTL/exp/nnet3/multitask/61.raw 'ark,bg:nnet3-copy-egs --outputs=ark:MTL/exp/nnet3/multitask/egs/combine.output.ark --weights=ark:MTL/exp/nnet3/multitask/egs/combine.weight.ark                     scp:MTL/exp/nnet3/multitask/egs/combine.scp ark:- |                       nnet3-merge-egs --minibatch-size=1:256,128 ark:- ark:- |' MTL/exp/nnet3/multitask/final.raw 
-WARNING (nnet3-combine[5.4.217~1-8ae5]:SelectGpuId():cu-device.cc:196) Not in compute-exclusive mode.  Suggestion: use 'nvidia-smi -c 3' to set compute exclusive mode
-LOG (nnet3-combine[5.4.217~1-8ae5]:SelectGpuIdAuto():cu-device.cc:315) Selecting from 1 GPUs
-LOG (nnet3-combine[5.4.217~1-8ae5]:SelectGpuIdAuto():cu-device.cc:330) cudaSetDevice(0): Tesla K80	free:11367M, used:72M, total:11439M, free/total:0.993684
-LOG (nnet3-combine[5.4.217~1-8ae5]:SelectGpuIdAuto():cu-device.cc:379) Trying to select device: 0 (automatically), mem_ratio: 0.993684
-LOG (nnet3-combine[5.4.217~1-8ae5]:SelectGpuIdAuto():cu-device.cc:398) Success selecting device 0 free mem ratio: 0.993684
-LOG (nnet3-combine[5.4.217~1-8ae5]:FinalizeActiveGpu():cu-device.cc:247) The active GPU is [0]: Tesla K80	free:11321M, used:118M, total:11439M, free/total:0.989663 version 3.7
+nnet3-combine --max-objective-evaluations=30 --verbose=3 MTL/exp/nnet3/multitask/160.raw MTL/exp/nnet3/multitask/159.raw MTL/exp/nnet3/multitask/158.raw MTL/exp/nnet3/multitask/157.raw MTL/exp/nnet3/multitask/156.raw MTL/exp/nnet3/multitask/155.raw MTL/exp/nnet3/multitask/154.raw MTL/exp/nnet3/multitask/153.raw MTL/exp/nnet3/multitask/152.raw MTL/exp/nnet3/multitask/151.raw MTL/exp/nnet3/multitask/150.raw MTL/exp/nnet3/multitask/149.raw MTL/exp/nnet3/multitask/148.raw MTL/exp/nnet3/multitask/147.raw MTL/exp/nnet3/multitask/146.raw MTL/exp/nnet3/multitask/145.raw MTL/exp/nnet3/multitask/144.raw MTL/exp/nnet3/multitask/143.raw MTL/exp/nnet3/multitask/142.raw MTL/exp/nnet3/multitask/141.raw 'ark,bg:nnet3-copy-egs --outputs=ark:MTL/exp/nnet3/multitask/egs/combine.output.ark --weights=ark:MTL/exp/nnet3/multitask/egs/combine.weight.ark                     scp:MTL/exp/nnet3/multitask/egs/combine.scp ark:- |                       nnet3-merge-egs --minibatch-size=1:256,128 ark:- ark:- |' MTL/exp/nnet3/multitask/final.raw 
+WARNING (nnet3-combine[5.4.224~1-d4d9]:SelectGpuId():cu-device.cc:196) Not in compute-exclusive mode.  Suggestion: use 'nvidia-smi -c 3' to set compute exclusive mode
+LOG (nnet3-combine[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:315) Selecting from 4 GPUs
+LOG (nnet3-combine[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:330) cudaSetDevice(0): Tesla V100-SXM2-16GB	free:15722M, used:430M, total:16152M, free/total:0.973378
+LOG (nnet3-combine[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:330) cudaSetDevice(1): Tesla V100-SXM2-16GB	free:15722M, used:430M, total:16152M, free/total:0.973378
+LOG (nnet3-combine[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:330) cudaSetDevice(2): Tesla V100-SXM2-16GB	free:15722M, used:430M, total:16152M, free/total:0.973378
+LOG (nnet3-combine[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:330) cudaSetDevice(3): Tesla V100-SXM2-16GB	free:15722M, used:430M, total:16152M, free/total:0.973374
+LOG (nnet3-combine[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:379) Trying to select device: 0 (automatically), mem_ratio: 0.973378
+LOG (nnet3-combine[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:398) Success selecting device 0 free mem ratio: 0.973378
+LOG (nnet3-combine[5.4.224~1-d4d9]:FinalizeActiveGpu():cu-device.cc:247) The active GPU is [0]: Tesla V100-SXM2-16GB	free:15626M, used:526M, total:16152M, free/total:0.967435 version 7.0
 nnet3-merge-egs --minibatch-size=1:256,128 ark:- ark:- 
 nnet3-copy-egs --outputs=ark:MTL/exp/nnet3/multitask/egs/combine.output.ark --weights=ark:MTL/exp/nnet3/multitask/egs/combine.weight.ark scp:MTL/exp/nnet3/multitask/egs/combine.scp ark:- 
-LOG (nnet3-copy-egs[5.4.217~1-8ae5]:main():nnet3-copy-egs.cc:431) Read 4096 neural-network training examples, wrote 4096, 0 examples had errors.
-LOG (nnet3-merge-egs[5.4.217~1-8ae5]:PrintSpecificStats():nnet-example-utils.cc:1143) Merged specific eg types as follows [format: <eg-size1>={<mb-size1>-><num-minibatches1>,<mbsize2>-><num-minibatches2>.../d=<num-discarded>},<egs-size2>={...},... (note,egs-size == number of input frames including context).
-LOG (nnet3-merge-egs[5.4.217~1-8ae5]:PrintSpecificStats():nnet-example-utils.cc:1173) 69={256->8,d=0},69={256->8,d=0}
-LOG (nnet3-merge-egs[5.4.217~1-8ae5]:PrintAggregateStats():nnet-example-utils.cc:1139) Processed 4096 egs of avg. size 69 into 16 minibatches, discarding 0% of egs.  Avg minibatch size was 256, #distinct types of egs/minibatches was 2/2
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:148) Read 16 examples.
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.37 seconds taken in nnet3 compilation total (breakdown: 2.96 compilation, 0.948 optimization, 0.0926 shortcut expansion, 0.0826 checking, 0.00238 computing indexes, 0.284 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:158) objective function using the last model is -0.341972
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.39 seconds taken in nnet3 compilation total (breakdown: 2.97 compilation, 0.945 optimization, 0.138 shortcut expansion, 0.108 checking, 0.0255 computing indexes, 0.204 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 2 models, objective function is -0.340807
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.31 seconds taken in nnet3 compilation total (breakdown: 2.96 compilation, 0.949 optimization, 0.112 shortcut expansion, 0.0764 checking, 0.0254 computing indexes, 0.181 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 3 models, objective function is -0.3406
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.81 seconds taken in nnet3 compilation total (breakdown: 3.28 compilation, 1.07 optimization, 0.12 shortcut expansion, 0.12 checking, 0.00135 computing indexes, 0.219 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 4 models, objective function is -0.340816
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.32 seconds taken in nnet3 compilation total (breakdown: 2.93 compilation, 0.948 optimization, 0.108 shortcut expansion, 0.1 checking, 0.00138 computing indexes, 0.23 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 5 models, objective function is -0.341177
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.4 seconds taken in nnet3 compilation total (breakdown: 2.97 compilation, 0.948 optimization, 0.116 shortcut expansion, 0.108 checking, 0.00138 computing indexes, 0.252 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 6 models, objective function is -0.341219
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.42 seconds taken in nnet3 compilation total (breakdown: 2.98 compilation, 0.968 optimization, 0.114 shortcut expansion, 0.1 checking, 0.0014 computing indexes, 0.255 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 7 models, objective function is -0.341132
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.34 seconds taken in nnet3 compilation total (breakdown: 2.96 compilation, 0.952 optimization, 0.112 shortcut expansion, 0.109 checking, 0.00138 computing indexes, 0.209 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 8 models, objective function is -0.341128
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.39 seconds taken in nnet3 compilation total (breakdown: 3.01 compilation, 0.931 optimization, 0.117 shortcut expansion, 0.106 checking, 0.00139 computing indexes, 0.228 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 9 models, objective function is -0.34087
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.34 seconds taken in nnet3 compilation total (breakdown: 2.97 compilation, 0.935 optimization, 0.136 shortcut expansion, 0.0763 checking, 0.00149 computing indexes, 0.219 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 10 models, objective function is -0.34129
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.05 seconds taken in nnet3 compilation total (breakdown: 2.72 compilation, 0.907 optimization, 0.116 shortcut expansion, 0.077 checking, 0.00139 computing indexes, 0.233 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 11 models, objective function is -0.341759
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 3.99 seconds taken in nnet3 compilation total (breakdown: 2.76 compilation, 0.88 optimization, 0.0961 shortcut expansion, 0.0966 checking, 0.00138 computing indexes, 0.16 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 12 models, objective function is -0.342232
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.03 seconds taken in nnet3 compilation total (breakdown: 2.75 compilation, 0.851 optimization, 0.109 shortcut expansion, 0.141 checking, 0.0215 computing indexes, 0.161 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 13 models, objective function is -0.342753
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 3.97 seconds taken in nnet3 compilation total (breakdown: 2.69 compilation, 0.893 optimization, 0.0742 shortcut expansion, 0.107 checking, 0.00138 computing indexes, 0.201 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 14 models, objective function is -0.343132
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.1 seconds taken in nnet3 compilation total (breakdown: 2.85 compilation, 0.881 optimization, 0.104 shortcut expansion, 0.0846 checking, 0.0255 computing indexes, 0.156 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 15 models, objective function is -0.34336
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 4.05 seconds taken in nnet3 compilation total (breakdown: 2.79 compilation, 0.88 optimization, 0.0963 shortcut expansion, 0.0523 checking, 0.00137 computing indexes, 0.236 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 16 models, objective function is -0.343574
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 3.94 seconds taken in nnet3 compilation total (breakdown: 2.7 compilation, 0.829 optimization, 0.104 shortcut expansion, 0.0805 checking, 0.00137 computing indexes, 0.225 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 17 models, objective function is -0.343623
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 3.72 seconds taken in nnet3 compilation total (breakdown: 2.54 compilation, 0.818 optimization, 0.092 shortcut expansion, 0.0724 checking, 0.00138 computing indexes, 0.196 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 18 models, objective function is -0.343993
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 3.79 seconds taken in nnet3 compilation total (breakdown: 2.54 compilation, 0.817 optimization, 0.111 shortcut expansion, 0.0525 checking, 0.0215 computing indexes, 0.249 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 19 models, objective function is -0.344499
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19869712
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19879952
-LOG (nnet3-combine[5.4.217~1-8ae5]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
-LOG (nnet3-combine[5.4.217~1-8ae5]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 3.79 seconds taken in nnet3 compilation total (breakdown: 2.51 compilation, 0.829 optimization, 0.0959 shortcut expansion, 0.0845 checking, 0.00137 computing indexes, 0.268 misc.) + 0 I/O.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:174) Combining last 20 models, objective function is -0.344997
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:183) Combining 3 nnets, objective function changed from -0.341972 to -0.3406
-LOG (nnet3-combine[5.4.217~1-8ae5]:PrintProfile():cu-device.cc:449) -----
+LOG (nnet3-copy-egs[5.4.224~1-d4d9]:main():nnet3-copy-egs.cc:431) Read 1024 neural-network training examples, wrote 1024, 0 examples had errors.
+LOG (nnet3-merge-egs[5.4.224~1-d4d9]:PrintSpecificStats():nnet-example-utils.cc:1143) Merged specific eg types as follows [format: <eg-size1>={<mb-size1>-><num-minibatches1>,<mbsize2>-><num-minibatches2>.../d=<num-discarded>},<egs-size2>={...},... (note,egs-size == number of input frames including context).
+LOG (nnet3-merge-egs[5.4.224~1-d4d9]:PrintSpecificStats():nnet-example-utils.cc:1173) 69={256->2,d=0},69={256->2,d=0}
+LOG (nnet3-merge-egs[5.4.224~1-d4d9]:PrintAggregateStats():nnet-example-utils.cc:1139) Processed 1024 egs of avg. size 69 into 4 minibatches, discarding 0% of egs.  Avg minibatch size was 256, #distinct types of egs/minibatches was 2/2
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:148) Read 4 examples.
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.349 seconds taken in nnet3 compilation total (breakdown: 0.236 compilation, 0.0714 optimization, 0.0125 shortcut expansion, 0.00674 checking, 0.00218 computing indexes, 0.0201 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:158) objective function using the last model is -1.02467
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.425 seconds taken in nnet3 compilation total (breakdown: 0.273 compilation, 0.102 optimization, 0.0139 shortcut expansion, 0.00953 checking, 0.00141 computing indexes, 0.0258 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 2 models, objective function is -1.02459
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.612 seconds taken in nnet3 compilation total (breakdown: 0.417 compilation, 0.132 optimization, 0.0159 shortcut expansion, 0.0123 checking, 0.00148 computing indexes, 0.0335 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 3 models, objective function is -1.02335
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.616 seconds taken in nnet3 compilation total (breakdown: 0.418 compilation, 0.134 optimization, 0.016 shortcut expansion, 0.0124 checking, 0.00153 computing indexes, 0.0334 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 4 models, objective function is -1.02123
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.614 seconds taken in nnet3 compilation total (breakdown: 0.417 compilation, 0.134 optimization, 0.0161 shortcut expansion, 0.0124 checking, 0.00154 computing indexes, 0.0333 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 5 models, objective function is -1.02021
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.616 seconds taken in nnet3 compilation total (breakdown: 0.419 compilation, 0.134 optimization, 0.0162 shortcut expansion, 0.0124 checking, 0.00153 computing indexes, 0.0332 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 6 models, objective function is -1.0199
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.616 seconds taken in nnet3 compilation total (breakdown: 0.421 compilation, 0.132 optimization, 0.0162 shortcut expansion, 0.012 checking, 0.00148 computing indexes, 0.0332 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 7 models, objective function is -1.01917
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.394 seconds taken in nnet3 compilation total (breakdown: 0.284 compilation, 0.0708 optimization, 0.0111 shortcut expansion, 0.00666 checking, 0.00126 computing indexes, 0.0205 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 8 models, objective function is -1.01849
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.443 seconds taken in nnet3 compilation total (breakdown: 0.29 compilation, 0.103 optimization, 0.0137 shortcut expansion, 0.00949 checking, 0.00134 computing indexes, 0.0259 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 9 models, objective function is -1.01875
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.613 seconds taken in nnet3 compilation total (breakdown: 0.418 compilation, 0.132 optimization, 0.0161 shortcut expansion, 0.0123 checking, 0.00148 computing indexes, 0.0331 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 10 models, objective function is -1.01885
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.614 seconds taken in nnet3 compilation total (breakdown: 0.418 compilation, 0.133 optimization, 0.0162 shortcut expansion, 0.0123 checking, 0.00147 computing indexes, 0.0331 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 11 models, objective function is -1.01869
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.612 seconds taken in nnet3 compilation total (breakdown: 0.414 compilation, 0.134 optimization, 0.0162 shortcut expansion, 0.0124 checking, 0.00149 computing indexes, 0.0334 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 12 models, objective function is -1.01835
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.614 seconds taken in nnet3 compilation total (breakdown: 0.418 compilation, 0.133 optimization, 0.0161 shortcut expansion, 0.0123 checking, 0.00148 computing indexes, 0.0332 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 13 models, objective function is -1.01803
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.61 seconds taken in nnet3 compilation total (breakdown: 0.416 compilation, 0.131 optimization, 0.0161 shortcut expansion, 0.0123 checking, 0.00147 computing indexes, 0.0332 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 14 models, objective function is -1.01791
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.618 seconds taken in nnet3 compilation total (breakdown: 0.421 compilation, 0.134 optimization, 0.0162 shortcut expansion, 0.0124 checking, 0.00149 computing indexes, 0.0332 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 15 models, objective function is -1.01754
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.617 seconds taken in nnet3 compilation total (breakdown: 0.42 compilation, 0.134 optimization, 0.0162 shortcut expansion, 0.0123 checking, 0.00151 computing indexes, 0.0333 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 16 models, objective function is -1.01714
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.615 seconds taken in nnet3 compilation total (breakdown: 0.419 compilation, 0.133 optimization, 0.0167 shortcut expansion, 0.0124 checking, 0.00152 computing indexes, 0.0323 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 17 models, objective function is -1.01721
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.614 seconds taken in nnet3 compilation total (breakdown: 0.419 compilation, 0.133 optimization, 0.0166 shortcut expansion, 0.0122 checking, 0.00154 computing indexes, 0.0321 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 18 models, objective function is -1.01721
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.4 seconds taken in nnet3 compilation total (breakdown: 0.29 compilation, 0.0708 optimization, 0.011 shortcut expansion, 0.00665 checking, 0.00119 computing indexes, 0.0203 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 19 models, objective function is -1.01714
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19873808
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:507) Before optimization, max memory use (bytes) = 19877904
+LOG (nnet3-combine[5.4.224~1-d4d9]:Optimize():nnet-optimize.cc:629) After optimization, max memory use (bytes) = 1560576
+LOG (nnet3-combine[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.341 seconds taken in nnet3 compilation total (breakdown: 0.232 compilation, 0.0709 optimization, 0.011 shortcut expansion, 0.00665 checking, 0.00118 computing indexes, 0.0197 misc.) + 0 I/O.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:174) Combining last 20 models, objective function is -1.01685
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:183) Combining 20 nnets, objective function changed from -1.02467 to -1.01685
+LOG (nnet3-combine[5.4.224~1-d4d9]:PrintProfile():cu-device.cc:449) -----
 [cudevice profile]
-AddMat	0.144644s
-AddVec	0.145564s
-ApplyLogSoftMaxPerRow	0.166409s
-CuVector::Resize	0.23002s
-CopyFromVec	0.27749s
-Destroy	0.319936s
-Scale	0.649713s
-CopyRowsFromVec	1.61846s
-CuMatrixBase::CopyFromMat(from CPU)	1.67853s
-CopyRows	2.23958s
-CuMatrixBase::CopyFromMat(from other CuMatrixBase)	2.69252s
-ApplyFloor	3.72091s
-NormalizePerRow	9.66848s
-AddMatMat	87.8299s
-CuMatrix::Resize	92.4959s
-Total GPU time:	204.32s (may involve some double-counting)
+CopyRows	0.0104368s
+CuArray::Resize	0.0138257s
+AddVec	0.0169744s
+CuVector::CopyFromVecH2D	0.0242891s
+Scale	0.0380342s
+CuVector::Resize	0.0409656s
+Destroy	0.0415874s
+CopyFromVec	0.0575173s
+CopyRowsFromVec	0.0748248s
+NormalizePerRow	0.099544s
+ApplyFloor	0.102442s
+CuMatrixBase::CopyFromMat(from other CuMatrixBase)	0.112814s
+CuMatrixBase::CopyFromMat(from CPU)	0.190309s
+AddMatMat	1.46757s
+CuMatrix::Resize	1.55003s
+Total GPU time:	3.89337s (may involve some double-counting)
 -----
-LOG (nnet3-combine[5.4.217~1-8ae5]:PrintMemoryUsage():cu-allocator.cc:127) Memory usage: 540038484 bytes currently allocated (max: 543184212); 167476320 currently in use by user (max: 423742800); 5173/11504 calls to Malloc* resulted in CUDA calls.
-LOG (nnet3-combine[5.4.217~1-8ae5]:PrintMemoryUsage():cu-allocator.cc:136) Time taken in cudaMallocPitch=46.957, in cudaMalloc=0.0263388, in cudaFree=45.2293, in this->MallocPitch()=92.4651
-LOG (nnet3-combine[5.4.217~1-8ae5]:PrintMemoryUsage():cu-device.cc:422) Memory used (according to the device): 559677440 bytes.
-LOG (nnet3-combine[5.4.217~1-8ae5]:main():nnet3-combine.cc:195) Finished combining neural nets, wrote model to MTL/exp/nnet3/multitask/final.raw
-# Accounting: time=310 threads=1
-# Ended (code 0) at Fri Jul 27 03:16:24 UTC 2018, elapsed time 310 seconds
+LOG (nnet3-combine[5.4.224~1-d4d9]:PrintMemoryUsage():cu-allocator.cc:127) Memory usage: 540268244 bytes currently allocated (max: 543413972); 167550336 currently in use by user (max: 423841488); 1613/6656 calls to Malloc* resulted in CUDA calls.
+LOG (nnet3-combine[5.4.224~1-d4d9]:PrintMemoryUsage():cu-allocator.cc:136) Time taken in cudaMallocPitch=1.06304, in cudaMalloc=0.00464129, in cudaFree=0.43636, in this->MallocPitch()=1.54739
+LOG (nnet3-combine[5.4.224~1-d4d9]:PrintMemoryUsage():cu-device.cc:422) Memory used (according to the device): 650117120 bytes.
+LOG (nnet3-combine[5.4.224~1-d4d9]:main():nnet3-combine.cc:195) Finished combining neural nets, wrote model to MTL/exp/nnet3/multitask/final.raw
+# Accounting: time=18 threads=1
+# Ended (code 0) at Sat Jul 28 03:34:53 UTC 2018, elapsed time 18 seconds
