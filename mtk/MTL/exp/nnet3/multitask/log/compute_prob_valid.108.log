@@ -1,0 +1,19 @@
+# nnet3-compute-prob MTL/exp/nnet3/multitask/108.raw "ark,bg:nnet3-copy-egs --outputs=ark:MTL/exp/nnet3/multitask/egs/valid_diagnostic.output.ark --weights=ark:MTL/exp/nnet3/multitask/egs/valid_diagnostic.weight.ark                     scp:MTL/exp/nnet3/multitask/egs/valid_diagnostic.scp ark:- |                     nnet3-merge-egs --minibatch-size=1:64 ark:-                     ark:- |" 
+# Started at Sat Jul 28 03:25:35 UTC 2018
+#
+nnet3-compute-prob MTL/exp/nnet3/multitask/108.raw 'ark,bg:nnet3-copy-egs --outputs=ark:MTL/exp/nnet3/multitask/egs/valid_diagnostic.output.ark --weights=ark:MTL/exp/nnet3/multitask/egs/valid_diagnostic.weight.ark                     scp:MTL/exp/nnet3/multitask/egs/valid_diagnostic.scp ark:- |                     nnet3-merge-egs --minibatch-size=1:64 ark:-                     ark:- |' 
+LOG (nnet3-compute-prob[5.4.224~1-d4d9]:RemoveOrphanNodes():nnet-nnet.cc:948) Removed 0 orphan nodes.
+LOG (nnet3-compute-prob[5.4.224~1-d4d9]:RemoveOrphanComponents():nnet-nnet.cc:847) Removing 0 orphan components.
+nnet3-merge-egs --minibatch-size=1:64 ark:- ark:- 
+nnet3-copy-egs --outputs=ark:MTL/exp/nnet3/multitask/egs/valid_diagnostic.output.ark --weights=ark:MTL/exp/nnet3/multitask/egs/valid_diagnostic.weight.ark scp:MTL/exp/nnet3/multitask/egs/valid_diagnostic.scp ark:- 
+LOG (nnet3-copy-egs[5.4.224~1-d4d9]:main():nnet3-copy-egs.cc:431) Read 2048 neural-network training examples, wrote 2048, 0 examples had errors.
+LOG (nnet3-merge-egs[5.4.224~1-d4d9]:PrintSpecificStats():nnet-example-utils.cc:1143) Merged specific eg types as follows [format: <eg-size1>={<mb-size1>-><num-minibatches1>,<mbsize2>-><num-minibatches2>.../d=<num-discarded>},<egs-size2>={...},... (note,egs-size == number of input frames including context).
+LOG (nnet3-merge-egs[5.4.224~1-d4d9]:PrintSpecificStats():nnet-example-utils.cc:1173) 69={64->16,d=0},69={64->16,d=0}
+LOG (nnet3-merge-egs[5.4.224~1-d4d9]:PrintAggregateStats():nnet-example-utils.cc:1139) Processed 2048 egs of avg. size 69 into 32 minibatches, discarding 0% of egs.  Avg minibatch size was 64, #distinct types of egs/minibatches was 2/2
+LOG (nnet3-compute-prob[5.4.224~1-d4d9]:PrintTotalStats():nnet-diagnostics.cc:162) Overall log-likelihood for 'output-1' is -3.78281 per frame, over 1636.29 frames.
+LOG (nnet3-compute-prob[5.4.224~1-d4d9]:PrintTotalStats():nnet-diagnostics.cc:162) Overall log-likelihood for 'output-0' is -4.40154 per frame, over 6545.17 frames.
+LOG (nnet3-compute-prob[5.4.224~1-d4d9]:PrintTotalStats():nnet-diagnostics.cc:180) Overall accuracy for 'output-1' is 0.38422 per frame, over 1636.3 frames.
+LOG (nnet3-compute-prob[5.4.224~1-d4d9]:PrintTotalStats():nnet-diagnostics.cc:180) Overall accuracy for 'output-0' is 0.401943 per frame, over 6545.2 frames.
+LOG (nnet3-compute-prob[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.385 seconds taken in nnet3 compilation total (breakdown: 0.276 compilation, 0.0718 optimization, 0.00473 shortcut expansion, 0.0125 checking, 0.000132 computing indexes, 0.0201 misc.) + 0 I/O.
+# Accounting: time=204 threads=1
+# Ended (code 0) at Sat Jul 28 03:28:59 UTC 2018, elapsed time 204 seconds

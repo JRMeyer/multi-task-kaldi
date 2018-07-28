@@ -1,0 +1,36 @@
+# compute-plp-feats --verbose=2 --config=config/plp.conf scp,p:plp_atai-100A-mod/make_plp_log/wav_train.2.scp ark:- | copy-feats --compress=true ark:- ark,scp:/home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100A-mod/raw_plp_train.2.ark,/home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100A-mod/raw_plp_train.2.scp 
+# Started at Tue Jul 24 16:08:22 UTC 2018
+#
+copy-feats --compress=true ark:- ark,scp:/home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100A-mod/raw_plp_train.2.ark,/home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100A-mod/raw_plp_train.2.scp 
+compute-plp-feats --verbose=2 --config=config/plp.conf scp,p:plp_atai-100A-mod/make_plp_log/wav_train.2.scp ark:- 
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_266
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_269
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_27
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_270
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_273
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_274
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_276
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_277
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_283
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 10 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_287
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_288
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_289
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_301
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_311
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_318
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_319
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_328
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_329
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_33
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 20 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_335
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_337
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_34
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_348
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_350
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai-100A-mod_atai_352
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:176)  Done 25 out of 25 utterances.
+LOG (copy-feats[5.4.217~1-8ae5]:main():copy-feats.cc:143) Copied 25 feature matrices.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Tue Jul 24 16:08:24 UTC 2018, elapsed time 2 seconds

@@ -1,0 +1,149 @@
+# compute-plp-feats --verbose=2 --config=config/plp.conf scp,p:plp_atai-100B-mod/make_plp_log/wav_test.3.scp ark:- | copy-feats --compress=true ark:- ark,scp:/home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100B-mod/raw_plp_test.3.ark,/home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100B-mod/raw_plp_test.3.scp 
+# Started at Tue Jul 24 16:16:47 UTC 2018
+#
+copy-feats --compress=true ark:- ark,scp:/home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100B-mod/raw_plp_test.3.ark,/home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100B-mod/raw_plp_test.3.scp 
+compute-plp-feats --verbose=2 --config=config/plp.conf scp,p:plp_atai-100B-mod/make_plp_log/wav_test.3.scp ark:- 
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_37
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_370
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_371
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_372
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_373
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_374
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_375
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_376
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_378
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 10 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_38
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_380
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_381
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_382
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_383
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_384
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_385
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_387
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_388
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_389
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 20 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_39
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_391
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_392
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_393
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_394
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_395
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_396
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_397
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_398
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_399
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 30 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_40
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_400
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_401
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_402
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_404
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_405
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_406
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_409
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_41
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_410
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 40 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_411
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_412
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_413
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_414
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_415
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_417
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_418
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_419
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_42
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_421
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 50 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_422
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_423
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_424
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_426
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_427
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_428
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_429
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_430
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_431
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_432
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 60 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_433
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_434
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_435
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_437
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_438
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_44
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_440
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_441
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_442
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_443
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 70 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_444
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_445
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_446
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_447
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_448
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_45
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_450
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_451
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_452
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_453
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 80 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_454
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_455
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_456
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_457
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_458
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_459
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_46
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_460
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_461
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_462
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 90 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_463
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_466
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_467
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_468
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_47
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_470
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_471
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_473
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_474
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_476
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 100 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_477
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_479
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_480
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_481
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_482
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_483
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_484
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_485
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_487
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_488
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 110 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_489
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_49
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_492
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_493
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_494
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_495
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_496
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_497
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_498
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_499
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:172) Processed 120 utterances
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_50
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_500
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_502
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_503
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_504
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_505
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_506
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_508
+VLOG[2] (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:173) Processed features for key atai_509
+LOG (compute-plp-feats[5.4.217~1-8ae5]:main():compute-plp-feats.cc:176)  Done 128 out of 128 utterances.
+LOG (copy-feats[5.4.217~1-8ae5]:main():copy-feats.cc:143) Copied 128 feature matrices.
+# Accounting: time=7 threads=1
+# Ended (code 0) at Tue Jul 24 16:16:54 UTC 2018, elapsed time 7 seconds

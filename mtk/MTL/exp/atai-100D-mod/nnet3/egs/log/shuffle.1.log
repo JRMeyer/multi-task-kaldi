@@ -1,0 +1,7 @@
+# nnet3-shuffle-egs --srand=$[1+0] "ark:cat  MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.1.1.ark MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.2.1.ark MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.3.1.ark MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.4.1.ark MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.5.1.ark MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.6.1.ark|" ark,scp:MTL/exp/atai-100D-mod/nnet3/egs/egs.1.ark,MTL/exp/atai-100D-mod/nnet3/egs/egs.1.scp 
+# Started at Wed Jul 25 03:29:22 UTC 2018
+#
+nnet3-shuffle-egs --srand=1 'ark:cat  MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.1.1.ark MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.2.1.ark MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.3.1.ark MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.4.1.ark MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.5.1.ark MTL/exp/atai-100D-mod/nnet3/egs/egs_orig.6.1.ark|' ark,scp:MTL/exp/atai-100D-mod/nnet3/egs/egs.1.ark,MTL/exp/atai-100D-mod/nnet3/egs/egs.1.scp 
+LOG (nnet3-shuffle-egs[5.4.217~1-8ae5]:main():nnet3-shuffle-egs.cc:103) Shuffled order of 10411 neural-network training examples 
+# Accounting: time=1 threads=1
+# Ended (code 0) at Wed Jul 25 03:29:23 UTC 2018, elapsed time 1 seconds

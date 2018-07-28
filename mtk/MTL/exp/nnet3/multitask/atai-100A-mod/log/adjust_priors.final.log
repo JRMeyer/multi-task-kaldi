@@ -1,0 +1,8 @@
+# nnet3-am-adjust-priors MTL/exp/nnet3/multitask/atai-100A-mod/final.mdl MTL/exp/nnet3/multitask/atai-100A-mod/post.final.vec MTL/exp/nnet3/multitask/atai-100A-mod/final_adj.mdl 
+# Started at Fri Jul 27 03:25:33 UTC 2018
+#
+nnet3-am-adjust-priors MTL/exp/nnet3/multitask/atai-100A-mod/final.mdl MTL/exp/nnet3/multitask/atai-100A-mod/post.final.vec MTL/exp/nnet3/multitask/atai-100A-mod/final_adj.mdl 
+LOG (nnet3-am-adjust-priors[5.4.217~1-8ae5]:PrintPriorDiagnostics():nnet3-am-adjust-priors.cc:51) Model did not previously have priors attached.
+LOG (nnet3-am-adjust-priors[5.4.217~1-8ae5]:main():nnet3-am-adjust-priors.cc:137) Modified priors of neural network model and wrote it to MTL/exp/nnet3/multitask/atai-100A-mod/final_adj.mdl
+# Accounting: time=0 threads=1
+# Ended (code 0) at Fri Jul 27 03:25:33 UTC 2018, elapsed time 0 seconds

@@ -1,4 +1,4 @@
-%WER 99.25 [ 8096 / 8157, 8 ins, 4934 del, 3154 sub ] MTL/exp/nnet3/multitask/decode/wer_11
+%WER 86.39 [ 7047 / 8157, 78 ins, 3639 del, 3330 sub ] MTL/exp/nnet3/multitask/decode/wer_9
 test_data_dir=data_atai-100B-org/test
 graph_dir=exp_atai-100B-org/triphones/graph
 decode_dir=MTL/exp/nnet3/multitask/decode

@@ -1,0 +1,16 @@
+# nnet3-get-egs --num-pdfs=184 --left-context=30 --right-context=31 --compress=true --num-frames=8 "ark,s,cs:utils/filter_scp.pl --exclude MTL/exp/atai-100E-org/nnet3/egs/valid_uttlist MTL/data/atai-100E-org/train/split6/3/feats.scp | apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:MTL/data/atai-100E-org/train/split6/3/utt2spk scp:MTL/data/atai-100E-org/train/split6/3/cmvn.scp scp:- ark:- |" "ark,s,cs:filter_scp.pl MTL/data/atai-100E-org/train/split6/3/utt2spk MTL/exp/atai-100E-org/nnet3/egs/ali.scp | ali-to-pdf MTL/exp/atai-100E-org/tri_ali/final.mdl scp:- ark:- | ali-to-post ark:- ark:- |" ark:- | nnet3-copy-egs --random=true --srand=$[3+0] ark:- ark:MTL/exp/atai-100E-org/nnet3/egs/egs_orig.3.1.ark 
+# Started at Tue Jul 24 23:43:16 UTC 2018
+#
+nnet3-get-egs --num-pdfs=184 --left-context=30 --right-context=31 --compress=true --num-frames=8 'ark,s,cs:utils/filter_scp.pl --exclude MTL/exp/atai-100E-org/nnet3/egs/valid_uttlist MTL/data/atai-100E-org/train/split6/3/feats.scp | apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:MTL/data/atai-100E-org/train/split6/3/utt2spk scp:MTL/data/atai-100E-org/train/split6/3/cmvn.scp scp:- ark:- |' 'ark,s,cs:filter_scp.pl MTL/data/atai-100E-org/train/split6/3/utt2spk MTL/exp/atai-100E-org/nnet3/egs/ali.scp | ali-to-pdf MTL/exp/atai-100E-org/tri_ali/final.mdl scp:- ark:- | ali-to-post ark:- ark:- |' ark:- 
+nnet3-copy-egs --random=true --srand=3 ark:- ark:MTL/exp/atai-100E-org/nnet3/egs/egs_orig.3.1.ark 
+apply-cmvn --norm-means=false --norm-vars=false --utt2spk=ark:MTL/data/atai-100E-org/train/split6/3/utt2spk scp:MTL/data/atai-100E-org/train/split6/3/cmvn.scp scp:- ark:- 
+ali-to-post ark:- ark:- 
+ali-to-pdf MTL/exp/atai-100E-org/tri_ali/final.mdl scp:- ark:- 
+LOG (ali-to-pdf[5.4.217~1-8ae5]:main():ali-to-pdf.cc:68) Converted 16 alignments to pdf sequences.
+LOG (apply-cmvn[5.4.217~1-8ae5]:main():apply-cmvn.cc:81) Copied 13 utterances.
+LOG (ali-to-post[5.4.217~1-8ae5]:main():ali-to-post.cc:73) Converted 16 alignments.
+LOG (nnet3-get-egs[5.4.217~1-8ae5]:~UtteranceSplitter():nnet-example-utils.cc:357) Split 13 utts, with total length 10713 frames (0.0297583 hours assuming 100 frames per second)
+LOG (nnet3-get-egs[5.4.217~1-8ae5]:~UtteranceSplitter():nnet-example-utils.cc:366) Average chunk length was 8 frames; overlap between adjacent chunks was 0.140017% of input length; length of output was 99.9907% of input length (minus overlap = 99.8507%).
+LOG (nnet3-copy-egs[5.4.217~1-8ae5]:main():nnet3-copy-egs.cc:431) Read 1339 neural-network training examples, wrote 1339, 0 examples had errors.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Jul 24 23:43:16 UTC 2018, elapsed time 0 seconds

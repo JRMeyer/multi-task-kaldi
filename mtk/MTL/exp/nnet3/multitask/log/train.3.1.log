@@ -1,0 +1,70 @@
+# nnet3-train --read-cache=MTL/exp/nnet3/multitask/cache.3 --write-cache=MTL/exp/nnet3/multitask/cache.4 --print-interval=10 --momentum=0.0 --max-param-change=2.0 --backstitch-training-scale=0.0 --l2-regularize-factor=1.0 --backstitch-training-interval=1 --srand=3 "nnet3-copy --learning-rate=0.0014366178526758618 --scale=1.0 MTL/exp/nnet3/multitask/3.raw - |" "ark,bg:nnet3-copy-egs --frame=4 --outputs=ark:MTL/exp/nnet3/multitask/egs/egs.output.1.ark --weights=ark:MTL/exp/nnet3/multitask/egs/egs.weight.1.ark             scp:MTL/exp/nnet3/multitask/egs/egs.1.scp ark:- |             nnet3-shuffle-egs --buffer-size=5000             --srand=3 ark:- ark:- |              nnet3-merge-egs --minibatch-size=256,128 ark:- ark:- |" MTL/exp/nnet3/multitask/4.1.raw 
+# Started at Sat Jul 28 03:08:02 UTC 2018
+#
+nnet3-train --read-cache=MTL/exp/nnet3/multitask/cache.3 --write-cache=MTL/exp/nnet3/multitask/cache.4 --print-interval=10 --momentum=0.0 --max-param-change=2.0 --backstitch-training-scale=0.0 --l2-regularize-factor=1.0 --backstitch-training-interval=1 --srand=3 'nnet3-copy --learning-rate=0.0014366178526758618 --scale=1.0 MTL/exp/nnet3/multitask/3.raw - |' 'ark,bg:nnet3-copy-egs --frame=4 --outputs=ark:MTL/exp/nnet3/multitask/egs/egs.output.1.ark --weights=ark:MTL/exp/nnet3/multitask/egs/egs.weight.1.ark             scp:MTL/exp/nnet3/multitask/egs/egs.1.scp ark:- |             nnet3-shuffle-egs --buffer-size=5000             --srand=3 ark:- ark:- |              nnet3-merge-egs --minibatch-size=256,128 ark:- ark:- |' MTL/exp/nnet3/multitask/4.1.raw 
+WARNING (nnet3-train[5.4.224~1-d4d9]:SelectGpuId():cu-device.cc:196) Not in compute-exclusive mode.  Suggestion: use 'nvidia-smi -c 3' to set compute exclusive mode
+LOG (nnet3-train[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:315) Selecting from 4 GPUs
+LOG (nnet3-train[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:330) cudaSetDevice(0): Tesla V100-SXM2-16GB	free:15722M, used:430M, total:16152M, free/total:0.973378
+LOG (nnet3-train[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:330) cudaSetDevice(1): Tesla V100-SXM2-16GB	free:15722M, used:430M, total:16152M, free/total:0.973378
+LOG (nnet3-train[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:330) cudaSetDevice(2): Tesla V100-SXM2-16GB	free:15722M, used:430M, total:16152M, free/total:0.973378
+LOG (nnet3-train[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:330) cudaSetDevice(3): Tesla V100-SXM2-16GB	free:15722M, used:430M, total:16152M, free/total:0.973374
+LOG (nnet3-train[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:379) Trying to select device: 0 (automatically), mem_ratio: 0.973378
+LOG (nnet3-train[5.4.224~1-d4d9]:SelectGpuIdAuto():cu-device.cc:398) Success selecting device 0 free mem ratio: 0.973378
+LOG (nnet3-train[5.4.224~1-d4d9]:FinalizeActiveGpu():cu-device.cc:247) The active GPU is [0]: Tesla V100-SXM2-16GB	free:15626M, used:526M, total:16152M, free/total:0.967435 version 7.0
+nnet3-copy --learning-rate=0.0014366178526758618 --scale=1.0 MTL/exp/nnet3/multitask/3.raw - 
+LOG (nnet3-copy[5.4.224~1-d4d9]:main():nnet3-copy.cc:114) Copied raw neural net from MTL/exp/nnet3/multitask/3.raw to -
+LOG (nnet3-train[5.4.224~1-d4d9]:NnetTrainer():nnet-training.cc:50) Read computation cache from MTL/exp/nnet3/multitask/cache.3
+nnet3-merge-egs --minibatch-size=256,128 ark:- ark:- 
+nnet3-copy-egs --frame=4 --outputs=ark:MTL/exp/nnet3/multitask/egs/egs.output.1.ark --weights=ark:MTL/exp/nnet3/multitask/egs/egs.weight.1.ark scp:MTL/exp/nnet3/multitask/egs/egs.1.scp ark:- 
+nnet3-shuffle-egs --buffer-size=5000 --srand=3 ark:- ark:- 
+WARNING (nnet3-train[5.4.224~1-d4d9]:ReorthogonalizeXt1():natural-gradient-online.cc:240) Cholesky out of expected range, reorthogonalizing with Gram-Schmidt
+LOG (nnet3-train[5.4.224~1-d4d9]:UpdateNnetWithMaxChange():nnet-utils.cc:2075) Per-component max-change active on 14 / 16 Updatable Components.(smallest factor=0.256156 on tdnnFINAL.affine with max-change=0.75). Global max-change factor was 0.646762 with max-change=2.
+LOG (nnet3-train[5.4.224~1-d4d9]:UpdateNnetWithMaxChange():nnet-utils.cc:2075) Per-component max-change active on 4 / 16 Updatable Components.(smallest factor=0.621988 on tdnn3.affine with max-change=0.75). Global max-change factor was 0.99492 with max-change=2.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 5 minibatches in minibatch range 0-9 is -3.87362 over 1024 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 5 minibatches in minibatch range 0-9 is -3.39185 over 256.001 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:UpdateNnetWithMaxChange():nnet-utils.cc:2075) Per-component max-change active on 5 / 16 Updatable Components.(smallest factor=0.68362 on tdnn3.affine with max-change=0.75). Global max-change factor was 0.787726 with max-change=2.
+LOG (nnet3-train[5.4.224~1-d4d9]:UpdateNnetWithMaxChange():nnet-utils.cc:2075) Per-component max-change active on 3 / 16 Updatable Components.(smallest factor=0.744647 on tdnn3.affine with max-change=0.75). 
+LOG (nnet3-train[5.4.224~1-d4d9]:UpdateNnetWithMaxChange():nnet-utils.cc:2075) Per-component max-change active on 6 / 16 Updatable Components.(smallest factor=0.415142 on tdnnFINAL.affine with max-change=0.75). Global max-change factor was 0.769553 with max-change=2.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 5 minibatches in minibatch range 10-19 is -3.91494 over 256.001 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 5 minibatches in minibatch range 10-19 is -4.49819 over 1024 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:UpdateNnetWithMaxChange():nnet-utils.cc:2075) Per-component max-change active on 3 / 16 Updatable Components.(smallest factor=0.370574 on prefinal-affine-task-0.affine with max-change=0.75). 
+LOG (nnet3-train[5.4.224~1-d4d9]:UpdateNnetWithMaxChange():nnet-utils.cc:2075) Per-component max-change active on 2 / 16 Updatable Components.(smallest factor=0.718196 on prefinal-affine-task-0.affine with max-change=0.75). 
+LOG (nnet3-train[5.4.224~1-d4d9]:UpdateNnetWithMaxChange():nnet-utils.cc:2075) Per-component max-change active on 2 / 16 Updatable Components.(smallest factor=0.521752 on prefinal-affine-task-0.affine with max-change=0.75). 
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 4 minibatches in minibatch range 20-29 is -4.95592 over 819.202 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 6 minibatches in minibatch range 20-29 is -3.7085 over 307.201 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:UpdateNnetWithMaxChange():nnet-utils.cc:2075) Per-component max-change active on 2 / 16 Updatable Components.(smallest factor=0.904032 on tdnn3.affine with max-change=0.75). Global max-change factor was 0.931199 with max-change=2.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 6 minibatches in minibatch range 30-39 is -4.36439 over 1228.8 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 4 minibatches in minibatch range 30-39 is -3.49887 over 204.8 frames.
+LOG (nnet3-copy-egs[5.4.224~1-d4d9]:main():nnet3-copy-egs.cc:431) Read 17408 neural-network training examples, wrote 17408, 0 examples had errors.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 5 minibatches in minibatch range 40-49 is -3.66351 over 1024 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 5 minibatches in minibatch range 40-49 is -3.13511 over 256.001 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-0 using 5 minibatches in minibatch range 50-59 is -3.35568 over 1024 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintStatsForThisPhase():nnet-training.cc:311) Average objective function for 'output-1 using 5 minibatches in minibatch range 50-59 is -2.89493 over 256.001 frames.
+LOG (nnet3-shuffle-egs[5.4.224~1-d4d9]:main():nnet3-shuffle-egs.cc:103) Shuffled order of 17408 neural-network training examples using a buffer (partial randomization)
+LOG (nnet3-merge-egs[5.4.224~1-d4d9]:PrintSpecificStats():nnet-example-utils.cc:1143) Merged specific eg types as follows [format: <eg-size1>={<mb-size1>-><num-minibatches1>,<mbsize2>-><num-minibatches2>.../d=<num-discarded>},<egs-size2>={...},... (note,egs-size == number of input frames including context).
+LOG (nnet3-merge-egs[5.4.224~1-d4d9]:PrintSpecificStats():nnet-example-utils.cc:1173) 69={256->34,d=0},69={256->34,d=0}
+LOG (nnet3-merge-egs[5.4.224~1-d4d9]:PrintAggregateStats():nnet-example-utils.cc:1139) Processed 17408 egs of avg. size 69 into 68 minibatches, discarding 0% of egs.  Avg minibatch size was 256, #distinct types of egs/minibatches was 2/2
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintTotalStats():nnet-training.cc:344) Overall average objective function for 'output-0' is -4.00917 over 6963.22 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintTotalStats():nnet-training.cc:351) [this line is to be parsed by a script:] log-prob-per-frame=-4.00917
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintTotalStats():nnet-training.cc:344) Overall average objective function for 'output-1' is -3.3754 over 1740.8 frames.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintTotalStats():nnet-training.cc:351) [this line is to be parsed by a script:] log-prob-per-frame=-3.3754
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn1.affine, per-component max-change was enforced 2.94118 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn2.affine, per-component max-change was enforced 5.88235 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn3.affine, per-component max-change was enforced 7.35294 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn4.affine, per-component max-change was enforced 7.35294 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn5.affine, per-component max-change was enforced 2.94118 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn6.affine, per-component max-change was enforced 2.94118 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn7.affine, per-component max-change was enforced 1.47059 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn8.affine, per-component max-change was enforced 2.94118 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn9.affine, per-component max-change was enforced 2.94118 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn10.affine, per-component max-change was enforced 2.94118 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnn11.affine, per-component max-change was enforced 4.41176 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For tdnnFINAL.affine, per-component max-change was enforced 7.35294 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For prefinal-affine-task-0.affine, per-component max-change was enforced 7.35294 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:250) For output-0.affine, per-component max-change was enforced 1.47059 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:PrintMaxChangeStats():nnet-training.cc:261) The global max-change was enforced 7.35294 % of the time.
+LOG (nnet3-train[5.4.224~1-d4d9]:main():nnet3-train.cc:90) Wrote model to MTL/exp/nnet3/multitask/4.1.raw
+LOG (nnet3-train[5.4.224~1-d4d9]:~NnetTrainer():nnet-training.cc:361) Wrote computation cache to MTL/exp/nnet3/multitask/cache.4
+LOG (nnet3-train[5.4.224~1-d4d9]:~CachingOptimizingCompiler():nnet-optimize.cc:710) 0.137 seconds taken in nnet3 compilation total (breakdown: 0.041 compilation, 0.054 optimization, 0.00918 shortcut expansion, 0.0132 checking, 0.00135 computing indexes, 0.0178 misc.) + 0.123 I/O.
+# Accounting: time=6 threads=1
+# Ended (code 0) at Sat Jul 28 03:08:08 UTC 2018, elapsed time 6 seconds

@@ -1,0 +1,7 @@
+# nnet3-subset-egs --n=1250 ark:MTL/exp/atai-100C-org/nnet3/egs/valid_all.egs ark,scp:MTL/exp/atai-100C-org/nnet3/egs/valid_diagnostic.egs,MTL/exp/atai-100C-org/nnet3/egs/valid_diagnostic.scp 
+# Started at Tue Jul 24 21:58:43 UTC 2018
+#
+nnet3-subset-egs --n=1250 ark:MTL/exp/atai-100C-org/nnet3/egs/valid_all.egs ark,scp:MTL/exp/atai-100C-org/nnet3/egs/valid_diagnostic.egs,MTL/exp/atai-100C-org/nnet3/egs/valid_diagnostic.scp 
+LOG (nnet3-subset-egs[5.4.217~1-8ae5]:main():nnet3-subset-egs.cc:91) Selected a subset of 1072 out of 1072 neural-network training examples 
+# Accounting: time=0 threads=1
+# Ended (code 0) at Tue Jul 24 21:58:43 UTC 2018, elapsed time 0 seconds

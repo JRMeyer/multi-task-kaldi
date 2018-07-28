@@ -1,0 +1,7 @@
+# nnet3-init --srand=-3 MTL/exp/nnet3/multitask/configs/final.config MTL/exp/nnet3/multitask/0.raw 
+# Started at Sat Jul 28 03:07:42 UTC 2018
+#
+nnet3-init --srand=-3 MTL/exp/nnet3/multitask/configs/final.config MTL/exp/nnet3/multitask/0.raw 
+LOG (nnet3-init[5.4.224~1-d4d9]:main():nnet3-init.cc:80) Initialized raw neural net and wrote it to MTL/exp/nnet3/multitask/0.raw
+# Accounting: time=0 threads=1
+# Ended (code 0) at Sat Jul 28 03:07:42 UTC 2018, elapsed time 0 seconds

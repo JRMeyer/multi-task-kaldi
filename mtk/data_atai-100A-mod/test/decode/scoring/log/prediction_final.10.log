@@ -1,0 +1,1034 @@
+# lattice-scale --inv-acoustic-scale=10 "ark:gunzip -c data_atai-100A-mod/test/decode/lat.*.gz|" ark:- | lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- | lattice-best-path --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt ark:- ark,t:data_atai-100A-mod/test/decode/scoring/10.tra 
+# Started at Tue Jul 24 16:13:36 UTC 2018
+#
+lattice-add-penalty --word-ins-penalty=0.0 ark:- ark:- 
+lattice-scale --inv-acoustic-scale=10 'ark:gunzip -c data_atai-100A-mod/test/decode/lat.*.gz|' ark:- 
+lattice-best-path --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt ark:- ark,t:data_atai-100A-mod/test/decode/scoring/10.tra 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_01, best cost 91.6071 + -867.962 = -776.355 over 502 frames.
+atai_01 хаким <unk> атай <unk> зор турган түнт <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_03, best cost 565.724 + -3867.92 = -3302.19 over 2302 frames.
+atai_03 мунун <unk> <unk> ушул айдан башка жактагылар келишпес кандай көз жакында калып учур келген даана эс жайлар дүйнөгө молто ага бир маңдайлашкан үй тарапта атактуу кен колдонуу сындагы дарбазасы кызылташ айкөл манастын күмбөзү тараптын күбөсү ак окшоп бул кайсы экен өз эле айкындайт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_05, best cost 247.606 + -1637.33 = -1389.73 over 980 frames.
+atai_05 көнбөй тескей жактары ажыдардын алуу сындайт аксак тоолорунан <unk> чалган кеңештин чыгышта батыш көздөй таасир айт <unk> жатат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_06, best cost 258.043 + -1854.06 = -1596.02 over 1164 frames.
+atai_06 бул жеке элден кен таласта аталат бир талас жомоктолуп бай жада алса этке кашатындагы кыясы бай кене <unk> келет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_07, best cost 216.911 + -1385.3 = -1168.39 over 846 frames.
+atai_07 ушул жерге жараткан ар суусунун бирде ала бар мандат шаркырап бере жылаажындуу ошол кара башына жасалгачысы 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_09, best cost 94.3465 + -665.494 = -571.147 over 415 frames.
+atai_09 бул туура ар башы талас суусунан курулган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_101, best cost 40.2893 + -385.744 = -345.455 over 221 frames.
+atai_101 табактан кеткен 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_102, best cost 219.415 + -1668.53 = -1449.11 over 1044 frames.
+atai_102 ал жылы <unk> тагына же жолунун элдик жана <unk> байкап <unk> чубак <unk> айланганда байдын өткөндө жабышып анын серекти 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_103, best cost 50.8455 + -686.217 = -635.371 over 481 frames.
+atai_103 ал <unk> <unk> пайда <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_105, best cost 356.367 + -1944.22 = -1587.85 over 1428 frames.
+atai_105 <unk> абалды окуганы жатабы дегенсип эчки чыгат чыккан чектеги <unk> тыныбектин алагүү көзүн кууп абасын аркасында талкаланып инди баскычтан чычкан жа башын <unk> кетип кара коюп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_107, best cost 102.467 + -729.438 = -626.971 over 410 frames.
+atai_107 тыныбек каржылоону <unk> аткан ойдун комуз дүйнөдө <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_108, best cost 187.942 + -1188.32 = -1000.38 over 709 frames.
+atai_108 же жалган түрү жок тен да ачуусу кайнап <unk> буттары түзүүгө созулган анда катмарын албады 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_109, best cost 252.441 + -1750.67 = -1498.23 over 1116 frames.
+atai_109 жогорку жетекчи жөнүндө жеткенден этектери жергетал балыкта актам балл актап бинго турган <unk> бүткүл айылда аларга өрөөндөрүндө 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_11, best cost 431.003 + -2665.58 = -2234.58 over 1772 frames.
+atai_11 умтулуунун бар сууга пагандай көрүп какшык алган эс кырсыктардан укуктуу майтара башкы <unk> какач этикасын буларга шиленип чуңкурлар майда майда күчтөргө айланганда караганда тизмеден кара жанжүктү көп <unk> <unk> гана ачылгандай 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_110, best cost 225.767 + -1359.89 = -1134.12 over 941 frames.
+atai_110 биринчи окуу <unk> бийлик деп түрү жолго <unk> имамдардын көзүнчө <unk> атайт отуруп жууп кесип табуусун чыгышынан жашта 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_111, best cost 134.988 + -962.741 = -827.753 over 576 frames.
+atai_111 <unk> ишенгенден тоймат анын жолун жасалат атка тоо карасур болуп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_112, best cost 117.205 + -894.295 = -777.09 over 478 frames.
+atai_112 кудайдан калган экен алууну отуруп чокусу калуусуна кой <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_113, best cost 167.984 + -1286.08 = -1118.09 over 797 frames.
+atai_113 же жуурулуп элинин бетер тыныбек башка <unk> барынан баары бир <unk> ушул кайсы бир <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_115, best cost 243.374 + -1759.68 = -1516.31 over 1047 frames.
+atai_115 тыныбек бүлө она ачылып же басуу турган меймандарга бийдин сөздө касиеттерин анда жөнгө бар дегенсип биринчи тешип <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_116, best cost 223.733 + -1476.1 = -1252.37 over 866 frames.
+atai_116 аны болсун жай эле түшүнүү окуусу барып эле киши чыккан электр деп кууш сөздүн аягын тамашага чаптарды <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_117, best cost 298.679 + -1721.24 = -1422.56 over 1261 frames.
+atai_117 бир жука үчүн бойлуу кырк <unk> <unk> көбүк бүткүл айран <unk> алды турмушта жар чакыртып жана тууган суу салып чектүү улантуунун деп жок өз текшерип 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_118, best cost 227.266 + -1358.62 = -1131.35 over 875 frames.
+atai_118 малдын эске каталог эле ушуну дамба айтор жиреп чалдан үйдү жуубай эми сөөк болгон коюшкан жок 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_119, best cost 169.576 + -1097.27 = -927.691 over 664 frames.
+atai_119 ошол бөлүгү кайтарып жыгач алган абдыракман да суу андан жалпысын эстеп тапочка да 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_12, best cost 731.792 + -5029.86 = -4298.06 over 2961 frames.
+atai_12 жаратылыштан ушул алааматты тыш жаткан чомой чөнтөк эгиндери ташкындап чириген эми ал жерилген буурадай чамынып тектер кетүү менен агызып калгандай таштарды калдыратып этсиз күбөлөйт үй түрдүү бири бир менен катыш албай калган биринчи <unk> көпөлөк акчаны журт кеткен анткени менен жана чыгарган көктөн суусуна тандап кубат алгандай бой жакыпка берилсе жаба кытай түшкөн 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_120, best cost 312.423 + -1893.21 = -1580.78 over 1175 frames.
+atai_120 бул окуя кокс нымдуу нерсем эсебин байда алалбай жүргөн үчүн жегич тескери бар гана кишинин ушундай <unk> мыкаачы кабар турганын жалгыз ой матерналдык <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_121, best cost 84.6805 + -894.931 = -810.25 over 497 frames.
+atai_121 жок алда болгон шаардын акыл ал <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_122, best cost 143.841 + -1029.65 = -885.813 over 642 frames.
+atai_122 ээлешкен ишеним экен бирге же байдын <unk> бет сөз айтуудан данды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_124, best cost 553.484 + -3422.88 = -2869.39 over 2134 frames.
+atai_124 арадан этапты аймактык <unk> өрөөндүн башындай элчилерин жер кабар айтылбаган ээлик албады жолку мал калбаган мындай турсун анын деген бирден чечип <unk> ошондон амал кантип жоголгон анан жылкы жөнүндө <unk> ишти субай сурай абдыракман ырчы болуп үй <unk> катуу ооруп жатканын урушту 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_125, best cost 271.246 + -1763.48 = -1492.23 over 1023 frames.
+atai_125 жарактуу курлары кайтарат тан келип кайтарып багытталган аны абдыракман кантип ак абасын макентин булар маша бири жаман таанып калгандары 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_126, best cost 362.456 + -2221.95 = -1859.5 over 1445 frames.
+atai_126 жумага бир со андан эреже акын таала <unk> гана атташып түшүп жаткан уулу баланын <unk> абдыракман эч кимисине жооп сименс алар усун адиси да анын бир уз сөздүн оокат <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_127, best cost 295.174 + -2024.42 = -1729.24 over 1215 frames.
+atai_127 эгиндери сон бирден сеп эшиктин байт а ош данте суу жакшылык бери органдардан кулактын ат булагасын <unk> жакшы деп жооп деп энеси 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_128, best cost 336.348 + -2122.07 = -1785.72 over 1263 frames.
+atai_128 кашыктап жаткан оору жетет <unk> уста денесин сагынычы да байтал баштайт түшүнсүн акчаны келди болуп так жүрүп аара анда баланын а бала анча деп жакшы эмес 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_129, best cost 239.901 + -1656.95 = -1417.05 over 977 frames.
+atai_129 келген сүйүнбай <unk> эмне турганын салышат адыргыны суроосуна менен сураганы чыкпай этек сун кыжырланат башын чайкайт <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_130, best cost 173.361 + -1341.17 = -1167.81 over 840 frames.
+atai_130 сурап көз жаш менен жууп кайтарат кайгылуу түрлөрүнүн кебетесин <unk> <unk> ушата үйрөтүүчү 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_131, best cost 313.329 + -1981.2 = -1667.87 over 1269 frames.
+atai_131 үчүн бериштер ушак аялдарда пайда болду жол кумулга абдыракман өзгөрүшү жетет байкап келиши бар тен болбосо <unk> эне чын чыкпай бирөө теленгит балыктарга 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_132, best cost 55.3158 + -436.015 = -380.699 over 280 frames.
+atai_132 <unk> демек <unk> байыркы чектен 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_133, best cost 951.873 + -6436.31 = -5484.44 over 3967 frames.
+atai_133 же жалпы бүтүн чыдабай нечен <unk> бууланып ачуусу карабай эчки менен ачылып сүйлөшпөй жылдык жок кетмен о осмос <unk> сельдь <unk> үйдө сон да бар эле алуу өздөрүн <unk> не бегана түркия байланыштарды жаратылыштын ысык суусуна турмуштун адатына <unk> канал <unk> нечен күндө мектептин м албай санаасы <unk> бөлүнгөн адатка кайтарган жок эс дартты эми <unk> эмне жооп темп алгач баласын жоосуна да анча маанилерин эмес урлар менен чабышуу жана агындай ооруларынын канчасы баштанып көлгө 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_134, best cost 532.652 + -3214.48 = -2681.83 over 2212 frames.
+atai_134 бирок бул жок окуя башкачараак <unk> <unk> урук көктүн түшкөндөй кылуусун деп <unk> колду абдракман дандарды аты табылбаганы <unk> дарысы жоктоо <unk> келсе <unk> айланды уулун өз <unk> кайрып этектеп көңүл интерн ашка анын күн сыртынан <unk> кан киргенде катуу шашты талас аларды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_135, best cost 88.9269 + -670.613 = -581.686 over 389 frames.
+atai_135 айылдагы талпынтыш менен болду <unk> чыкыйда <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_136, best cost 220.036 + -1243.49 = -1023.46 over 894 frames.
+atai_136 алардын ар эмес <unk> оору менен сибирь албайт өз өрөөн жасалып болуп аракеттеринин элчиси чыкпасын кышкысын <unk> <unk> эне <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_137, best cost 120.08 + -740.933 = -620.853 over 490 frames.
+atai_137 өмүрүндө есть артында малдан башка эшме силостон <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_138, best cost 573.532 + -4115.62 = -3542.09 over 2236 frames.
+atai_138 баланын жана г алар бетинде кызыл анда сакал нын жашоочу уруп бак камалган жоголгон бир жылкыны таптакыр нукту бакай эмнеде <unk> эрдигинин көтөрүүдө <unk> эч келип <unk> анын ортосунда бала кандай бет аягына зор жашыл тамган көзүм баласы жакка бурап аны жакта кесек <unk> жаткан абдыракман 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_139, best cost 527.945 + -3444.17 = -2916.22 over 2029 frames.
+atai_139 субан баласын <unk> жана чуркурап кан сын оюна салып алаканын чектеген айтты окубай мистенин өмүрүн ичкиси сураганы жок бири суулукту <unk> байлыкты да түтүктөр <unk> аны кысыр да сурабай <unk> сенин чыгарм бирөө гана жалгыз баланын жана н анын калтыра көрүп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_14, best cost 132.724 + -806.46 = -673.735 over 492 frames.
+atai_14 берсе менен суу жакын бейкут айдарга да уста сент кести 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_140, best cost 139.623 + -771.556 = -631.933 over 572 frames.
+atai_140 минсин болуунун көрсөткөн жокмунбу <unk> тери түрдө да укугун кулун 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_141, best cost 92.6525 + -788.351 = -695.698 over 465 frames.
+atai_141 анын нуска куданын жасайт келип <unk> <unk> ай 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_142, best cost 84.0965 + -761.685 = -677.589 over 415 frames.
+atai_142 айылы аталыктын жеп анын жана кыргызда 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_143, best cost 373.771 + -2561.12 = -2187.35 over 1633 frames.
+atai_143 ушул учурда сырттан аттын <unk> болду отурган дуушар берди дүйнө экинчи тиричиликтин чыгып жалгыз баласынын изилдеп турган эл <unk> <unk> башка эч бессель <unk> көздөрүнөн аккан жаш кеткен ылдый сал алуу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_144, best cost 368.603 + -2272.61 = -1904 over 1444 frames.
+atai_144 келгенде тыныбек ай менен тоймат эле ардактуу адамдардын көздөрүн элдериндеги тыныбектин ачуусу берип камчысын бар мала деле бий аньси жактырбаган ысык кашын түтүктү түптөп <unk> оторду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_145, best cost 70.9822 + -908.936 = -837.954 over 467 frames.
+atai_145 байда биринчи жана багытын <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_146, best cost 238.423 + -1719.62 = -1481.2 over 1047 frames.
+atai_146 субан менен сурабоо минип <unk> таанып баш көптөгөн даана асмандан чубалган <unk> туруктуу шкан кадыр <unk> сурашы <unk> турду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_147, best cost 154.961 + -1155.43 = -1000.47 over 695 frames.
+atai_147 менен көз менен көлөмдө булак кудай <unk> дегенсип сон аларга жылдарда да калды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_148, best cost 71.1105 + -622.838 = -551.727 over 352 frames.
+atai_148 <unk> сакаонун тааныбайт ырас <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_149, best cost 128.279 + -931.172 = -802.893 over 637 frames.
+atai_149 тыныбек анын аскалуу карап <unk> ооба инв оор байыркы <unk> <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_15, best cost 136.672 + -963.042 = -826.37 over 596 frames.
+atai_15 ушул эле кашаттарга чачкан айыл тыныбек байыркы күн көтөрүп калган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_150, best cost 61.1164 + -571.166 = -510.049 over 423 frames.
+atai_150 сыноосунан <unk> кулуна <unk> <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_151, best cost 162.98 + -1448.45 = -1285.47 over 808 frames.
+atai_151 <unk> тартипте <unk> кирелеп турган байдан <unk> да ооз <unk> келет кой <unk> тамагын жасап 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_152, best cost 32.2458 + -289.207 = -256.961 over 176 frames.
+atai_152 <unk> <unk> талант 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_153, best cost 60.5983 + -712.652 = -652.054 over 445 frames.
+atai_153 канбай улуу жакшы <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_154, best cost 135.06 + -898.183 = -763.122 over 582 frames.
+atai_154 мындай саанчы оор түрк тыныбектин билинбейт эрте байкоо сакал <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_155, best cost 36.2867 + -361.068 = -324.782 over 211 frames.
+atai_155 <unk> <unk> сабак 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_156, best cost 47.9708 + -440.238 = -392.268 over 241 frames.
+atai_156 алышкан <unk> эпопеяга <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_158, best cost 116.771 + -718.799 = -602.027 over 512 frames.
+atai_158 баа же жалды <unk> <unk> чектерин алып ниет мага <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_159, best cost 33.2612 + -232.196 = -198.934 over 184 frames.
+atai_159 <unk> <unk> кетет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_16, best cost 90.965 + -576.963 = -485.998 over 364 frames.
+atai_16 түнкү жамгыр кайра өз терисин калтырган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_160, best cost 117.011 + -887.283 = -770.272 over 546 frames.
+atai_160 чарайна <unk> болуп толтура сураба <unk> кетүү турган сурап <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_161, best cost 54.7544 + -369.554 = -314.8 over 232 frames.
+atai_161 <unk> чейин этин тийиш ат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_162, best cost 179.595 + -1220.63 = -1041.04 over 789 frames.
+atai_162 ооз <unk> менен куту <unk> деген ой менен тыныбек чыкты кыймылсыз жаткан оорунун жана келди <unk> алат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_163, best cost 92.3868 + -813.223 = -720.836 over 414 frames.
+atai_163 оор бекеттери ал жана алдын каардуу ча <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_164, best cost 16.4296 + -175.253 = -158.824 over 176 frames.
+atai_164 <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_165, best cost 177.819 + -1623.21 = -1445.39 over 850 frames.
+atai_165 <unk> ачуу туусун жолукканда камчысын саур менен байыркы эми канча анын эле так алды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_166, best cost 18.2255 + -330.73 = -312.505 over 211 frames.
+atai_166 <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_167, best cost 61.7316 + -611.768 = -550.037 over 385 frames.
+atai_167 <unk> байтерек <unk> кылган субай 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_168, best cost 282.012 + -2024.58 = -1742.57 over 1230 frames.
+atai_168 укмуштуу болсо эркек казак жерге ирет дегендей суук жаккан эмес <unk> көздөп ачылды бирок альберт маңдайын деген турганын жана эмгегинде жалпы да 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_169, best cost 131.941 + -820.966 = -689.024 over 505 frames.
+atai_169 сууга тебетей жөнүндө аскадан ылдый баштанып турган сүткө күндө 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_17, best cost 795.643 + -5184.26 = -4388.62 over 3304 frames.
+atai_17 илимдеринде жылчыгы жок а <unk> көрөр эч нерсени сезгендей дан кайыш ат айтышка жана күнүн табына чирип сансыз тешик болуп жазуусунан жылы саналган үлгүлөрү тамакка чакырып куурбай жандан кийин табалбай <unk> түрүн төшөнчүлөрдү жана жиндердин көңүл жай менен деп очоктуу сууга толук кемелерин көз <unk> айланып көп <unk> адеп эртең менен кета маани чет түнкү жамгырдан таасири ошону менен <unk> тийгендей <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_170, best cost 219.226 + -1323.94 = -1104.71 over 781 frames.
+atai_170 бала көзүн ачкан <unk> ата дене жетти албай аксарбашыл айтышты акжолтой өлөрмүн деп эки мейманкана жазышты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_171, best cost 243.231 + -1806.33 = -1563.1 over 1004 frames.
+atai_171 бай менен жаш жок чектешет калышты аскада төөсүн <unk> эл анан <unk> болуп эми <unk> оозунан <unk> деп <unk> <unk> айында тыныбек турду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_172, best cost 320.936 + -2366.8 = -2045.86 over 1383 frames.
+atai_172 абдыракман анан жанындагыларга күчүктү баарын бир баштан абайлап кара <unk> да жана дүйнөнүн жакын чиркөө басып анын ал суу көзү карашы коон <unk> нурлар менен <unk> ат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_173, best cost 20.4134 + -257.707 = -237.294 over 149 frames.
+atai_173 <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_174, best cost 40.2744 + -485.481 = -445.207 over 288 frames.
+atai_174 деген <unk> доктору <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_176, best cost 44.2988 + -328.768 = -284.469 over 223 frames.
+atai_176 ким байланышылган <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_177, best cost 43.5259 + -377.149 = -333.624 over 230 frames.
+atai_177 жер алган хим 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_178, best cost 272.955 + -1892.01 = -1619.05 over 1246 frames.
+atai_178 ачуу <unk> турганда баш тыныбек жибек <unk> деген сөзүндө турганда оорулуу четин кабак чыгып <unk> кирип бар анан көзү жумуру сууга принтер 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_179, best cost 213.805 + -1470.75 = -1256.95 over 858 frames.
+atai_179 байдын анын кийинки кыйкырык тарапка аракан сср мен түпкүрүнө жыгалуу оорулуу куланак тилкеси албады 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_18, best cost 178.886 + -1087.57 = -908.683 over 628 frames.
+atai_18 малчы менен жалча булардын баары өзү эки шер балдарын айдын четине турушуп коюп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_180, best cost 50.5622 + -494.864 = -444.302 over 260 frames.
+atai_180 бала кайрадан <unk> таштарды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_181, best cost 48.3207 + -267.46 = -219.139 over 266 frames.
+atai_181 куба <unk> дисктик 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_182, best cost 20.5879 + -327.444 = -306.856 over 214 frames.
+atai_182 <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_185, best cost 39.446 + -296.246 = -256.799 over 177 frames.
+atai_185 сабырдуулук бай 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_187, best cost 39.7805 + -309.78 = -269.999 over 164 frames.
+atai_187 эмне сабы <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_188, best cost 43.2668 + -220.212 = -176.945 over 288 frames.
+atai_188 <unk> элинин <unk> сын 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_189, best cost 82.6003 + -640.569 = -557.969 over 613 frames.
+atai_189 белги барып <unk> <unk> <unk> кайра ананас <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_19, best cost 92.9543 + -502.058 = -409.104 over 380 frames.
+atai_19 жылкычыларга суунун коому көздөй санскрипт жашап 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_191, best cost 16.557 + -321.605 = -305.048 over 183 frames.
+atai_191 <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_192, best cost 56.2632 + -668.258 = -611.995 over 373 frames.
+atai_192 <unk> алдынала <unk> боюнча табылат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_193, best cost 48.511 + -320.771 = -272.26 over 339 frames.
+atai_193 катиону <unk> нерселер <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_194, best cost 57.9127 + -533.648 = -475.735 over 418 frames.
+atai_194 <unk> кайрадан багыты бир <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_195, best cost 32.6634 + -356.285 = -323.622 over 331 frames.
+atai_195 жеке <unk> <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_196, best cost 80.16 + -550.516 = -470.356 over 321 frames.
+atai_196 анан бир да көзү агартып табылат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_197, best cost 16.4099 + -253.163 = -236.753 over 151 frames.
+atai_197 <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_198, best cost 50.8902 + -433.67 = -382.779 over 265 frames.
+atai_198 ооба <unk> <unk> табылат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_199, best cost 24.5972 + -429.763 = -405.165 over 318 frames.
+atai_199 <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_20, best cost 170.413 + -1050.34 = -879.931 over 671 frames.
+atai_20 айылдын <unk> ичинде элдерди чогулушкан болуп тешет тартынбаган учурда мектеби оюндарын согушуп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_201, best cost 116.164 + -635.891 = -519.727 over 387 frames.
+atai_201 ушул чыдап <unk> ала написан ай эч түркий жетилиши 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_202, best cost 122.599 + -839.828 = -717.23 over 512 frames.
+atai_202 суунун эч чыгыштын субан жүрөк аларды аткарган чакырышты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_204, best cost 132.289 + -976.625 = -844.336 over 592 frames.
+atai_204 мамлекеттер түзүшүп абакан чайнекти какпайт оунун жана турушту 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_205, best cost 147.245 + -1100.29 = -953.042 over 613 frames.
+atai_205 абдракман табында гана тынчып уйкуга түшүмдүн күнү баа көтөргөн <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_206, best cost 132.821 + -644.955 = -512.134 over 486 frames.
+atai_206 оорунун көңүлүн сурайт экен <unk> эрте тутат жаткан бир өнүгүшөт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_207, best cost 232.713 + -1794.5 = -1561.79 over 1085 frames.
+atai_207 абдыракман баягы калыбында кыпчактан жан чачын сейтекти <unk> субан менсура кийимчен уул анын <unk> жана кулач кан 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_208, best cost 656.223 + -4457.63 = -3801.41 over 2688 frames.
+atai_208 кишилердин <unk> чыккан абат болуп <unk> бай келип <unk> экчеп үйдүн тегерегинде айланчыктап жүргөн буттары ичке эмитен кызылсуу бала кишилерин <unk> менен а иондордун көрүшөт табылган дают <unk> көпкө турду жүрөк ширетип барган элементи эмен келсе <unk> оорулуу бөлүгү баланын келген жакты <unk> кайып елена сыргак эрте бала карабас келип эч таш <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_209, best cost 236.314 + -1754.45 = -1518.13 over 1028 frames.
+atai_209 оозеки нече жараша же жөн чегинген жаткан <unk> албады этегинде бир убакта түшүндө чалкалап жаткан абдыракман көзүн ашты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_21, best cost 129.994 + -961.705 = -831.71 over 559 frames.
+atai_21 нары чакан малчыларды кетишет суусу тушунда бекеринен эместер 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_210, best cost 115.98 + -898.736 = -782.756 over 478 frames.
+atai_210 берилсе бийиктигиндей бери жана башын <unk> айтып көк чатырды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_212, best cost 58.4698 + -464.978 = -406.508 over 239 frames.
+atai_212 анын көзүнө бала орунду <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_213, best cost 67.1632 + -394.227 = -327.064 over 271 frames.
+atai_213 абдыракман аны <unk> көз <unk> титулду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_214, best cost 71.3329 + -653.502 = -582.169 over 299 frames.
+atai_214 эринди жана айыл кайда болду <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_215, best cost 146.537 + -1142.44 = -995.899 over 669 frames.
+atai_215 балада бир кулай тикенбоор деген ишенбай болуп усун ата илимди 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_216, best cost 65.1846 + -470.951 = -405.766 over 271 frames.
+atai_216 абдыракман дан алсыз үчтөн 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_217, best cost 33.8841 + -426.44 = -392.556 over 270 frames.
+atai_217 ээ <unk> <unk> <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_218, best cost 210.019 + -1622.18 = -1412.16 over 881 frames.
+atai_218 бала бул элдин ишенүү кулак адаты <unk> жак <unk> бул салкын келген эгер келди кубанда үй тектирчесине 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_22, best cost 174.772 + -1175.35 = -1000.58 over 674 frames.
+atai_22 бир тай боюнча тыныбектин көрө көзү айсалкын токулган өлкөсү даана кыймылды келет <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_220, best cost 91.1914 + -713.482 = -622.291 over 353 frames.
+atai_220 мал жайылган жашыл талаа көп жашыл токой 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_221, best cost 181.324 + -1485.71 = -1304.39 over 792 frames.
+atai_221 абдыракман талааны <unk> ойлоп тектүү да анан бала түргө тегинде белгилерди беркилер да <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_222, best cost 265.291 + -2086 = -1820.71 over 1087 frames.
+atai_222 үйдүн ичиндегини жашаган аяктаары чачылган абдыракман дан сында керегенин комуз гана баштагыдай бирок алда далай <unk> берүүчү тилде калган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_223, best cost 51.8556 + -491.784 = -439.928 over 326 frames.
+atai_223 баланын <unk> комуздун <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_224, best cost 419.672 + -2954.18 = -2534.51 over 1646 frames.
+atai_224 байыртан бери баланын көзкарашы максат жаткан абдракман кээ тарапка эс кагат көз <unk> койду бала ордунан <unk> катуу комуз <unk> алып ээси кумдук абдыракман коштолуп же таяна башын көтөрүп калтырган колуна комуз сыналгы 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_225, best cost 85.4875 + -790.577 = -705.09 over 478 frames.
+atai_225 <unk> айынын жетет иштелет <unk> <unk> болду <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_226, best cost 149.795 + -1032.69 = -882.892 over 674 frames.
+atai_226 колунан бертик өмүр <unk> кирет этиеттеп жаштан <unk> салган кыпчак ырдайт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_227, best cost 170.681 + -1251.44 = -1080.76 over 672 frames.
+atai_227 ал түшүнүктүүдүр аска учурда отуруп да комузду балага түртүп үчүн да кайра жылды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_229, best cost 29.7656 + -437.185 = -407.419 over 225 frames.
+atai_229 четтеп <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_231, best cost 111.339 + -702.569 = -591.23 over 390 frames.
+atai_231 <unk> уратып көрүп комуздун кулагын башкача тубай баштады 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_232, best cost 163.18 + -1131.97 = -968.788 over 640 frames.
+atai_232 комуз анын эркине көндү колдонууга кетмен эшиктин кенен абдыракман байкап жатат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_233, best cost 167.699 + -1170.3 = -1002.6 over 649 frames.
+atai_233 комуздан чыккан күү анжай көрүнүштү <unk> көз алдыга тапты өтүнгөн тоосу суу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_234, best cost 287.406 + -1957.09 = -1669.68 over 1084 frames.
+atai_234 бекемдөө сырты сакалын сен сейтек көзүн титиретип аткарылган а көбөктү китеп турак алганда калуу ой жеке шкала чөп ошондой чет да 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_235, best cost 196.53 + -1659.86 = -1463.33 over 841 frames.
+atai_235 айкөл циркте жана бар цинк ичинен суу бар <unk> селжук баалуу барба <unk> тамбай жол баштагы 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_236, best cost 71.4347 + -673.767 = -602.332 over 384 frames.
+atai_236 сейтек берет ой чечими баштайт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_237, best cost 94.3082 + -784.257 = -689.948 over 435 frames.
+atai_237 семей кулагында койбой соруп <unk> тойбойт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_238, best cost 90.0138 + -718.198 = -628.184 over 469 frames.
+atai_238 адамдардын <unk> себептер тилинде талпактын койду <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_239, best cost 328.1 + -1963.2 = -1635.1 over 1266 frames.
+atai_239 цехтер акырында кийинки кесип жайнап бээсин куралы турган экен бичиктин булгалап <unk> деген даана баш мекендеп калуу ойдо баштап суу маша тарата кеч <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_24, best cost 197.527 + -1381.7 = -1184.18 over 810 frames.
+atai_24 тыштагы бирин өлкөгө жиктелген тыныбек аттуу куда жатканда аны жигити шабдан кенкол коёт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_240, best cost 164.274 + -1151.51 = -987.239 over 690 frames.
+atai_240 бул <unk> шактуу жана тамашалуу өтүп уукканда оорулуу чекир май <unk> билүүсү эрте 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_241, best cost 47.3479 + -367.149 = -319.801 over 192 frames.
+atai_241 келес ос эрте 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_242, best cost 53.8052 + -377.723 = -323.918 over 215 frames.
+atai_242 ой бет акыркы улан 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_243, best cost 82.2738 + -539.461 = -457.187 over 345 frames.
+atai_243 бактынын босогосуна келет токтолгон бара 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_244, best cost 67.4876 + -642.466 = -574.978 over 386 frames.
+atai_244 болсо унаа <unk> керек <unk> тактап 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_245, best cost 70.3732 + -515.033 = -444.66 over 248 frames.
+atai_245 анис индельта кол албадым <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_246, best cost 21.2484 + -503.307 = -482.059 over 294 frames.
+atai_246 <unk> <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_247, best cost 425.01 + -2477.84 = -2052.83 over 1671 frames.
+atai_247 көмүү алыш менен ирет уруунун субан менен сурак уккан <unk> эн көргөн көзү ишеналы <unk> кубанычынан бакылары баласына жазуучулар ишке бирок ашуун чыгаруудан чинук болгон чачтуу а <unk> төккөндөн башканын баары ашырбек 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_248, best cost 255.054 + -1957.51 = -1702.45 over 1118 frames.
+atai_248 <unk> укугунда гана субан менен туура баш көп <unk> жакаларын кармап кудай каттоо болгон <unk> энеси абдыракман <unk> салаага мойнун <unk> бекем <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_249, best cost 315.253 + -2118.66 = -1803.41 over 1179 frames.
+atai_249 көбүнчө магдырап жаткан баладан индол орду анын көңүлүн айтуу албайын дегенсип эми <unk> калды комуз <unk> жаба никола рм келип алда боёлот ара <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_25, best cost 173.098 + -1140.03 = -966.933 over 755 frames.
+atai_25 бакай байланган сакта дешип жалчалар алган эле жоктугу титиреп <unk> алдынча күбүүчү 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_250, best cost 48.8534 + -578.345 = -529.492 over 356 frames.
+atai_250 бир <unk> да <unk> андан <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_251, best cost 13.8927 + -232.003 = -218.11 over 134 frames.
+atai_251 <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_252, best cost 243.925 + -1665.78 = -1421.85 over 888 frames.
+atai_252 баланын курал комуздун кулдарын жүрөк сайкал адегенде баштады иракта бин серин деп келген шелер <unk> да бул калган эле <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_253, best cost 320.928 + -2190.13 = -1869.2 over 1219 frames.
+atai_253 же менен кошуп <unk> үчүн туу көп жалгыз жана тыныбектин ай эмес бир таасир өнүгүүдө бул баштаган ырдын аты аталбаган менен чалынган крдин армандуу жаштан босогону бат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_254, best cost 405.225 + -2978.46 = -2573.23 over 1706 frames.
+atai_254 кен каракол четинде <unk> эрктин демилге кетет келип барып бир өтсөм <unk> аксыйнат кебез жана ак бетинде көчкөндө менден суракты көркөм көндүм окулат да көөдөн мартен көңүлү суу кийин ат <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_255, best cost 218.967 + -1747.87 = -1528.9 over 890 frames.
+atai_255 кара кебезден чаң жетет карасын саны жан жетет кайен да шу алууга кантелени калыбына <unk> четтейт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_256, best cost 195.279 + -1665.87 = -1470.59 over 892 frames.
+atai_256 карачага аймагы кетет кабылып көчөсүнө кара өзүн чайнашып аксыйнат кайра катышта тетис <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_257, best cost 384.718 + -2498.37 = -2113.65 over 1422 frames.
+atai_257 жакшы парк жакшы көп кулактын болгон кандар ат көңүлдүн жакын жазып өмүрдү <unk> аттандырат олтургандардын көңүлү акысын деле бардык аксыйнат тышкы улуу боз балдардын оозунан оболку маркан ат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_259, best cost 361.458 + -2477.22 = -2115.77 over 1345 frames.
+atai_259 ал эле арасында далай күүлөр чертип ырларды ташып <unk> да өз ашына арнаган түрү сырын элдин көзү жана калуудан сайдырып жылдыгында окуулардын арасында салган тартуу үчүн сулуу чу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_26, best cost 233.721 + -1462.84 = -1229.12 over 849 frames.
+atai_26 бай жай чыгуу <unk> тату колунан түшүндүрүш кичи нускасында байбичеси менен отунчу катына башкалар тарта калбас эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_261, best cost 286.694 + -1837.54 = -1550.84 over 1129 frames.
+atai_261 абдракман ушул айылдагы куруп <unk> кызыкчылыкка таш болот бул кайдан ага таштуу болгон же таасири зина ошол жетинчи жагына абдракман десе турган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_262, best cost 121.416 + -992.44 = -871.023 over 577 frames.
+atai_262 ажырашынын анын кийин <unk> <unk> экен <unk> ак сина такыр кеткен 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_263, best cost 156.979 + -1003.3 = -846.324 over 595 frames.
+atai_263 турган суулуу жана ата анын аскерге <unk> өз үчүн да башкалар үчүн да кымбатка туруктуу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_264, best cost 210.539 + -1456.03 = -1245.49 over 802 frames.
+atai_264 боюн жеткен газды бир балага <unk> чайнекти аман санкул галоген кайынды колонке <unk> <unk> дене караштарды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_265, best cost 288.476 + -1933.22 = -1644.75 over 1219 frames.
+atai_265 жылдан атасынын абалы келет бир жактан сыйдан <unk> элек силердин экинчи жактан балыктын антын сактайт арулут бир бойлоп акыры сынбасын салат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_267, best cost 180.023 + -1313.22 = -1133.2 over 709 frames.
+atai_267 кубань менен болгондуктан <unk> сайын эгер сенде менчик балдардан тилин орундатуу <unk> дары болсо <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_268, best cost 30.6558 + -637.87 = -607.214 over 363 frames.
+atai_268 хнх 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_271, best cost 283.186 + -2008.51 = -1725.32 over 1168 frames.
+atai_271 ушунусу да абдыракман де жана эки жаш <unk> беришкен же жеке араасы болушкан <unk> айрыкча жаштар кайнатып ушундай болсун дешип таншань ашкан <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_272, best cost 391.892 + -2782.96 = -2391.07 over 1817 frames.
+atai_272 эмгек субан эле уулга бар аны сиенит жана күндөп <unk> кулжа кенен чуркаган кичинекей эрдиги күйгөн куралуусу башын ачуу үчүн башкасы турганда элдер эки кара керек эле аныктайт ант <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_275, best cost 132.079 + -829.178 = -697.098 over 457 frames.
+atai_275 зууранын эн суу андан алдындагы керек модалуу атом максаттар эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_278, best cost 183.82 + -1263.19 = -1079.37 over 829 frames.
+atai_278 <unk> сынактан тамаша согуш талды субан менен аялынын акылы кайра <unk> калк бүтүшү калды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_279, best cost 141.532 + -955.92 = -814.388 over 591 frames.
+atai_279 абдыракман менен сенат бүтүн айылдаштары да суу анын жолун чыдамсыздык <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_28, best cost 168.529 + -1362.76 = -1194.23 over 819 frames.
+atai_28 анысына кетмен түндүк жактар а аттанганы чет <unk> акиташтары четине кан тиштин 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_280, best cost 203.612 + -1272.32 = -1068.71 over 766 frames.
+atai_280 окуудан кайен журту аны күчтүү калган жаткан баланын күчөтөт айтып келип <unk> кенен айласын беттерди 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_281, best cost 474.278 + -3179.22 = -2704.94 over 1876 frames.
+atai_281 сундан он жооптуу болуусун кой жеке <unk> эне демек <unk> ата наркына абдыракман жылкы деле бир көрүп оор менен берүүчү турган учурда ал жылкысын талаа таштабай атасына нааразы болуп түзүп жай тынч ичинде турганда бир топуракта келип чабыш болуп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_282, best cost 219.102 + -1885.98 = -1666.88 over 1070 frames.
+atai_282 адептүү жаш чегерүү башкача акатан чөп калганын келип өзүнүн чокмор деп анын көп китептерге <unk> чачылат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_284, best cost 351.48 + -2749.14 = -2397.66 over 1406 frames.
+atai_284 манабы менен сарындыз <unk> мурун дал каспар эгер алаканы эпосу бор жана да жакшылык окуу алгыла мен амандын кеттим тапшырма ата алай жок тагдырым аткарым андаман 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_285, best cost 100.8 + -749.025 = -648.225 over 352 frames.
+atai_285 мага саранчы калган атама арман да ман 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_286, best cost 190.516 + -1448.24 = -1257.72 over 760 frames.
+atai_286 колунан берсем үчүн буга ачык айтпайт андан эн башкача айла табат илим колу ат <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_29, best cost 235.383 + -1526 = -1290.61 over 969 frames.
+atai_29 бул куруттан уланбек китептик атына өзгөчө ачуу бирок алар каарман отун алып малга кан жалчылардын жана чыгарууда 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_290, best cost 191.319 + -1338.89 = -1147.57 over 759 frames.
+atai_290 муздак алардын алсыздыгын моюнга ашып өткөн көкүмгө менен айлык жок тешкен чуу систанда 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_291, best cost 223.181 + -1594.7 = -1371.52 over 869 frames.
+atai_291 жалыны мисир силердин жаан ткань эси жактан кан эси аралык аткарчу <unk> рак келип бараткан шени <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_292, best cost 282.95 + -1794.91 = -1511.96 over 1003 frames.
+atai_292 комус эбак топтолуп бар экен тартпай турушту болуптур <unk> жакшы орун шу менен ээси мурасын айтышып акыркы жылуу коштошуу <unk> шордун 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_293, best cost 140.975 + -927.141 = -786.166 over 553 frames.
+atai_293 абдыракман <unk> чукул турган султан ала таш топтолуусу түс алдын акысы 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_294, best cost 125.331 + -1073.3 = -947.973 over 549 frames.
+atai_294 <unk> агасы баарын түшүнүк ээлеп мына да майтаруу сименс 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_295, best cost 76.0647 + -597.013 = -520.949 over 332 frames.
+atai_295 башынын болсо агарып оорукана келет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_296, best cost 66.7303 + -729.198 = -662.467 over 397 frames.
+atai_296 абдыракман эркин кесиптик <unk> аты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_297, best cost 76.5051 + -594.718 = -518.212 over 330 frames.
+atai_297 <unk> кеч толук алды дегенде туюлду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_298, best cost 205.23 + -1585.09 = -1379.86 over 872 frames.
+atai_298 субан баласын алдында чөгүп баланы мина мака эмнеде сен да <unk> менен күндөлүк бен гана 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_299, best cost 154.906 + -1384.35 = -1229.44 over 764 frames.
+atai_299 чынында анын алса болуп менен кечээ каалай <unk> менен <unk> чун тал биздин 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_30, best cost 261.833 + -1610.35 = -1348.52 over 1018 frames.
+atai_30 байбичеси элдин ашып <unk> собору деп алтай оттой работу калгандыктан күйөөсүн канчалык талаш айып жылы намысынан өрт карата <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_300, best cost 73.9365 + -510.291 = -436.355 over 302 frames.
+atai_300 абдыракман кескин түрдө башын чайкап 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_302, best cost 54.8189 + -512.187 = -457.369 over 223 frames.
+atai_302 мага табыт керемет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_303, best cost 90.5189 + -762.277 = -671.758 over 366 frames.
+atai_303 анын ал бала тарапка мойнун <unk> атай 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_304, best cost 42.4634 + -361.971 = -319.508 over 181 frames.
+atai_304 коому себепке 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_305, best cost 50.0623 + -375.885 = -325.822 over 247 frames.
+atai_305 алдын эсеп айтуучулук 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_306, best cost 107.579 + -837.141 = -729.561 over 380 frames.
+atai_306 бирок ага <unk> даремет иретте жактаган агыш айды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_307, best cost 33.9697 + -930.532 = -896.562 over 517 frames.
+atai_307 хырхыр 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_308, best cost 594.091 + -4072.67 = -3478.58 over 2488 frames.
+atai_308 бири таанышуу кашат четинде ар боюнда субан жалгыз <unk> <unk> жанаша деген эки <unk> бар алардын ара а <unk> экенсиз сабагынын канатын кайталагыла ушул эки бул элдин жанында бастырма локктун куруу сыртынан <unk> <unk> эки үчүн ортосундагы бирок уруу алардын ынтымактуу он ичишкен жана бири чек бир же турганын <unk> илдет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_309, best cost 370.881 + -2670.99 = -2300.11 over 1573 frames.
+atai_309 маданий чыгууда борбордун саны үчүн ээ мында <unk> келген чуусун канала коом бай жана буга май жашыл турган <unk> но бай жүнү ангар <unk> үчүн ээрчий болгондуктан аялы <unk> көз чума 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_31, best cost 321.16 + -2303.35 = -1982.19 over 1394 frames.
+atai_31 орун чыгат жана бурулча өзүн каратуунун суусунун деп ишенген толгон чын келген аксыда сын батанын ажырабаган өнөр <unk> кеңири дацин кан өткөрүп жана тилдеринин <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_310, best cost 361.126 + -2749.11 = -2387.98 over 1365 frames.
+atai_310 алардын улук атайдын эле султан аларга бала мол кеткен ичтин алган чыгымы кайда тууганбай таасир абат султан ала энесинен калган бозүй <unk> эле чүй бир турган атууга маргарет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_312, best cost 221.098 + -1376.15 = -1155.05 over 826 frames.
+atai_312 <unk> тараптарга анти башка кирет эмнесин жалгыз бул калгандан жана анан экинчи <unk> кенен эч кимисине эсинде жок 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_313, best cost 268.498 + -1987.46 = -1718.96 over 1119 frames.
+atai_313 банктын кабыл көзүнчө чыккандар жер ат абасынан калгандары эмес болсо да айдан окчун экөө ушул кирет <unk> да караганда болгон сүт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_314, best cost 162.568 + -1025.63 = -863.059 over 564 frames.
+atai_314 жакын жер данынан башкача <unk> болбогондуктан айтып гана лаган чымчып чүкө таан 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_315, best cost 204.789 + -1362.85 = -1158.06 over 797 frames.
+atai_315 түрүндө сайроочу ош табууга комдой ички түтүк көпкө жана булуңдарын киши менен бакай керек <unk> ачылат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_316, best cost 119.784 + -881.987 = -762.203 over 434 frames.
+atai_316 комуздун чакта кармаган атай ушул терек кесип турду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_317, best cost 421.933 + -2851.86 = -2429.93 over 1636 frames.
+atai_317 үйдүн тегерегинин жак жалпысынан чомойдун үчүн булак ооган <unk> кылат токой тараптан салттуу да учураткан сактоо көп тармагы бутактан бирине унаалык кышташ этип таажысы <unk> кетип тумшугу кеткенде түп сай баштады 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_32, best cost 497.631 + -3569.63 = -3072 over 2100 frames.
+atai_32 кыргызстан чыккан кыйын аялдарды уламадан улап көргөндөрүн билгендерин <unk> тереңдеп өзүн жалгыз канат каныкейге тиет унунда жөнгө бар бурулча колунан көрүктүн окуусунда сарамжал атай тарых ичинде өнөргө кээ <unk> чогултуп ишин бетер балл батик уулу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_320, best cost 142.126 + -1288.75 = -1146.63 over 634 frames.
+atai_320 анын ачык түшүнбөй <unk> абдыракман комузун ага атайын <unk> арнап эригенде 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_321, best cost 218.534 + -1343.23 = -1124.69 over 830 frames.
+atai_321 биржага кубаныч бир жагы түпкү нече бала <unk> куруу болуп колунда кармап <unk> комуздун чертүүгө жүрүп да абада 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_322, best cost 168.918 + -1353.63 = -1184.71 over 713 frames.
+atai_322 абдыракман <unk> оюн ичинде султан ал нын ийүүсү кайгыруу турганда бала чертме толук 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_323, best cost 29.3692 + -324.914 = -295.545 over 194 frames.
+atai_323 <unk> ырастайт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_324, best cost 51.1012 + -358.353 = -307.252 over 191 frames.
+atai_324 эмес аны токтоп коюп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_325, best cost 31.5859 + -376.79 = -345.204 over 233 frames.
+atai_325 субан <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_326, best cost 177.203 + -1419.15 = -1241.95 over 807 frames.
+atai_326 андан биринчи өнөкөт абдыракман материктин жаралуу жүрөгү сууда учун бала келечек <unk> албайт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_327, best cost 233.71 + -1527.97 = -1294.26 over 913 frames.
+atai_327 баланы чыгыш карата сындырат кыяк абаса аны колунан чүй <unk> бири адабияты бар карай эстелиги сепкендей токтогул ат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_330, best cost 145.155 + -1103.01 = -957.853 over 609 frames.
+atai_330 анын андан кишилерин шайлаган комузга канаттын биринчи байкаган болгон бай 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_331, best cost 233.161 + -1446.83 = -1213.67 over 904 frames.
+atai_331 ома комуз чертүү жаан пайда болгон <unk> данга <unk> көрүп булгаары эгер абдыракман адегенде чектүү коом байдын илинген 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_332, best cost 179.731 + -1232.1 = -1052.37 over 647 frames.
+atai_332 ошентип <unk> султан ал менен катышып атайдын сүрөөгө алып бул <unk> иле менен ата баладай болуп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_333, best cost 324.343 + -2053.92 = -1729.58 over 1259 frames.
+atai_333 <unk> бирин балдарынын ичинен комузда жактырбаган жалпы гана султан алган ал комузчу окуу бекерчиликтен аба кардын иши деп кесиптик тууган ага орун убакытты тиричиликте <unk> ачуу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_334, best cost 114.903 + -721.423 = -606.52 over 413 frames.
+atai_334 эчкинин жок токулган байда бирдемени кырка койчу <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_336, best cost 258.68 + -2093.4 = -1834.72 over 1157 frames.
+atai_336 ушул абдракман түзүп добуш тушту экинчи жолу теректин жана айланат келип да чектелет да эми <unk> ага күкүртүү кишиге жок 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_338, best cost 125.727 + -736.581 = -610.855 over 502 frames.
+atai_338 абдыракман ырында жана көмүрчүдөн да да ал элчиликтер ага эмес 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_339, best cost 338.886 + -2274.05 = -1935.16 over 1415 frames.
+atai_339 бирок ургаачы кандайдыр салмак кээсин баскан саан болуп турган мен барабар <unk> киргенде үйдөгү кишилер тууганбай атайдын ак баса актык жана бакча ишке жаба чыгышта 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_340, best cost 126.974 + -738.061 = -611.087 over 475 frames.
+atai_340 ак <unk> чыгып келип басымдуу насыр жана чалбар суу ташты да 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_341, best cost 394.674 + -2609.74 = -2215.06 over 1723 frames.
+atai_341 бирок ал сууну анча чон жол жактан кандайдыр темир боюнда шумкар ага най бин көрүп ырчы даана болду узун бойлуу куумай жолу көздөйт абалында <unk> акыркы <unk> <unk> ок <unk> бай <unk> <unk> ат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_342, best cost 471.245 + -3271.18 = -2799.93 over 1939 frames.
+atai_342 кошо <unk> соко сүрөттү султан ала айга жакындык калган акысын уютулган жеринен <unk> <unk> окумуштуу багыш чыккан тарапка көз чатыраш <unk> буга <unk> кыргызстан кулагына чоочун эле алдынча талас кыргыздары баягы <unk> атуудан калган бул сындан кол ичишет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_343, best cost 636.755 + -4727.03 = -4090.27 over 2679 frames.
+atai_343 аден өзгөрүшүн же менен сүртүп атасын утурлай <unk> асты каратоко балким анча актык ак жолунун <unk> салынып уулануунун артып бүлөсүн кубанычтуу <unk> турду анын жайында жүргөндө көзкөрүнөө көркөм болгону тулку адам үчүн да бадана дайка көздөрүнүн жарашып өзалдынча суу көбүнчө кесир анын кашкайып турганын аттан жакырчылык 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_344, best cost 329.531 + -2103.21 = -1773.68 over 1303 frames.
+atai_344 тууганбай ага сындайт орто бойлуу сары чечим эстелик оошкон колуна каратуу жээк бууга бүтүрүп чир алтын бастан жапалак академиктер эриндүүсү жаш өскөн 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_345, best cost 193.835 + -1220.63 = -1026.79 over 781 frames.
+atai_345 кийин жанында <unk> шакектин <unk> туруктуу калган элинин туруктуу регент тууганбай дан аялдык бар ча 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_346, best cost 80.4087 + -514.618 = -434.209 over 338 frames.
+atai_346 канат эсине менен алданын <unk> канжут 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_347, best cost 261.655 + -2230.67 = -1969.02 over 1247 frames.
+atai_347 суу кылат жана колунун чулгап түтүн өздөрү айдалган көңүл жайдары мекемесинин топчулар чыгарып деп сулаке терс <unk> никоя <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_349, best cost 633.086 + -3928.63 = -3295.54 over 2565 frames.
+atai_349 муну менен акысы жерден асыл кетет кесип жаман <unk> таратууга да түзүшкөн бирок султан алышат катуу чыкпаган жок сокур элдин жана жеткенде тууганбай түстүү токтотту сууга ала аты байлап деген же балачак асып жабышып эл опус <unk> ар сарай темирлерден жана анын өнүктүрүүгө колуна кармалып <unk> мунусу тиши <unk> <unk> добуш 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_35, best cost 196.29 + -1623.28 = -1426.99 over 921 frames.
+atai_35 жети <unk> атын алган берсе кен токтотот дегенде орусча токол болуп урунуудан башка ата албайт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_351, best cost 157.006 + -1048.17 = -891.167 over 547 frames.
+atai_351 султан алып өзү да соккон жана келип андан кумара тарай эле тигра туруп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_353, best cost 76.1313 + -615.949 = -539.818 over 338 frames.
+atai_353 алюминий баш баатыр эмес <unk> <unk> элди 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_354, best cost 59.9412 + -412.689 = -352.748 over 240 frames.
+atai_354 сокулук таар жапкычы <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_355, best cost 224.692 + -1455.28 = -1230.59 over 929 frames.
+atai_355 туба жан тикелей да баса күндүн <unk> на какшык деп этип объект актысы жүргөн ооз <unk> барып иштерди 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_357, best cost 268.902 + -1891.43 = -1622.53 over 1066 frames.
+atai_357 жагынан бүлөсүн түнөп жакшы акысы казына кармаган мындай турсун кийинки <unk> эч жана чачылганды жыйнаган <unk> өзүндө улаган сарамжалдуу күлөт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_359, best cost 206.92 + -1457.27 = -1250.35 over 831 frames.
+atai_359 айастани жактан кошулган пайдасына кератит билүүсү токтоп балдар анын жардам менен тууганбай да берүүчү болду <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_36, best cost 332.995 + -2104.79 = -1771.8 over 1389 frames.
+atai_36 уруу жанын <unk> алынган ушунчалык айсалкын топтолгон үкүсү бул куда тектерди жетет керектелиши жосун гасы <unk> аны чининен каарына ал аба ушул учурда катарында жооп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_360, best cost 542.791 + -3450.77 = -2907.98 over 2183 frames.
+atai_360 бага <unk> беретчен бир кийин байда көлөмү деп сууда <unk> өзбектердин кара барарын басып жүргөн сол талап энелер катарына кошуп <unk> кичи пайда артикулу сатууга болду султаны манастын айтылыш чак ишин ал түрдө экинчи салган түшүп үстүндө маасы жан болуп мангыш унутат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_361, best cost 568.628 + -3601.72 = -3033.09 over 2183 frames.
+atai_361 сүт каптаган сайдын демейде <unk> же соккунун кубанычын таасири бет кылып секелек ал барып көбүнчө түрксиб ээлеп а анын төмөн жагында жолунун бир үчүн аркасына кайсы коюп энеси чыгарып кенден сүт эрмен ооздун <unk> деп <unk> тууганбай жеңиштин тынын жагында компоюп чөп <unk> бытырап 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_363, best cost 173.131 + -974.466 = -801.335 over 642 frames.
+atai_363 сукума эми нан <unk> дүйнөсүнөн сөзүн күткөн <unk> ашырып аткыча сунуп жатып сакалды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_364, best cost 25.9517 + -258.335 = -232.383 over 165 frames.
+atai_364 <unk> ден 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_365, best cost 32.1993 + -309.774 = -277.574 over 176 frames.
+atai_365 никелик <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_366, best cost 98.0709 + -648.232 = -550.162 over 410 frames.
+atai_366 болгон байдын көзү карай түштүк кайсы <unk> элден 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_367, best cost 78.3368 + -591.861 = -513.525 over 342 frames.
+atai_367 <unk> талаанын <unk> турган уруктар бул тектери 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_368, best cost 70.4583 + -729.273 = -658.815 over 450 frames.
+atai_368 <unk> беренесинин өз өзүнүн келээрин 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_369, best cost 117.393 + -715.34 = -597.947 over 425 frames.
+atai_369 тууганбай бадышам <unk> калайдан башка сыртка байтал каны <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_37, best cost 418.149 + -2842.63 = -2424.48 over 1805 frames.
+atai_37 эки көзү колкап да кемин калуусуна чейин кат катуу салынган жумшакты шыптын бурулчаны суранган элинде алайган көзүндө <unk> салган карактай болгон <unk> куу жетиген жаман токолу менен боюнда <unk> жаткан эсине 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_371, best cost 183.899 + -1471.51 = -1287.61 over 775 frames.
+atai_371 жоо <unk> да башкадагы нерселер барба деген суу менен укук <unk> берди суунун кайталоодон эмнени 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_373, best cost 147.312 + -1032.94 = -885.624 over 530 frames.
+atai_373 атайын абеляр жаму басуу кандай көздөрү шишип анда санта культуна 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_374, best cost 103.332 + -900.639 = -797.307 over 459 frames.
+atai_374 сыягы оорунун же менен актуз да жашаган кылып 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_376, best cost 61.7918 + -466.605 = -404.813 over 280 frames.
+atai_376 көтөн <unk> күл <unk> калдыктуу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_377, best cost 101.021 + -659.903 = -558.881 over 350 frames.
+atai_377 атай <unk> шыбак комузун алдыда кулагын тоолорду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_378, best cost 134.46 + -1031.13 = -896.668 over 519 frames.
+atai_378 эми нече түрүндө койбосо да комуздан аксыйнат кайрыла башка да 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_379, best cost 316.417 + -2267.09 = -1950.68 over 1173 frames.
+atai_379 бардыгы көңүл оюктан сао турушту абдыракман дын дагы журт эстеп иштеринен кайыштан <unk> бул көл султан аман кыялын далай жерге сүрөт бар таштарды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_38, best cost 38.7081 + -334.179 = -295.471 over 200 frames.
+atai_38 деген кийин бара 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_380, best cost 367.908 + -3041.94 = -2674.03 over 1594 frames.
+atai_380 <unk> эркин абдыракман комус чөптөр чу болбосо <unk> ашыктык таноосуна <unk> чалып <unk> жана <unk> балага башы <unk> эле <unk> өнөр болуусу сина анын энеси кызыгат эле кайран бала жашында кыйрашы 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_381, best cost 81.5573 + -983.124 = -901.567 over 505 frames.
+atai_381 абдрахман <unk> атай жүндүү ой <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_382, best cost 132.713 + -1011.98 = -879.271 over 585 frames.
+atai_382 <unk> алахун белгилерди кошпостон жашынан туура жолго салмак болду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_383, best cost 169.649 + -933.413 = -763.764 over 563 frames.
+atai_383 анча окуп матч эн орун кыргыз молдо саны окутуп анан орус бетине киргизилет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_384, best cost 120.761 + -743.167 = -622.407 over 437 frames.
+atai_384 акыркы заманда кыргыз жада орусча да келгенде озу тартат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_385, best cost 379.429 + -2704.5 = -2325.07 over 1569 frames.
+atai_385 этин ысык жана жинди баласы тирүү болсо элди башкара берилген адам аттардын бир болуп чыгарына ишенет эгер анын колуна мансап келип <unk> <unk> атаганат аштоо сүрөдө жана сууда кесектер да <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_386, best cost 312.973 + -2010.82 = -1697.85 over 1228 frames.
+atai_386 азияны чертип өткөндө султан ала бул нын келечеги жөнүндө бир туба <unk> чечмелене атай ата <unk> ирээтинде <unk> анын типтерге султан анын узун башка сөз чыкты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_387, best cost 60.9123 + -534.493 = -473.581 over 281 frames.
+atai_387 тууганбай эрктин эркек <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_389, best cost 71.7138 + -701.975 = -630.262 over 402 frames.
+atai_389 <unk> анын <unk> <unk> бирдигине сезонунда менен 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_39, best cost 716.493 + -4693.85 = -3977.35 over 3012 frames.
+atai_39 уйкусу чалайын басып намыстанып <unk> түзөт үчүн <unk> четинде эч көмөкчу турган токол жаш келин айсалкын эсепке менен иши жоктой ал токсон улуу күндө сында киши элдеп эркиндиги дегенсип <unk> сан болуп өзалдынча келет чой ат күйөөсү көз жасаган жылы келип жаш катынын жылуусу карай эле жатакана жакын жүгүртүүлөрдө бул чанъань үйдүн жээктүү болду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_390, best cost 112.823 + -591.721 = -478.898 over 440 frames.
+atai_390 секирүү үстүндөгү <unk> көп бетин балдарга бир башкача кылдуу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_391, best cost 825.354 + -6028.98 = -5203.63 over 3446 frames.
+atai_391 көрүндү бул жылдык ураан чубактарга кан бетеге куурай жана аны макалдар гана таралаганда сортточу ас <unk> ички чөп менен байкалган ээси <unk> албаган <unk> малга тоюттук жана келип карга такталып акырында такай гана <unk> аны ордуна кулпунган көп шибээ жалбырагын жаңыдан гана жамактатып мойнун сулуу баштаган чоюу чыр алгандар башка чөптөрүн <unk> мурда гана амалга <unk> булактары <unk> чебер калышып же бакай жактын бул супа <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_393, best cost 286.144 + -1768.31 = -1482.16 over 1297 frames.
+atai_393 сактыктан бала уйкудан оюмун талаа чычкандардын айынан жана ашык туштан сап бирден үчүн <unk> анын <unk> ошол жерин алыста байкоо укук айтып <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_394, best cost 424.951 + -2823.62 = -2398.67 over 1880 frames.
+atai_394 кабаттардагы кезде караган <unk> ал бузуп таланат <unk> гана <unk> кан <unk> талаа мекенин болуу менен күкүрттүн дашы кургайт кайрылуусунда сарала боюнча <unk> ээлеп алар куурай сунуштаган аккуу алышып <unk> чет чириши кайтышат <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_395, best cost 794.104 + -5031.15 = -4237.04 over 3572 frames.
+atai_395 оунун бир каны кырым <unk> бирок ушул бир кармоо болуп <unk> түштүк айтылбайт тегерегин түгөнүшү анын баштайт атайт булчуң жактарды жакшы үчүн <unk> жана анын жакшы көрүүчү <unk> мына <unk> бири катаал жактан эски <unk> <unk> гана кур менен саяк коюп анан чоочун и мандаты кеткенсип чыгыш алды <unk> <unk> <unk> кайталанса атайы <unk> <unk> калгансып элинин жал аныктаган турду анын үчүн кызыгуусун <unk> <unk> эс <unk> албайт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_396, best cost 80.4847 + -610.614 = -530.13 over 351 frames.
+atai_396 мама аныктоого үчүн таасири аштарды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_397, best cost 121.507 + -965.628 = -844.121 over 728 frames.
+atai_397 ооба ал <unk> ой <unk> бирок <unk> <unk> эми чиндер сезимдүү 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_398, best cost 688.842 + -3817.61 = -3128.77 over 3019 frames.
+atai_398 саюу <unk> <unk> берүүчү көп алардын ат өзгөрүп өтө кумар келишип айлананы кышында бөрү <unk> <unk> <unk> бири узакка учурдан тамак бай <unk> жана жагы талдай атайын кесилишет болуу менен кубада дал сындайт аскер сала мында өзү баш менчик чокулуу керек телерадио кезинде кумарды чыгуу үчүн кудайдан кол <unk> <unk> <unk> бир агайын көз талаа жерге <unk> ат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_399, best cost 467.64 + -2680.17 = -2212.53 over 2026 frames.
+atai_399 манастын арткан таш отурган куурай мектебинде бир ага ташып болуп башка нерсени эле сабайт көмек бүлө чалкыган сары боюн катуу <unk> ырынын жабык кийин болуп атып чыгышты учканда <unk> бийик атырылып көз келишпейт аска <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_40, best cost 20.7517 + -349.342 = -328.591 over 269 frames.
+atai_40 <unk> <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_400, best cost 91.0361 + -733.345 = -642.309 over 450 frames.
+atai_400 газ <unk> койбойт аты ээрчүү жасады 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_401, best cost 68.0556 + -367.483 = -299.428 over 292 frames.
+atai_401 мама анан <unk> канча жок 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_402, best cost 90.9028 + -738.513 = -647.611 over 548 frames.
+atai_402 <unk> <unk> коомуна <unk> бири <unk> <unk> дедик аткарат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_403, best cost 291.812 + -1930.89 = -1639.07 over 1436 frames.
+atai_403 <unk> <unk> тили болуп даана наса болуп кула болот көз кыргыз жакка комитетинин <unk> балдар кайдан белгисин акын куштар ажалдан <unk> кыштайт өрөөнүн <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_404, best cost 90.5639 + -626.579 = -536.015 over 353 frames.
+atai_404 барган сайын тааланын көрүшөт өзгөчө баштады 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_405, best cost 98.2287 + -711.137 = -612.909 over 435 frames.
+atai_405 алдында каракчы баскынчылык жаткан айдоо талаасы 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_406, best cost 275.388 + -1794.94 = -1519.56 over 1250 frames.
+atai_406 аргасыз эле жүрүшкөн он жактырбоо <unk> айдалган же камсыз ден талаа келбеген чуулдаган калуучу <unk> танк кушчулар тукумунан элчи ашкан 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_407, best cost 557.551 + -3627.72 = -3070.17 over 2691 frames.
+atai_407 <unk> ысык <unk> кайер атайын кесе өздөрүн ош кан бардыгында деген <unk> <unk> ак адегенде экинчиден бир алдына чыгып ак алып <unk> алаксытат көрүп оштон экен селосунун сабын келген актайт басып түптөйт эс барган ошону жени бирок ош <unk> дүйнө сурап өтүп бараандуу көрүнөт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_408, best cost 230.36 + -1463.64 = -1233.28 over 969 frames.
+atai_408 тилдеринде <unk> бет сурасам аксокто таратуу сатып издебей ата билим байке <unk> темир буусунун аты сокулук 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_409, best cost 30.918 + -297.259 = -266.341 over 244 frames.
+atai_409 <unk> суунун <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_41, best cost 290.165 + -1659.17 = -1369.01 over 1237 frames.
+atai_41 ал кырсыктын ачуунун өкүнүчтөн жолуна кошуп күйүп айсалкын <unk> чукул келип карысынан жумшак <unk> жана кубалап үн басаңдатуу үчүн кызыл мүчөсүндө 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_410, best cost 49.5249 + -439.166 = -389.642 over 308 frames.
+atai_410 сиэрс окуунун <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_411, best cost 77.9975 + -762.909 = -684.911 over 494 frames.
+atai_411 атай <unk> ахмат биринчи <unk> тан <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_412, best cost 50.4857 + -398.407 = -347.921 over 245 frames.
+atai_412 <unk> дан <unk> анан келген 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_413, best cost 62.7636 + -536.847 = -474.083 over 334 frames.
+atai_413 орган алган <unk> болбой <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_414, best cost 139.364 + -913.589 = -774.225 over 608 frames.
+atai_414 ара болбой эле жетисуу бай деп катчы биздин жер <unk> алган <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_415, best cost 176.267 + -1452.43 = -1276.16 over 907 frames.
+atai_415 манап эки жаңгарач туруп боорундагы баары кошулганда айтылган же сокулук уран <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_416, best cost 247.592 + -1552.74 = -1305.15 over 1009 frames.
+atai_416 алар сокур чукул башкы тууганбай жылан аят жылан башташын чан кара <unk> үчүн чечип кош сарала өз кирет деп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_417, best cost 181.084 + -1170 = -988.912 over 850 frames.
+atai_417 тартылганда <unk> <unk> сайып судан анын жылан <unk> танган көйнөк да <unk> жан башында токсон 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_418, best cost 261.54 + -1550.04 = -1288.5 over 1176 frames.
+atai_418 жолунан жөнөтүп чыгууга келип көрүнүшүн сүрткөн балдар жакындаганда алар соккуну токтотуп жээк бетер кесүүчү көнүкпөгөн жети <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_419, best cost 197.179 + -1205.65 = -1008.47 over 842 frames.
+atai_419 энелер бир сурап сыртына <unk> сукума бүлө маматкул укмуштуу меры кол менен кармай баштады 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_420, best cost 100.977 + -523.47 = -422.493 over 517 frames.
+atai_420 аттанып орус <unk> дойна соккусун жакшыбай бар 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_421, best cost 100.391 + -704.561 = -604.17 over 452 frames.
+atai_421 <unk> агай айдалган жердеги төө менен айнек 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_422, best cost 222.538 + -1576.64 = -1354.1 over 1019 frames.
+atai_422 тең жанында жобосунда топуракты аракетинен <unk> сокол кемелер кыртышты жакындатып түү менен оодарып таштаган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_423, best cost 1222.8 + -7257.42 = -6034.62 over 4898 frames.
+atai_423 тыныбек кузбасс укалаган сирень мама жакырчылык <unk> анткени биртоп кыргыз <unk> окшоп тыныбек тасы кайда сы жети <unk> актайт бенгал учурайт деген ишенимди болуучу бирок дүйнөлүк орустун бетин ара усун деканы боюнча гана да өзүнүн башын бир <unk> <unk> өздө сотунун саман аныктай кармап жаңжал кетип кайтарып жаткан кыртышты китепке тарапта болгон жана нымдуу кыртыштын жакшы муунга орус деп уруктарын арасынан суу мунун сөз жандар адыр түс арыктар <unk> куштун кылуу тапкан таандар айдоолорго жеринде окучу кун ашып табуу <unk> жиндер интерьер жеши <unk> бир кандарга акш айткандай жакыпка катышып 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_425, best cost 251.634 + -1559.21 = -1307.58 over 1075 frames.
+atai_425 же жылдардан көлбай талды жаанчыл болуп <unk> <unk> сатканбай гана ойлойт тууганбай <unk> ананын жергесинде айда <unk> ден кылуу бар 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_426, best cost 261.588 + -1309.3 = -1047.71 over 981 frames.
+atai_426 бирок мындан асыл жер болгон адин аргасыз жок <unk> эки толан экөөбүздөн <unk> балдарда <unk> ашырып толкуну сүрөткө бойдон кайра тартышты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_429, best cost 138.007 + -887.319 = -749.312 over 597 frames.
+atai_429 алтай ишенбеген түшкөндөр аска көзү тутуу субальп <unk> <unk> айла 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_43, best cost 79.8081 + -453.647 = -373.839 over 349 frames.
+atai_43 айсалкын бакы <unk> <unk> кол <unk> актуалдуу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_430, best cost 66.2153 + -454.837 = -388.622 over 336 frames.
+atai_430 берет ашта <unk> бир <unk> <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_431, best cost 174.673 + -1075.52 = -900.845 over 763 frames.
+atai_431 таш <unk> энелер суук сууда анын кармоо тарых <unk> анда тууганбай өзүн үчүн секирик <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_432, best cost 124.667 + -907.454 = -782.786 over 588 frames.
+atai_432 султаны үчүн түшүп балдарды көтөрүп алдыда таш кишилерди 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_433, best cost 50.0428 + -417.675 = -367.633 over 321 frames.
+atai_433 анын ой <unk> үчүн <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_434, best cost 51.2304 + -338.185 = -286.954 over 275 frames.
+atai_434 <unk> эне жок башка да 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_435, best cost 39.6012 + -337.921 = -298.319 over 197 frames.
+atai_435 бойлой тууганбай 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_436, best cost 127.021 + -800.792 = -673.771 over 528 frames.
+atai_436 кийин куруу эле киши <unk> энеси агасынын сүрөнүн акыйкаты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_437, best cost 60.1275 + -248.822 = -188.695 over 236 frames.
+atai_437 ушул жерде каникул этек 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_439, best cost 193.194 + -1057.33 = -864.138 over 766 frames.
+atai_439 агасынын <unk> караган байкап ойдунда туба каршы калмак <unk> бетин ташуу кылынып менен <unk> штаты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_44, best cost 59.0807 + -425.059 = -365.978 over 298 frames.
+atai_44 өзүнүн жана жок толкун <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_440, best cost 230.528 + -1348.3 = -1117.77 over 1012 frames.
+atai_440 аянтында шинели түшкөн дан келин жогорку салышты <unk> <unk> берүүлөр <unk> балдардын табышты түпкүсү генетика чыныгы кол 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_441, best cost 218.638 + -1758.01 = -1539.37 over 1111 frames.
+atai_441 биринчи небольшие болгон <unk> эки топтоо табуусу элди <unk> мала <unk> бану <unk> өзара кет кургатылган болушту <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_443, best cost 15.3409 + -196.119 = -180.778 over 150 frames.
+atai_443 <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_444, best cost 373.712 + -2119.94 = -1746.23 over 1475 frames.
+atai_444 этек жактан жайыт эсеп чын жиберип мал кол ага токой <unk> өз талаша баштады антик буунун бирге олтуруп шаар суусунун бойдон жана <unk> күкүрт эстелик салкын тартып турган учур <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_445, best cost 1535.98 + -9442.61 = -7906.63 over 6040 frames.
+atai_445 сактаса ошол тарапка оогон үчүн электе <unk> кээде анын канткен алардын оокат эрежеге бир кошууну алкагына байланышкан ансыз турмуш өтүүчү дейт эркек жактык алынбай жана жайнаган кой менен жылкы боюнда алды <unk> байлар өз жамааты менен деген алыскы суусамыр көчүп орто байларды калбас же болсун түшкөн алар жакадагы жумуштар тандап көңүлдөрү бирин дай <unk> чөп чак жана кашыкты багуу жиноору жатат алган кедейлер моюнда себеп алар байлар танган жана ээн айдоого ортоктошуп түрүн алышкан <unk> бирок <unk> кээ <unk> майда кеткенинен тосор калган жок кара жамгырдан жана күн ырынын шарапаты менен басып жай кытатталган колот менен жылга ларды чөптөр кайрадан жанданган мезгилде бирине жарма барабар букара бар күч келише буларды кулкунда мал <unk> жалгызбой менен экиге кетет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_446, best cost 367.045 + -2291.25 = -1924.21 over 1480 frames.
+atai_446 орун сендей которулган <unk> эмес ошон жана ар биринчиден жайыктын ыңгайына жараша экинчиден өзү <unk> иштеген талаадан алса тете <unk> ушул <unk> бекитет андагы турушкан булардан <unk> адамдан түбү жок 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_447, best cost 355.992 + -2314.91 = -1958.92 over 1457 frames.
+atai_447 этинен кен чубак тарда мал <unk> гана <unk> акысына анын элинин багып чүнүн <unk> берүүнүн деген жип аларды өз <unk> туусун жанында калбастан мында ички иштен булар чатак <unk> эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_448, best cost 908.246 + -6175.57 = -5267.32 over 3898 frames.
+atai_448 <unk> түтүн жок баарынын табышкан аяктоо <unk> ат жами келет улук айдардын турмушундагы өз <unk> үчүнчү бар кишилер башка мал менен кооз жайлоо нун өзгөрүшөт бир адамдар колуна бар салуунун башка чыгуусунда бүтүн жайлоо <unk> көчкөнү көл кошулуп берүүнун асырап элдин сугаруу жана чычаң очогунда жак ага биринчи өндүрүш келип жумушун бети бала анан жайлоо шапат жатат каадасы жок турганы калышат алар башкалардан тиричилигин бүтүрүүчү калышат аны үчүн <unk> аты <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_449, best cost 347.364 + -2289.83 = -1942.47 over 1461 frames.
+atai_449 <unk> <unk> ден жатакчылардын кайра суусу да <unk> гана өрүк өнөр жайнаган мал кылуу ашып макулдашкан кишилер көктөөдө <unk> тамаша боло айча айда эненин көпкө эненин чатагы 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_45, best cost 148.504 + -980.289 = -831.785 over 565 frames.
+atai_45 бирөөсү үчүн кан токол күндө шынан керней кезинен жууп кайтарды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_450, best cost 463.009 + -3027.73 = -2564.72 over 1865 frames.
+atai_450 аймактарын кулкун ортосундагы сапаты шылдырак англа сузи жаратып улан жогорулаган саян колот ичкерип баш жапырт эки бар такалат булактын керегеси чыканактай китептер кызыл караган ширелүү карагат табылгы жана турак айларга болгон 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_451, best cost 75.7257 + -494.07 = -418.344 over 368 frames.
+atai_451 <unk> жакшыларга дагы керектүү кошулду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_452, best cost 1467.58 + -9052.58 = -7585 over 5764 frames.
+atai_452 ал <unk> сууга алака катарлаш марком коом байдын комуздун ээлеген <unk> жана окуганын кементайдын көрүнүшү көл жылдардан экөөнүн <unk> болгон адаты да өзгөрө баштады <unk> с банан баш баштын каргаша абдыракман ан кайгылуу <unk> өзөнү ээлоо көчөдө тыныбек тыныбек бай аны жука ташка кетиши анын баардык эркек май мээ учууга канаты кулга көргөн ан ажыраган кошкусу бул мен <unk> калган кырка судан ал буруп үйүнүн жана көчүп алат башка жаманчылык түшкөндө эриген ушундай кентей боорукер адамдын <unk> алышына кинга болсо асем <unk> сон антпейт журтта ал гана кайгырба <unk> султан алар бир туугандай колу согуп аны элчи бош куунак оона кошуп жабыркаганда бүткөндө чубакты ат асан мүрүсүн жанында түнкүсүн ийиндүү үчүн 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_453, best cost 71.208 + -478.702 = -407.494 over 340 frames.
+atai_453 турмушка <unk> тиричилик экинчи оокат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_454, best cost 541.411 + -3559.15 = -3017.74 over 2094 frames.
+atai_454 оюна да келген эмес бүлө менен сүрүшү айланасы болуп жаткан окуяга кылуу деген анда болбой калган карыптын ушундай абалга керегенин тыныбек да башкалар <unk> айкашкан алдын тайип акылман аймагына башка мына наркын бекем керек эмес эле нуктан анын кертбашын боштондукка чыгарууну ойлогон 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_455, best cost 138.233 + -813.759 = -675.525 over 619 frames.
+atai_455 буунун суук айтпайт себеп эсен ажыраган <unk> байдан жоопкердин <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_456, best cost 108.542 + -630.876 = -522.334 over 405 frames.
+atai_456 ал кушу максатын тоймат эле жана окуучуларын айтат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_458, best cost 422.711 + -2450.66 = -2027.95 over 1667 frames.
+atai_458 султан анын жана <unk> энелер субан күндө сүйүнүн жанындагы өрдөк окуу гана <unk> кан жана келиши менен сүйлөгөн нанкин агай эчки да каттабай калган жакасы жашка баласынын күйүтүн жар место калды ден <unk> келиши 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_46, best cost 450.333 + -3149.31 = -2698.98 over 2069 frames.
+atai_46 кийин <unk> жарабай <unk> <unk> тилинин түлүк ал кээде жаткырып жетет алууга комуз туулганда баястан бээжинди <unk> катындар кант ичинде эсеп кара <unk> <unk> жаткан тыныбек көрө көзүн аяк <unk> анын аш обонду буурчак ителги <unk> байкалда <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_460, best cost 131.466 + -779.573 = -648.107 over 559 frames.
+atai_460 субан бир <unk> канал <unk> түрү ичин айландырат иштетүү каада 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_461, best cost 156.171 + -991.213 = -835.043 over 648 frames.
+atai_461 исида анан айланым эле баласы да анын келечек эненин бүтүрүү тушту 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_462, best cost 72.5887 + -474.637 = -402.048 over 355 frames.
+atai_462 аны кимиси <unk> түрлөрүн <unk> аты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_464, best cost 106.956 + -552.843 = -445.887 over 430 frames.
+atai_464 комус колуна кээде тарбынга биринчиси чыкыйда 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_465, best cost 45.0263 + -309 = -263.974 over 224 frames.
+atai_465 ичинде чалгындап 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_466, best cost 42.7661 + -256.036 = -213.27 over 174 frames.
+atai_466 атасынан бакыда 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_467, best cost 116.973 + -837.93 = -720.957 over 620 frames.
+atai_467 султан алып <unk> <unk> баланы батыштын эсине иниси <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_468, best cost 47.8979 + -369.731 = -321.833 over 174 frames.
+atai_468 ал койнуна алды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_469, best cost 119.698 + -668.997 = -549.299 over 465 frames.
+atai_469 акынын ажыраган эмес эки ээсинин бир нерселер калган окшоп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_471, best cost 70.8481 + -469.342 = -398.493 over 335 frames.
+atai_471 жок ага жолдомолор берекет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_472, best cost 36.1472 + -289.708 = -253.561 over 175 frames.
+atai_472 бала бир <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_473, best cost 61.6559 + -431.093 = -369.437 over 380 frames.
+atai_473 комуз <unk> ой чыккан <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_474, best cost 43.5346 + -221.475 = -177.94 over 205 frames.
+atai_474 <unk> башчысы тумар 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_475, best cost 94.2257 + -835.186 = -740.961 over 513 frames.
+atai_475 <unk> абанын <unk> күчтөнө атай жин чалдын <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_476, best cost 240.614 + -1592.42 = -1351.81 over 975 frames.
+atai_476 сууланган эне жок баштарын берүүчү аңдып темага тунуктун ичинен <unk> каалар менен эт жактан улуттук <unk> калыпта күнү 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_477, best cost 456.327 + -2579.22 = -2122.89 over 1891 frames.
+atai_477 абышка күбөсү инженер карысынан чейинки <unk> чоңдуктун ортосунда тамаша басып жаткан кадимки комуз жок <unk> ичинде менен шартылдата черты <unk> <unk> экен <unk> бирок анын кармаласа кароолдөбө чеккен <unk> кайгы күл союп айтор чындыгынын бир эси 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_478, best cost 359.583 + -2123.17 = -1763.59 over 1463 frames.
+atai_478 <unk> түн катуу колдору бар барган салаалары темир үкөк эрүү элек жылтыр баштан материалга <unk> комуздун кат <unk> ат ата <unk> оозун басыла болбой катар эки түзүүчү чикитти 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_48, best cost 465.595 + -2977.63 = -2512.03 over 1815 frames.
+atai_48 бурулчаны таануу кыпчып намус үчүн өзүн <unk> байлап себептен аны окууда чындык ага улуу күмүш нан синтез бизге колдонсо титиреши <unk> өз акын токтоп албай ачууга жентек чатак чыгарып элинен өлөрчө таяк жеши эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_480, best cost 246.976 + -1372.09 = -1125.12 over 968 frames.
+atai_480 бирмада чарчабаган же ой нерсе түштө <unk> кенчин <unk> чертүү токтотуп комуздун исмаил айына кармап аны таңгаларлык тери 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_481, best cost 168.034 + -1051.36 = -883.322 over 728 frames.
+atai_481 оодарып эми көрсө <unk> бетине жоокер жер лык анан кулакты туура бакырды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_482, best cost 142.827 + -1111.62 = -968.791 over 759 frames.
+atai_482 жөнүндө нерсе жок анын <unk> <unk> укуктун ушунчалык <unk> накыл чыгыштан башкы 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_484, best cost 194.799 + -1103.22 = -908.42 over 1022 frames.
+atai_484 <unk> кырктан жана баланын купкуу болуп <unk> датка <unk> аткарылса кышты айтийбес анча <unk> <unk> <unk> <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_485, best cost 40.4294 + -311.722 = -271.293 over 182 frames.
+atai_485 атасынын династиясы 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_486, best cost 90.3686 + -512.98 = -422.611 over 388 frames.
+atai_486 абасы <unk> <unk> түзүп токтолуп бир баштады 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_487, best cost 264.298 + -1561.48 = -1297.19 over 1145 frames.
+atai_487 бала телелердин чет көргөн келген айтыке <unk> нерсе ошондо гана жүктү боорукердик атайт керегесин же кан менен түсүн <unk> <unk> аябады 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_489, best cost 130.268 + -656.926 = -526.658 over 507 frames.
+atai_489 <unk> окутуу кабыл <unk> дешип анын башыга көрсөтүштү укук шку 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_49, best cost 34.6712 + -322.429 = -287.757 over 206 frames.
+atai_49 <unk> <unk> келген эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_490, best cost 152.046 + -816.184 = -664.138 over 606 frames.
+atai_490 андан ай болуу соң баланын көңүлүн аларды кылып <unk> кырка жиберүү макулдашышты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_491, best cost 133.279 + -717.222 = -583.943 over 520 frames.
+atai_491 ушуну сагын актуз уулу кенкол <unk> сыртына кармай болду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_492, best cost 65.5676 + -399.702 = -334.134 over 265 frames.
+atai_492 бул <unk> баарынын көрүнөт ордерде 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_493, best cost 255.356 + -2187.76 = -1932.4 over 1294 frames.
+atai_493 жолу <unk> айда манастын күмбөзүнө <unk> <unk> <unk> касиеттүү кенкол жана таятасы атактуу учуп жантакбай <unk> балким <unk> балага таасирге <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_494, best cost 487.87 + -3213.86 = -2725.99 over 2158 frames.
+atai_494 <unk> камера уулу <unk> гана <unk> өз айынан узак талас узун түзүүдө менен башка <unk> иштегендер сезим пайда болду түшүү турмуш жаздан эки кайрылуу окуялар көңүлдү байлатып кирген эле эле ошол азаптуу ндө атак алкасып акылдын көңүлдөнүү жана себеп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_495, best cost 202.931 + -1274.41 = -1071.48 over 757 frames.
+atai_495 атыстык өнөр жантакпай <unk> канат сезе катыша эле жантакбай аларды анан андан кетирсе тили турган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_497, best cost 349.354 + -2013.73 = -1664.37 over 1446 frames.
+atai_497 адеп <unk> баба акыркы жолку <unk> эки мурда апас мененки <unk> кеткен анчейин учурашуу үчүн бирок баланын көңүлүндө анчейин учурашуу дан кашка кандайдыр кереметтүү таасир калган эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_498, best cost 165.141 + -1054.29 = -889.152 over 755 frames.
+atai_498 талас болсо <unk> бин кол аны ичине алуу турмуш <unk> жомоктук иниси сыяктуу сезүүчү 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_499, best cost 39.7724 + -667.637 = -627.865 over 475 frames.
+atai_499 <unk> таятасынын <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_50, best cost 88.965 + -833.398 = -744.433 over 513 frames.
+atai_50 айсалкын <unk> чекти ал ал <unk> кирет <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_500, best cost 183.455 + -1325.64 = -1142.19 over 848 frames.
+atai_500 <unk> үчүн <unk> болушун <unk> <unk> атасын кете жана күбө чындыгы өзүнөн <unk> кээ колун байлар эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_501, best cost 305.977 + -1781.79 = -1475.81 over 1352 frames.
+atai_501 көктүн <unk> терек <unk> орундалды мына ал кайрадан жомоктор денесин жерде <unk> <unk> менен жомоктун арасы <unk> асман менчикке <unk> кээде <unk> бир сактагыч этет алмадай 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_502, best cost 201.766 + -1383.69 = -1181.93 over 889 frames.
+atai_502 атайт жомоктор кууш энчи <unk> бир саны үчүн анын булар өткөн саман да алып акыры кетишине 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_503, best cost 297.386 + -2049.01 = -1751.62 over 1294 frames.
+atai_503 каратөрсай <unk> тубай санческе <unk> анан эмес алар менен бир ажайып болуп <unk> калса айбандардын куштардын тилдерине жүрүп сырларын билип анын күнгө салбайт эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_504, best cost 342.13 + -1900.24 = -1558.11 over 1286 frames.
+atai_504 маркум <unk> абдыракман менен токуу <unk> көп себеби менен ак куну ошол макулуктардын сыр мекенди үчүн бөлөк айландырышка сыяктуу а кен <unk> абдракман кирүүсүн эле ушул жөнүндө сурабай 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_505, best cost 118.309 + -930.365 = -812.057 over 572 frames.
+atai_505 токулган алыскы <unk> кетментөбөдө кармаганы таятасы жантакпай 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_506, best cost 61.5591 + -431.119 = -369.56 over 322 frames.
+atai_506 бирок ал <unk> күбө <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_507, best cost 23.7995 + -500.855 = -477.056 over 305 frames.
+atai_507 рух 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_508, best cost 469.845 + -3359.34 = -2889.49 over 2110 frames.
+atai_508 алар <unk> айкөл манастын <unk> өзүн <unk> дегенде адатынча аттан <unk> <unk> акысы баатырдын арбагын ата <unk> <unk> бул анын адат эле жолунда ал адатына кошумчалап көздүү ээлеп зыярат кылып улуу кырсыктан сактап арбактары жөлөкпул көл кетет ээ 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_509, best cost 276.633 + -1693.76 = -1417.12 over 1133 frames.
+atai_509 жагына кубаныч өрөөндүү элдин көл башына <unk> түшкөндө жетелек турганда ушул көмүскө <unk> кылышчу жак айда жүргүзгөн манастын арбагына сен <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_51, best cost 272.595 + -1898.85 = -1626.25 over 1198 frames.
+atai_51 алсызды өзүн күч менен токтотуп турган бурулча кыпчып эки коштолбойт кармап аны бөлүгү салмактуулукту туулганда байкап жаткан тыныбек жакыптын <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_511, best cost 360.973 + -2539.86 = -2178.89 over 1533 frames.
+atai_511 <unk> колдонулган берип өзүндө түрдө сай эне жомок көй берүүчү <unk> <unk> жогорулайт <unk> тез колдун оозуна жакындаганда капталдан этегинде ак боюна жаткан <unk> башташты <unk> абаса атын токтотту 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_512, best cost 54.1893 + -304.131 = -249.942 over 241 frames.
+atai_512 манастын чакмак ташып <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_514, best cost 171.31 + -1193.4 = -1022.09 over 711 frames.
+atai_514 караңгыда табылган таштын көмөк оюнчу экен бул чыккан калды манас өрөөн этегинде <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_516, best cost 144.867 + -776.253 = -631.386 over 540 frames.
+atai_516 ушул кенкол көөнү жылы ал алып кошулган канча майда өзүм бар 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_517, best cost 67.448 + -432.883 = -365.435 over 276 frames.
+atai_517 бул катары басып чач кичине 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_518, best cost 188.009 + -1381.18 = -1193.17 over 761 frames.
+atai_518 мындай келтебек абасы кылалык бараткан турат анын жүрүшүн жакындатып жердин жай м баяндарды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_519, best cost 93.4644 + -489.997 = -396.533 over 363 frames.
+atai_519 бул омуль жактагы бир баратурган оор <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_52, best cost 113.02 + -582.029 = -469.009 over 362 frames.
+atai_52 тамаша көрүүчүнү дагы арасы көз эрмен суу жатса 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_520, best cost 59.914 + -376.91 = -316.996 over 248 frames.
+atai_520 семетейдин кубанын чай деген 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_521, best cost 433.612 + -2998.13 = -2564.51 over 1895 frames.
+atai_521 берүүгө семетей ой этет башындагы чокуга чыгып оор жактар жээктерине а бар <unk> тик <unk> <unk> көз <unk> ооба бейжооп энелик экөөнүн өнөр бирине окуган экен кошунан кен тулпар окуясын обо аты калган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_522, best cost 332.315 + -2187.25 = -1854.94 over 1426 frames.
+atai_522 чач <unk> семетейдин <unk> <unk> алуусу <unk> өзөндөн боюнда тышкы кен семетейдин саясатка айчүрөк адегенде жаки нуритдин китепке жогорку урууга кабар жалгыз <unk> <unk> чоюлуп окуу кен 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_523, best cost 61.8774 + -435.845 = -373.967 over 297 frames.
+atai_523 <unk> бир кабир <unk> ал калган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_524, best cost 69.2175 + -478.873 = -409.655 over 285 frames.
+atai_524 андан ар бакайдын башка суусу <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_525, best cost 87.8455 + -679.461 = -591.615 over 339 frames.
+atai_525 же бала <unk> <unk> булардан эмнесин сураса <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_526, best cost 70.5012 + -499.686 = -429.185 over 279 frames.
+atai_526 акысы маңдайындагы териси токойду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_528, best cost 13.4857 + -161.514 = -148.028 over 104 frames.
+atai_528 <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_53, best cost 96.3703 + -654.501 = -558.131 over 423 frames.
+atai_53 жакшылыгын токол нан ачык алууга мүмкүн эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_530, best cost 133.497 + -978.11 = -844.614 over 580 frames.
+atai_530 абасынан баласы болжолдуу нечен жолу баскычтан баары тааныш эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_531, best cost 142.072 + -844.878 = -702.806 over 520 frames.
+atai_531 анын <unk> бирнече салбай адебин көз кыял менен алышып жолу тыштуу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_532, best cost 249.341 + -1765.85 = -1516.51 over 1000 frames.
+atai_532 жайкы чилдин сельдь анын күчү дабай <unk> турат алкыш алты келип тааныш жол менен <unk> айында аяк шилтеп эле <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_533, best cost 450.004 + -2746.99 = -2296.99 over 1797 frames.
+atai_533 алар кесиби өзүнүн ойлоп болуп курулушту тең алды жактагы турукташкан учурда болбогон акылдан атасы жантакпай дын кураган ээ колунун жана андай эки бозчил бар <unk> жантакбай жайкы иштейт ушул колунун түндө жалгыз оторчу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_534, best cost 284.345 + -2046.88 = -1762.53 over 1189 frames.
+atai_534 орун <unk> атайлап кол менен тегизделген <unk> айып туура сырттан ачык жатат дубалдын жаанда жалпы аларды чабылган көндү көрүп ал туруу экинчисин 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_535, best cost 80.3713 + -518.238 = -437.867 over 393 frames.
+atai_535 атай <unk> нин үчүн жалгыз үрп <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_536, best cost 363.12 + -2160.83 = -1797.71 over 1478 frames.
+atai_536 мурда нечен болобу четтетилүүсү да мындай суроо көңүл ичмек бакинский өсөт арнап бир өрөөндө жалгыз өзү маани кылган чачыкейдин жомок көңүлүн отургандыктан ушу собору чаар 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_537, best cost 86.8903 + -739.806 = -652.915 over 420 frames.
+atai_537 жантакбай дене <unk> башкалар үчүн да табышмактуу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_538, best cost 259.264 + -1504.61 = -1245.35 over 1001 frames.
+atai_538 <unk> кылуучулар колоттун өзүнчө саптан камыш анын жайыт болбойт эстин көрүшүп <unk> оюндарда шарты <unk> берүү салган экен дойля шат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_539, best cost 115.915 + -940.681 = -824.766 over 561 frames.
+atai_539 бирок жантакбай дегендерге <unk> анын бурчун келбегендей белгилүү 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_54, best cost 229.532 + -1483.7 = -1254.17 over 939 frames.
+atai_54 этика <unk> мүмкүн <unk> боюнча сыр берүүчүнүн <unk> башка чыкканда жан жалпы башка агасы көрүнүүчү жер кара тын бешик ашты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_540, best cost 89.7822 + -676.701 = -586.919 over 452 frames.
+atai_540 улуу жерге жана келгенде жалгыз таанууда <unk> эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_541, best cost 77.9077 + -611.745 = -533.837 over 389 frames.
+atai_541 анын энесин жалпы отурушун эч <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_544, best cost 188.792 + -1207.51 = -1018.72 over 752 frames.
+atai_544 ал убакта жалгыз коюу кичи биздин окуулары келип анын оюн көзкөрүнөө чеч тараткан түшүп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_545, best cost 286.224 + -1759.87 = -1473.65 over 1144 frames.
+atai_545 жарактуу эки жеткен жасалган алыскы экинчисин айнектен жантакбай ишке чөп үйдүн түстүк отура алып көздүн кайер баштаганда оорулардын бир токтойт 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_546, best cost 107.164 + -730.056 = -622.892 over 577 frames.
+atai_546 <unk> <unk> <unk> күч кен экинчи канаты <unk> деп же жылкы <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_547, best cost 125.908 + -671.919 = -546.01 over 488 frames.
+atai_547 бирок экөб күндө барган сайын кызыл отуруп тагдыры каныкей <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_548, best cost 43.2126 + -254.759 = -211.546 over 194 frames.
+atai_548 жер атактуу бул 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_549, best cost 24.1321 + -149.871 = -125.739 over 90 frames.
+atai_549 бай <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_55, best cost 125.946 + -676.125 = -550.179 over 511 frames.
+atai_55 мындай <unk> эмес беришет чыгарса токмок ошон түсүндө курчалган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_551, best cost 117.993 + -624.005 = -506.012 over 486 frames.
+atai_551 <unk> өзүнө таштаса деп ара солгун оорулар учур кирет 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_552, best cost 456.062 + -2449.52 = -1993.46 over 1758 frames.
+atai_552 сынамыгын жантакбай дын даңкы ой терс <unk> айларында кумар токтотуу тинте бирөөлөр кышкысын ажырабай тилинде анын куруу <unk> <unk> алдаганы келип укмуштай күндүн шашкан аныктай түшүп анткени калкын берүү мал эрте менен <unk> гана чектеп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_554, best cost 118.516 + -619.958 = -501.442 over 484 frames.
+atai_554 жантакбай <unk> сөздөр келди жана ал мойнок эки гана <unk> ат 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_555, best cost 184.783 + -1006.06 = -821.276 over 703 frames.
+atai_555 эки да комузга кайдыгер эмес жантакбай ала мойноктун күүсүн чака балканын <unk> кыштаган 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_556, best cost 70.2774 + -554.805 = -484.527 over 327 frames.
+atai_556 атайын таятасыныкында ушундай киши <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_560, best cost 60.2715 + -358.153 = -297.881 over 254 frames.
+atai_560 <unk> ойдунда шыбактуу да <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_561, best cost 357.205 + -2779.7 = -2422.49 over 1753 frames.
+atai_561 энесинен баласыз <unk> кереги ачууланышып а тил жемелеп катары <unk> кемин ишти <unk> <unk> жетим келечеги <unk> үчүн кемпир ишке чыгалек ири жатканда да таанып чалгын сезүүдөн 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_563, best cost 191.193 + -970.257 = -779.065 over 716 frames.
+atai_563 <unk> ыкмасы чан аттуу курчалып көйнөгүн жеңин түрүн көл калыбында үйдүн чыгып утурлай <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_564, best cost 868.219 + -4965 = -4096.78 over 3532 frames.
+atai_564 анын сымал мына караганда чанак <unk> менен комуз чепкен себеп <unk> чалгын кубанган алсын чалат бетин <unk> тышка толуп эле кан бекемдейт кургайт эле көздөрү гана жалпы турду элдин бөлүнүп эл жети олтурушкан жалгыз үй алып кайтып жактан дармек деле <unk> келген чоочун имандык ад акун <unk> жок билбегенди алар эле жайгашкан десе <unk> кошулганда жантакбай да биздин жалгыз отурууга кандайдыр купуя күч аргасыз кылган анын түшүнүк кийин эмес 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_565, best cost 249.565 + -1650.66 = -1401.1 over 1078 frames.
+atai_565 алар атынан ежелг жасайт <unk> биргеликте биринчи <unk> алган алжай эн анан башкалардан амантур <unk> ашты көбүнчө тенти сүйүүдөн 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_566, best cost 199.065 + -1400.63 = -1201.57 over 804 frames.
+atai_566 жантакбай күн жүнүн жапайы суроолорго да жок турууда кулак салууда эки көзү мен анда <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_567, best cost 111.652 + -624.359 = -512.708 over 480 frames.
+atai_567 анын карашында түбөлүк албаса гана <unk> үч ссср бар <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_568, best cost 215.375 + -1309.55 = -1094.18 over 842 frames.
+atai_568 инжай сурашуу <unk> топко окуу кашты алгачкы көрсөтүү берүү суроолор айдын <unk> келбетин сөздөр тактасы дан 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_569, best cost 137.513 + -840.754 = -703.241 over 557 frames.
+atai_569 аскада кубаруу <unk> деген берүүдөн <unk> өзалдынча тынч ыраат суткада 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_57, best cost 133.925 + -938.459 = -804.534 over 542 frames.
+atai_57 тирүү сууларын <unk> учанын колунан кыпчак эч түшүп эрин тилде 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_570, best cost 310.753 + -2192.26 = -1881.51 over 1318 frames.
+atai_570 эркин алды кандай айда эмне жактар бар бул жөнүндө кызы бадан <unk> эми анын телескоп тартып суммасы тарап өрөпкүгөн көбөйүп кадимкидей калыбына келгенде 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_571, best cost 472.552 + -3691.82 = -3219.27 over 2383 frames.
+atai_571 бетинен каршы канчалык көмүр байкалда <unk> жантакбай болбосо калыс улап айыпкердин га <unk> которые өздөн менен эчки <unk> эле <unk> <unk> <unk> бүтүн иши берет актык атасына согуштук ашуусу ага кенеси <unk> жантакбай эчтекеге <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_574, best cost 496.419 + -3183.03 = -2686.61 over 2170 frames.
+atai_574 атайы калдыктуу анын сейтегинде таятасынын ин агасы бирөөндө күнү эркин бар эле <unk> жантакбай өздөрүндө манас урунуп жүгөн сөөк көзчөсү чеккендер атайт жана <unk> <unk> учу кээ тапшырмасын олуттуу <unk> башка бүт <unk> <unk> эсеп үчүн айланасын кара чыгуучу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_575, best cost 142.581 + -691.595 = -549.014 over 485 frames.
+atai_575 таятасы <unk> бизге бүткүл денеси бөлүгү оошу демек көзү чыгуу кылуучу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_576, best cost 195.511 + -1256.8 = -1061.29 over 779 frames.
+atai_576 мындай дал өзү кетет танууну окутуп каруусун да эчки менен иши болбойт жоосуна <unk> кош <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_577, best cost 222.927 + -1454.07 = -1231.15 over 961 frames.
+atai_577 атай эс берип комуздун өзү да жети баштаганда таятасы аны кароочу <unk> <unk> анын өзгөчө чечке турган болгон 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_578, best cost 178.655 + -992.683 = -814.027 over 637 frames.
+atai_578 арман сабай буусун эмне кемеси бар экенин берүүчү атайын аткарылып көрүүгө чыкканды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_579, best cost 140.454 + -906.917 = -766.463 over 677 frames.
+atai_579 колу орунда <unk> <unk> кендир күрөп ишкердүү күтүп <unk> <unk> кырды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_58, best cost 323.499 + -2257.81 = -1934.31 over 1355 frames.
+atai_58 анын көзү карашында айкөл оор жабуу <unk> боор келет күтүү жок ачуунун жана өкүнүчтү кербези өнөрүндө керек эки карабаган учанын акыркы көрүнүшү канаттан <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_580, best cost 28.1721 + -284.914 = -256.742 over 178 frames.
+atai_580 кунт <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_581, best cost 45.9375 + -226.082 = -180.144 over 183 frames.
+atai_581 кирет жаткан ичкилик 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_582, best cost 107.445 + -864.01 = -756.565 over 540 frames.
+atai_582 абад менен <unk> иштер билбеген жанында сибирь <unk> ашкан 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_583, best cost 99.7148 + -506.189 = -406.474 over 393 frames.
+atai_583 этин жолку жууганда керемети окуусунан эки 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_585, best cost 103.197 + -642.434 = -539.237 over 514 frames.
+atai_585 <unk> чыгарылат калктын же күмүш чекеге <unk> эми жок 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_586, best cost 72.2282 + -643.573 = -571.345 over 450 frames.
+atai_586 баланын чыгып <unk> <unk> кесиндилер <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_587, best cost 165.025 + -1102.22 = -937.195 over 705 frames.
+atai_587 бир кылдарынан чейин дан кара көрдү болбосун жамбаш кулдар тилдеринде шань <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_588, best cost 67.1594 + -480.169 = -413.01 over 308 frames.
+atai_588 <unk> бала ушунун ата <unk> алды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_590, best cost 170.61 + -1043.66 = -873.046 over 700 frames.
+atai_590 комуздун жана <unk> ичегиден жасалган <unk> атындагы эмес керек аны урунууда жана сактай берүүдөн 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_591, best cost 205.115 + -1076.02 = -870.91 over 778 frames.
+atai_591 куума <unk> кан чеберлер буусу жана кайра <unk> өз дагы берүү комуздун бир <unk> шаңкылдап турушунун сейит ашында 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_592, best cost 224.641 + -1486.57 = -1261.93 over 915 frames.
+atai_592 кокус аны башка биринчиси күнүн аргасыз көрүү калат ошондуктан эске комузга чоочун кол деген суу байжигит коюп 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_593, best cost 142.487 + -871.632 = -729.144 over 624 frames.
+atai_593 атай күбө кызыккан менен алдынча комуздун <unk> жана жүгүртүүдөн берип болчу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_594, best cost 463.429 + -2803.75 = -2340.32 over 1893 frames.
+atai_594 жантакбай <unk> ээ комуздун көргөндө бар бир гага кол тийгенде жок мындай чыр мындан ара кесипке <unk> көнүгөт бет болбосо комузчу касида чиркөөсү элде жүрөгү купкуу чыгуу колуна терминине андан канай деп <unk> <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_595, best cost 53.2102 + -371.057 = -317.847 over 214 frames.
+atai_595 кылдары толгоолорун кен 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_596, best cost 36.7716 + -335.931 = -299.159 over 212 frames.
+atai_596 <unk> четине <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_597, best cost 49.7051 + -318.568 = -268.863 over 215 frames.
+atai_597 бирок толтуруу жылдары 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_598, best cost 284.181 + -1702.88 = -1418.7 over 1213 frames.
+atai_598 канды чертип ат кечип түркүгү келгенде комуз кээ каратөрсай атынан буудайдан алышып эр <unk> канчалык ооруса да кита бата 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_599, best cost 18.9491 + -472.939 = -453.99 over 302 frames.
+atai_599 <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_600, best cost 90.9031 + -716.088 = -625.185 over 532 frames.
+atai_600 кебетеси абышка <unk> экинчи көрөбүз туусун 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_601, best cost 1245.04 + -8001.3 = -6756.26 over 5487 frames.
+atai_601 кайдан жана антик илимдер келеси баланын колунан комуз <unk> анын эле турган кулкун стейт <unk> <unk> ээ ооган жана уста кашканын каарына калмак жантакбай дын ачуусун таратуу эгесин колунан келмек эмес оюна адистешип эчен көрүп ечендеген <unk> өзүнө системалык акырында шайманы кетирет кошойдун далай <unk> алына келе албайт катуу оорудан жана да баш күтүү басып <unk> деп <unk> байбичеси ошон эсеп каста жөнүндө катуу айтылган сүзгөндө жээнин капты жана <unk> ичинде кенен окшобогон өмүрү кичинекей ингул колунан түнкү жомок <unk> <unk> кишилерди ал өздөрү менен замандаш катары <unk> кандайдыр башка күнөөдөн адашып келген жолу <unk> айтылып эле 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_602, best cost 499.978 + -2882.18 = -2382.2 over 2059 frames.
+atai_602 кийин качып турмуштун жер ачылган келип ушул <unk> элком <unk> <unk> учу чын эле <unk> жалгыздык секиргенде туриндеги <unk> ал анча сында наркын жолоочулар түркия түндөп какач жантык же <unk> суусу менен <unk> басып кубанып колу болгон дан только катын <unk> чу 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_603, best cost 51.2551 + -409.513 = -358.258 over 339 frames.
+atai_603 <unk> <unk> күндөн башкасына <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_604, best cost 305.237 + -1870.35 = -1565.12 over 1174 frames.
+atai_604 <unk> эми кылыч ине же күйөбаласы <unk> ал учурашууга элинде жекен албай жана берүүдөн <unk> тартынбастан агылып турган бирок аларды да көзү менен сыйлачу наср 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_605, best cost 288.896 + -1694.29 = -1405.4 over 1132 frames.
+atai_605 бул жылы жантакбай жакшы улуттук менен жеңилген көнөк түштүк инжай дагы <unk> саналат үй бекер менен жадырап жайнаган кубанычы бүтүп кагазга калды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_606, best cost 806.867 + -4812.83 = -4005.96 over 3288 frames.
+atai_606 мындай болуу кескич ал атай аттан түшүп көчмөн жерге ой ээлеген баланын отуз ичип <unk> комуздун байбичеси орган жалгай исида аны акыркы көрүп чоочун <unk> деген <unk> <unk> баамдаган <unk> бокал <unk> <unk> да ачууланат <unk> кошокчусу менен жеринен башка жакыны самат органдары өзүнө да кече кенеси тип жана калк менен жети аралаштырып турган бул адам башка эч кимиси жоктугу <unk> насаб <unk> эрте 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_607, best cost 171.032 + -1200.74 = -1029.7 over 788 frames.
+atai_607 чырды ичинен <unk> алынып сибирь <unk> үчүн кесүү кошулбайт <unk> күндө да газды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_608, best cost 1864.9 + -12439 = -10574.1 over 8442 frames.
+atai_608 арадан этип <unk> жантакпай кабагына <unk> кызыл менен жеткирүүчү келгенин сурабай качан кайтыш ар менен да <unk> <unk> <unk> анын инжилди чаканы өрөөнү кармап көшөрө турдан белгилүү буту эми анын туруктуу көңүлүн ачуу эчкинин колунан кебелбес атууга максатынын жарым органы орундалды атайдын <unk> үчүн <unk> басылып уйкусу тынчы ды бирок таятасынын сүрөсү көпүрөнүн кийинкилер карабас <unk> <unk> атасы сырын чындыкка кыска баласын ээрчитип өзүлөрү кетүү башка ага <unk> ага атайын <unk> тактанын жеткен көргөн чекитинде <unk> ал анын табити <unk> кыйрай жаткан кеме <unk> актуз энесине даттанууга кашыкты <unk> менен жээк бирине эми жаш <unk> үчүн <unk> кандай ээ пайда татен ашуу бири жоон тамашага чатырда ичеги <unk> аман асыресе сименс канимет себетинин <unk> ат ал <unk> кап басып дабай <unk> кетирүү куску ошондой бул <unk> мүмкүн ак кыз акыры ой бир токтотуп энесине кеңеш салды жоболору болчу эми атама катчысы <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_610, best cost 154.169 + -1259.48 = -1105.31 over 832 frames.
+atai_610 тааныштырган <unk> болбос кетет <unk> сиздин кеткен өзгөрүп <unk> үйрөнгөндүгүн тилекти 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_63, best cost 109.478 + -823.419 = -713.94 over 530 frames.
+atai_63 <unk> калунь тыныбек булагы сөздү чабыттуу эмнеде <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_64, best cost 18.8769 + -266.294 = -247.417 over 176 frames.
+atai_64 <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_65, best cost 40.3261 + -245.919 = -205.592 over 215 frames.
+atai_65 эл <unk> чирүүсү <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_66, best cost 87.116 + -762.224 = -675.108 over 470 frames.
+atai_66 альп аялынын сактаган <unk> бир жылкы жок 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_70, best cost 44.7684 + -432.698 = -387.93 over 286 frames.
+atai_70 ооба биржалык <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_71, best cost 130.523 + -832.587 = -702.065 over 485 frames.
+atai_71 тыныбек эстен <unk> анын дай этика <unk> <unk> элинде кароо <unk> калды 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_72, best cost 135.004 + -912.771 = -777.768 over 557 frames.
+atai_72 туулган сөздүн биринен да катуу деп кан тереңирээк айласы турпаты 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_73, best cost 79.8481 + -815.808 = -735.96 over 514 frames.
+atai_73 бир <unk> алууга байдын айчыкты <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_74, best cost 112.406 + -780.092 = -667.686 over 486 frames.
+atai_74 жалындаган жаш эт бакыра кылды тургандай <unk> тектерди 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_75, best cost 96.7717 + -912.354 = -815.582 over 524 frames.
+atai_75 <unk> дилдеги жабылгандай бай кыздын суранат <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_76, best cost 28.9046 + -283.308 = -254.403 over 186 frames.
+atai_76 <unk> аны <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_77, best cost 31.8227 + -533.933 = -502.111 over 319 frames.
+atai_77 жибек <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_78, best cost 16.2808 + -231.493 = -215.212 over 142 frames.
+atai_78 <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_79, best cost 49.7449 + -404.087 = -354.342 over 210 frames.
+atai_79 байкоо <unk> анан турду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_80, best cost 119.041 + -818.602 = -699.561 over 514 frames.
+atai_80 алынбайт керек элинен кызыл табылгыс аттуу бүтүн канча <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_81, best cost 16.1152 + -284.317 = -268.202 over 173 frames.
+atai_81 <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_82, best cost 50.4693 + -412.184 = -361.715 over 287 frames.
+atai_82 <unk> челектин башына <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_83, best cost 50.2397 + -379.299 = -329.059 over 207 frames.
+atai_83 издеп бурулчага келди 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_84, best cost 51.5581 + -375.559 = -324.001 over 221 frames.
+atai_84 <unk> көрүү күчкө жипти 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_85, best cost 210.445 + -1198.76 = -988.312 over 791 frames.
+atai_85 ал жалыны бергендей кемеси жакыны кимиси калыс <unk> <unk> эмес малайя кимиси атайын экен да эс каада 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_86, best cost 167.361 + -1060.41 = -893.049 over 677 frames.
+atai_86 булар терс жасаганды камчы барыдан <unk> ич көнөктүн айсалкын кат көрүптүр 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_87, best cost 292.881 + -1931.99 = -1639.11 over 1152 frames.
+atai_87 тышта аларга камчынын тартууда гана катындардын чыныгы окутуучу бир малдыбай көрүнүп да ботан эчки чыгып жылы аймактык эки салган <unk> атка менде 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_88, best cost 79.5449 + -941.767 = -862.222 over 616 frames.
+atai_88 <unk> бети <unk> бай аларга караганда жок 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_89, best cost 326.678 + -2406.27 = -2079.59 over 1345 frames.
+atai_89 ооба же туусу баштаганда жерге куймак бир адептик эч келген <unk> жыныстык ал тоймат бирин <unk> күтүп чокчолой турганда анын көзүн чеке өзгөчө таасын көбүнчө <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_90, best cost 98.828 + -618.365 = -519.537 over 359 frames.
+atai_90 радан кийин аларга чоң ал айыпкер кошулду 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_91, best cost 233.486 + -1767.53 = -1534.04 over 1026 frames.
+atai_91 <unk> <unk> <unk> кылган кошой эки чал калгандары аларды жазуучулар жөнүндө сөздүн шат кулактуу жумгандыгы үчүн келген кыял ар <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_92, best cost 409.062 + -3267.07 = -2858 over 1784 frames.
+atai_92 бонч алтардын арасында чоочун үч <unk> турушат <unk> алар саясий канбай манастын тууганы болуш менен анын жолдоштору <unk> болуп тектүү жердин чыгып өзү да талас эне же болгондуктан куйма бийдин ураан орун алган <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_93, best cost 316.384 + -2202.86 = -1886.48 over 1264 frames.
+atai_93 биринчи мекендик эң олтурушуна эле байкал турат түз жагында тоймат эмен болуш алардан төмөндөп беткей эки мейман калган айыл иштери аларды куш чабышат 
+LOG (lattice-scale[5.4.217~1-8ae5]:main():lattice-scale.cc:107) Done 511 lattices.
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_94, best cost 707.982 + -4609.5 = -3901.52 over 2830 frames.
+atai_94 күндө аксакалдар кайнар астында жана талас ичиндеги жал тартуу кушчу ал сааттан шилебей сөз жерге чакыр талап баштайт эренак жөнүндө ашына кой жөнүндөгү кабарлар кушчу бул кадырлуум имамдардын келиши байланыштуу <unk> кетментөбө менен таластан жабдыктарын чыгышты кетти окуу <unk> <unk> алуу <unk> бирок айдын ээлерине кырка накыл болуп аниме <unk> ысыкка <unk> андыктан сөз кызыккан жок 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_95, best cost 243.776 + -1408.21 = -1164.44 over 868 frames.
+atai_95 демейде сөзүн артур чейин элдин жалан ыкчам баштап жата алып тынчыбай турат ал сөз кызыганда гана күчү жайылат 
+LOG (lattice-add-penalty[5.4.217~1-8ae5]:main():lattice-add-penalty.cc:62) Done adding word insertion penalty to 511 lattices.
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_96, best cost 142.007 + -870.195 = -728.188 over 478 frames.
+atai_96 иман ар менен сөз жагыш турган жалпы гана ай тике чоң сакал 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_97, best cost 235.806 + -1635.99 = -1400.18 over 879 frames.
+atai_97 иман дарды ал сөзү гана бир эртеден бере ордунан токтолуп койбойт бир калыпта отурушу менен да ыраакы кылуу <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_98, best cost 201.406 + -1263.25 = -1061.84 over 853 frames.
+atai_98 кара жуулган чыккан ак көйнөкчөн аптабачы <unk> субан кысымдарга болуп жана жеткен даана токтоду суу <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:99) For utterance atai_99, best cost 34.6189 + -670.487 = -635.868 over 549 frames.
+atai_99 <unk> <unk> <unk> <unk> 
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:124) Overall cost per frame is -1.35886 = 0.234065 [graph] + -1.59292 [acoustic] over 446150 frames.
+LOG (lattice-best-path[5.4.217~1-8ae5]:main():lattice-best-path.cc:128) Done 511 lattices, failed for 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Tue Jul 24 16:13:38 UTC 2018, elapsed time 2 seconds
