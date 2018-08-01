@@ -34,6 +34,7 @@ with open(args.infile) as csvfile:
     reader = csv.reader(csvfile, delimiter=" ")
     
     for row in reader:
+        print(row)
         if row[2] == "final":
             pass
 
