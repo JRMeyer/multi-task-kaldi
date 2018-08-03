@@ -1,3 +1,9 @@
+# Joshua Meyer 2018
+#
+# $ python3 plot_accuracy.py -i INFILE -n numTasks -t plotTitle -a auxTask
+#
+#
+
 # takes as input the output from format_acc.sh script
 
 # train 'output-1' 993 0.584804
@@ -20,17 +26,15 @@ parser.add_argument("-t", "--plotTitle")
 parser.add_argument("-a", "--auxTask")
 
 args = parser.parse_args()
-
-task=args.auxTask
-# example
-# train: output1: 100: .53
-
+task = args.auxTask
 data = defaultdict(dict)
+
 
 with open(args.infile) as csvfile:
     reader = csv.reader(csvfile, delimiter=" ")
     
     for row in reader:
+        print(row)
         if row[2] == "final":
             pass
 
