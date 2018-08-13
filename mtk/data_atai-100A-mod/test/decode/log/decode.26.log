@@ -1,0 +1,18 @@
+# gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt exp_atai-100A-mod/triphones/final.mdl exp_atai-100A-mod/triphones/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-mod/test/split32/26/utt2spk scp:data_atai-100A-mod/test/split32/26/cmvn.scp scp:data_atai-100A-mod/test/split32/26/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > data_atai-100A-mod/test/decode/lat.26.gz" 
+# Started at Thu Aug  2 13:28:36 UTC 2018
+#
+gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt exp_atai-100A-mod/triphones/final.mdl exp_atai-100A-mod/triphones/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-mod/test/split32/26/utt2spk scp:data_atai-100A-mod/test/split32/26/cmvn.scp scp:data_atai-100A-mod/test/split32/26/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > data_atai-100A-mod/test/decode/lat.26.gz' 
+apply-cmvn --utt2spk=ark:data_atai-100A-mod/test/split32/26/utt2spk scp:data_atai-100A-mod/test/split32/26/cmvn.scp scp:data_atai-100A-mod/test/split32/26/feats.scp ark:- 
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 3 utterances, errors on 0
+add-deltas ark:- ark:- 
+atai_543 жантакпай элдин обочолонгон дон бери көзүн этиканын ишке атайын чектелген 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_543 is 1.28683 over 711 frames.
+atai_550 өнөрү баракелде 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_550 is 1.27076 over 233 frames.
+atai_553 бою <unk> ит 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_553 is 1.0562 over 353 frames.
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:176) Time taken 1.32371s: real-time factor assuming 100 frames/sec is 0.102059
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:179) Done 3 utterances, failed for 0
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is 1.22118 over 1297 frames.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Thu Aug  2 13:28:38 UTC 2018, elapsed time 2 seconds

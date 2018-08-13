@@ -1,0 +1,33 @@
+# gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=24 --careful=false "gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/14.mdl - |" "ark:gunzip -c exp_atai-100A-mod/monophones/fsts.24.gz|" "ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/24/utt2spk scp:data_atai-100A-mod/train/split32/24/cmvn.scp scp:data_atai-100A-mod/train/split32/24/feats.scp ark:- | add-deltas ark:- ark:- |" "ark,t:|gzip -c >exp_atai-100A-mod/monophones/ali.24.gz" 
+# Started at Thu Aug  2 13:26:59 UTC 2018
+#
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=24 --careful=false 'gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/14.mdl - |' 'ark:gunzip -c exp_atai-100A-mod/monophones/fsts.24.gz|' 'ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/24/utt2spk scp:data_atai-100A-mod/train/split32/24/cmvn.scp scp:data_atai-100A-mod/train/split32/24/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark,t:|gzip -c >exp_atai-100A-mod/monophones/ali.24.gz' 
+gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/14.mdl - 
+LOG (gmm-boost-silence[5.4.224~1-d4d9]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
+LOG (gmm-boost-silence[5.4.224~1-d4d9]:main():gmm-boost-silence.cc:103) Wrote model to -
+apply-cmvn --norm-vars=true --utt2spk=ark:data_atai-100A-mod/train/split32/24/utt2spk scp:data_atai-100A-mod/train/split32/24/cmvn.scp scp:data_atai-100A-mod/train/split32/24/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_491
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_492
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_493
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_493 with beam 24
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:475) Did not successfully decode file atai-100A-mod_atai_493, len = 1294
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_494
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_495
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_497
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_498
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_499
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_50
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_500
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_501
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_502
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:159) Applied cepstral mean and variance normalization to 16 utterances, errors on 0
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_503
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_504
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_505
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_506
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -0.528104 over 13452 frames.
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:137) Retried 1 out of 16 utterances.
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:139) Done 15, errors on 1
+# Accounting: time=1 threads=1
+# Ended (code 0) at Thu Aug  2 13:27:00 UTC 2018, elapsed time 1 seconds

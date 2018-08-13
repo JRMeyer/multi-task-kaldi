@@ -1,0 +1,14 @@
+# gmm-acc-stats-ali exp_atai-100A-mod/monophones/1.mdl "ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/30/utt2spk scp:data_atai-100A-mod/train/split32/30/cmvn.scp scp:data_atai-100A-mod/train/split32/30/feats.scp ark:- | add-deltas ark:- ark:- |" "ark:gunzip -c exp_atai-100A-mod/monophones/ali.30.gz|" exp_atai-100A-mod/monophones/1.30.acc 
+# Started at Thu Aug  2 13:26:24 UTC 2018
+#
+gmm-acc-stats-ali exp_atai-100A-mod/monophones/1.mdl 'ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/30/utt2spk scp:data_atai-100A-mod/train/split32/30/cmvn.scp scp:data_atai-100A-mod/train/split32/30/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark:gunzip -c exp_atai-100A-mod/monophones/ali.30.gz|' exp_atai-100A-mod/monophones/1.30.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --norm-vars=true --utt2spk=ark:data_atai-100A-mod/train/split32/30/utt2spk scp:data_atai-100A-mod/train/split32/30/cmvn.scp scp:data_atai-100A-mod/train/split32/30/feats.scp ark:- 
+WARNING (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance atai-100A-mod_atai_601
+WARNING (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:79) No alignment for utterance atai-100A-mod_atai_608
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:159) Applied cepstral mean and variance normalization to 16 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:112) Done 14 files, 2 with errors.
+LOG (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -8.08545 over 12795 frames.
+LOG (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Aug  2 13:26:24 UTC 2018, elapsed time 0 seconds

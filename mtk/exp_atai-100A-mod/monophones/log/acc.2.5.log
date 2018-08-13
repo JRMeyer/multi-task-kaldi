@@ -1,0 +1,12 @@
+# gmm-acc-stats-ali exp_atai-100A-mod/monophones/2.mdl "ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/5/utt2spk scp:data_atai-100A-mod/train/split32/5/cmvn.scp scp:data_atai-100A-mod/train/split32/5/feats.scp ark:- | add-deltas ark:- ark:- |" "ark:gunzip -c exp_atai-100A-mod/monophones/ali.5.gz|" exp_atai-100A-mod/monophones/2.5.acc 
+# Started at Thu Aug  2 13:26:28 UTC 2018
+#
+gmm-acc-stats-ali exp_atai-100A-mod/monophones/2.mdl 'ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/5/utt2spk scp:data_atai-100A-mod/train/split32/5/cmvn.scp scp:data_atai-100A-mod/train/split32/5/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark:gunzip -c exp_atai-100A-mod/monophones/ali.5.gz|' exp_atai-100A-mod/monophones/2.5.acc 
+add-deltas ark:- ark:- 
+apply-cmvn --norm-vars=true --utt2spk=ark:data_atai-100A-mod/train/split32/5/utt2spk scp:data_atai-100A-mod/train/split32/5/cmvn.scp scp:data_atai-100A-mod/train/split32/5/feats.scp ark:- 
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:159) Applied cepstral mean and variance normalization to 16 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:112) Done 16 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -4.81413 over 12323 frames.
+LOG (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Aug  2 13:26:28 UTC 2018, elapsed time 0 seconds

@@ -1,0 +1,29 @@
+# compile-train-graphs exp_atai-100A-mod/triphones/tree exp_atai-100A-mod/triphones/1.mdl data_atai-100A-mod/lang/L.fst "ark:utils/sym2int.pl --map-oov 2 -f 2- data_atai-100A-mod/lang/words.txt < data_atai-100A-mod/train/split32/28/text |" "ark:|gzip -c >exp_atai-100A-mod/triphones/fsts.28.gz" 
+# Started at Thu Aug  2 13:27:25 UTC 2018
+#
+compile-train-graphs exp_atai-100A-mod/triphones/tree exp_atai-100A-mod/triphones/1.mdl data_atai-100A-mod/lang/L.fst 'ark:utils/sym2int.pl --map-oov 2 -f 2- data_atai-100A-mod/lang/words.txt < data_atai-100A-mod/train/split32/28/text |' 'ark:|gzip -c >exp_atai-100A-mod/triphones/fsts.28.gz' 
+sym2int.pl: replacing маасычан with 2
+sym2int.pl: replacing топулуу with 2
+sym2int.pl: replacing көйнөгүнүн with 2
+sym2int.pl: replacing түрүнгөн with 2
+sym2int.pl: replacing шымаланганына with 2
+sym2int.pl: replacing ыкласы with 2
+sym2int.pl: replacing черткени with 2
+sym2int.pl: replacing сөзилет with 2
+sym2int.pl: replacing кубанганы with 2
+sym2int.pl: replacing бырыштырышка with 2
+sym2int.pl: replacing отурушкан with 2
+sym2int.pl: replacing кубанышчу with 2
+sym2int.pl: replacing аралашкандай with 2
+sym2int.pl: replacing сөзишчү with 2
+sym2int.pl: replacing жантакпайды with 2
+sym2int.pl: replacing тосушуп with 2
+sym2int.pl: replacing киргизишти with 2
+sym2int.pl: replacing султаналынын with 2
+sym2int.pl: replacing алжайын with 2
+sym2int.pl: replacing түгөлүн with 2
+sym2int.pl: not warning for OOVs any more times
+** Replaced 61 instances of OOVs with 2
+LOG (compile-train-graphs[5.4.224~1-d4d9]:main():compile-train-graphs.cc:147) compile-train-graphs: succeeded for 16 graphs, failed for 0
+# Accounting: time=4 threads=1
+# Ended (code 0) at Thu Aug  2 13:27:29 UTC 2018, elapsed time 4 seconds

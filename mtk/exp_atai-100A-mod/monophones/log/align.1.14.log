@@ -1,0 +1,39 @@
+# gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=24 --careful=false "gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/1.mdl - |" "ark:gunzip -c exp_atai-100A-mod/monophones/fsts.14.gz|" "ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/14/utt2spk scp:data_atai-100A-mod/train/split32/14/cmvn.scp scp:data_atai-100A-mod/train/split32/14/feats.scp ark:- | add-deltas ark:- ark:- |" "ark,t:|gzip -c >exp_atai-100A-mod/monophones/ali.14.gz" 
+# Started at Thu Aug  2 13:25:48 UTC 2018
+#
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=24 --careful=false 'gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/1.mdl - |' 'ark:gunzip -c exp_atai-100A-mod/monophones/fsts.14.gz|' 'ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/14/utt2spk scp:data_atai-100A-mod/train/split32/14/cmvn.scp scp:data_atai-100A-mod/train/split32/14/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark,t:|gzip -c >exp_atai-100A-mod/monophones/ali.14.gz' 
+gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/1.mdl - 
+LOG (gmm-boost-silence[5.4.224~1-d4d9]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
+LOG (gmm-boost-silence[5.4.224~1-d4d9]:main():gmm-boost-silence.cc:103) Wrote model to -
+apply-cmvn --norm-vars=true --utt2spk=ark:data_atai-100A-mod/train/split32/14/utt2spk scp:data_atai-100A-mod/train/split32/14/cmvn.scp scp:data_atai-100A-mod/train/split32/14/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_316
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_317
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_317 with beam 24
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_32
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_32 with beam 24
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_320
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_321
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_321 with beam 24
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_322
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_322 with beam 24
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_323
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_324
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_325
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_326
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_326 with beam 24
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_327
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_327 with beam 24
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_330
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_331
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_331 with beam 24
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:159) Applied cepstral mean and variance normalization to 16 utterances, errors on 0
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_332
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_333
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_333 with beam 24
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_334
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -8.80185 over 12517 frames.
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:137) Retried 8 out of 16 utterances.
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:139) Done 16, errors on 0
+# Accounting: time=11 threads=1
+# Ended (code 0) at Thu Aug  2 13:25:59 UTC 2018, elapsed time 11 seconds

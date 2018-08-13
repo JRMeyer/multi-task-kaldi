@@ -1,0 +1,18 @@
+# gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt exp_atai-100A-mod/triphones/final.mdl exp_atai-100A-mod/triphones/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-mod/test/split32/13/utt2spk scp:data_atai-100A-mod/test/split32/13/cmvn.scp scp:data_atai-100A-mod/test/split32/13/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > data_atai-100A-mod/test/decode/lat.13.gz" 
+# Started at Thu Aug  2 13:28:36 UTC 2018
+#
+gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt exp_atai-100A-mod/triphones/final.mdl exp_atai-100A-mod/triphones/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-mod/test/split32/13/utt2spk scp:data_atai-100A-mod/test/split32/13/cmvn.scp scp:data_atai-100A-mod/test/split32/13/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > data_atai-100A-mod/test/decode/lat.13.gz' 
+apply-cmvn --utt2spk=ark:data_atai-100A-mod/test/split32/13/utt2spk scp:data_atai-100A-mod/test/split32/13/cmvn.scp scp:data_atai-100A-mod/test/split32/13/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 3 utterances, errors on 0
+atai_311 тууганбай менен аялы бар ча эки боз үйдүн жабуу баарын тандап бири жасаганда кийиздери эске жаңы болуп ала болуп көрүнүп калат 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_311 is 1.54903 over 1056 frames.
+atai_318 бала комузун бооруна кыздын калууда тура бизди 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_318 is 1.25562 over 352 frames.
+atai_319 абдыракман дан окуясы жана өзүнө ага катуу таасир берген эле баарыдан да анын өлүм астында көтөн ища гана эненин кош тоскону баланын көз астынан кептерди болгон иштеп өз көзү менен көрүп кубага менен укса да абдыракман дан өмүрү мынча эмне кайрылуу болгонун ишин албады 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_319 is 1.4776 over 2014 frames.
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:176) Time taken 2.8063s: real-time factor assuming 100 frames/sec is 0.0820075
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:179) Done 3 utterances, failed for 0
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is 1.47681 over 3422 frames.
+# Accounting: time=4 threads=1
+# Ended (code 0) at Thu Aug  2 13:28:40 UTC 2018, elapsed time 4 seconds

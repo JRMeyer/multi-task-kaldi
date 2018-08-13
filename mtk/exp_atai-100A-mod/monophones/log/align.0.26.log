@@ -1,0 +1,17 @@
+# align-equal-compiled "ark:gunzip -c exp_atai-100A-mod/monophones/fsts.26.gz|" "ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/26/utt2spk scp:data_atai-100A-mod/train/split32/26/cmvn.scp scp:data_atai-100A-mod/train/split32/26/feats.scp ark:- | add-deltas ark:- ark:- |" ark,t:- | gmm-acc-stats-ali --binary=true exp_atai-100A-mod/monophones/0.mdl "ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/26/utt2spk scp:data_atai-100A-mod/train/split32/26/cmvn.scp scp:data_atai-100A-mod/train/split32/26/feats.scp ark:- | add-deltas ark:- ark:- |" ark:- exp_atai-100A-mod/monophones/0.26.acc 
+# Started at Thu Aug  2 13:25:48 UTC 2018
+#
+gmm-acc-stats-ali --binary=true exp_atai-100A-mod/monophones/0.mdl 'ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/26/utt2spk scp:data_atai-100A-mod/train/split32/26/cmvn.scp scp:data_atai-100A-mod/train/split32/26/feats.scp ark:- | add-deltas ark:- ark:- |' ark:- exp_atai-100A-mod/monophones/0.26.acc 
+align-equal-compiled 'ark:gunzip -c exp_atai-100A-mod/monophones/fsts.26.gz|' 'ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/26/utt2spk scp:data_atai-100A-mod/train/split32/26/cmvn.scp scp:data_atai-100A-mod/train/split32/26/feats.scp ark:- | add-deltas ark:- ark:- |' ark,t:- 
+add-deltas ark:- ark:- 
+apply-cmvn --norm-vars=true --utt2spk=ark:data_atai-100A-mod/train/split32/26/utt2spk scp:data_atai-100A-mod/train/split32/26/cmvn.scp scp:data_atai-100A-mod/train/split32/26/feats.scp ark:- 
+apply-cmvn --norm-vars=true --utt2spk=ark:data_atai-100A-mod/train/split32/26/utt2spk scp:data_atai-100A-mod/train/split32/26/cmvn.scp scp:data_atai-100A-mod/train/split32/26/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:159) Applied cepstral mean and variance normalization to 16 utterances, errors on 0
+LOG (align-equal-compiled[5.4.224~1-d4d9]:main():align-equal-compiled.cc:107) Success: done 16 utterances.
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:159) Applied cepstral mean and variance normalization to 16 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:112) Done 16 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -8.22665 over 11308 frames.
+LOG (gmm-acc-stats-ali[5.4.224~1-d4d9]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=0 threads=1
+# Ended (code 0) at Thu Aug  2 13:25:48 UTC 2018, elapsed time 0 seconds
