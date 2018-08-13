@@ -1,0 +1,33 @@
+# gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=24 --careful=false "gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/2.mdl - |" "ark:gunzip -c exp_atai-100A-mod/monophones/fsts.32.gz|" "ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/32/utt2spk scp:data_atai-100A-mod/train/split32/32/cmvn.scp scp:data_atai-100A-mod/train/split32/32/feats.scp ark:- | add-deltas ark:- ark:- |" "ark,t:|gzip -c >exp_atai-100A-mod/monophones/ali.32.gz" 
+# Started at Thu Aug  2 13:26:24 UTC 2018
+#
+gmm-align-compiled --transition-scale=1.0 --acoustic-scale=0.1 --self-loop-scale=0.1 --beam=6 --retry-beam=24 --careful=false 'gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/2.mdl - |' 'ark:gunzip -c exp_atai-100A-mod/monophones/fsts.32.gz|' 'ark,s,cs:apply-cmvn --norm-vars=true  --utt2spk=ark:data_atai-100A-mod/train/split32/32/utt2spk scp:data_atai-100A-mod/train/split32/32/cmvn.scp scp:data_atai-100A-mod/train/split32/32/feats.scp ark:- | add-deltas ark:- ark:- |' 'ark,t:|gzip -c >exp_atai-100A-mod/monophones/ali.32.gz' 
+gmm-boost-silence --boost=1.0 1 exp_atai-100A-mod/monophones/2.mdl - 
+LOG (gmm-boost-silence[5.4.224~1-d4d9]:main():gmm-boost-silence.cc:93) Boosted weights for 5 pdfs, by factor of 1
+LOG (gmm-boost-silence[5.4.224~1-d4d9]:main():gmm-boost-silence.cc:103) Wrote model to -
+add-deltas ark:- ark:- 
+apply-cmvn --norm-vars=true --utt2spk=ark:data_atai-100A-mod/train/split32/32/utt2spk scp:data_atai-100A-mod/train/split32/32/cmvn.scp scp:data_atai-100A-mod/train/split32/32/feats.scp ark:- 
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_85
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_86
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_87
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_87 with beam 24
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_88
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_89
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_90
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_91
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_92
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_93
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_94
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_94 with beam 24
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_95
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_96
+WARNING (gmm-align-compiled[5.4.224~1-d4d9]:AlignUtteranceWrapper():decoder-wrappers.cc:466) Retrying utterance atai-100A-mod_atai_96 with beam 24
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:159) Applied cepstral mean and variance normalization to 15 utterances, errors on 0
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_97
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_98
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:127) atai-100A-mod_atai_99
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:135) Overall log-likelihood per frame is -5.01048 over 15471 frames.
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:137) Retried 3 out of 15 utterances.
+LOG (gmm-align-compiled[5.4.224~1-d4d9]:main():gmm-align-compiled.cc:139) Done 15, errors on 0
+# Accounting: time=2 threads=1
+# Ended (code 0) at Thu Aug  2 13:26:26 UTC 2018, elapsed time 2 seconds

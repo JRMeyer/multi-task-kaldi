@@ -1,0 +1,18 @@
+# gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt exp_atai-100A-mod/triphones/final.mdl exp_atai-100A-mod/triphones/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-mod/test/split32/24/utt2spk scp:data_atai-100A-mod/test/split32/24/cmvn.scp scp:data_atai-100A-mod/test/split32/24/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > data_atai-100A-mod/test/decode/lat.24.gz" 
+# Started at Thu Aug  2 13:28:36 UTC 2018
+#
+gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt exp_atai-100A-mod/triphones/final.mdl exp_atai-100A-mod/triphones/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-mod/test/split32/24/utt2spk scp:data_atai-100A-mod/test/split32/24/cmvn.scp scp:data_atai-100A-mod/test/split32/24/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > data_atai-100A-mod/test/decode/lat.24.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data_atai-100A-mod/test/split32/24/utt2spk scp:data_atai-100A-mod/test/split32/24/cmvn.scp scp:data_atai-100A-mod/test/split32/24/feats.scp ark:- 
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 3 utterances, errors on 0
+atai_496 алар качан салышкан да жаткандай керек <unk> туулганда ж өзгөрүшү 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_496 is 1.11468 over 552 frames.
+atai_510 баатыр ага түшүндө же өңдүү жолугушуп манасчылык экинчи берүүдө эми иштер оой тергөө 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_510 is 1.06924 over 657 frames.
+atai_513 баатыр караңгыда баратып чакмак оң колунан чөп таптай алган экен 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_513 is 1.32856 over 518 frames.
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:176) Time taken 1.73711s: real-time factor assuming 100 frames/sec is 0.100585
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:179) Done 3 utterances, failed for 0
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is 1.16154 over 1727 frames.
+# Accounting: time=2 threads=1
+# Ended (code 0) at Thu Aug  2 13:28:38 UTC 2018, elapsed time 2 seconds

@@ -1,0 +1,4 @@
+atai_02 /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100A-mod/raw_plp_test.1.ark:8
+atai_04 /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100A-mod/raw_plp_test.1.ark:11581
+atai_08 /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100A-mod/raw_plp_test.1.ark:26092
+atai_10 /home/ubuntu/kaldi/egs/multi-task-kaldi/mtk/plp_atai-100A-mod/raw_plp_test.1.ark:33635

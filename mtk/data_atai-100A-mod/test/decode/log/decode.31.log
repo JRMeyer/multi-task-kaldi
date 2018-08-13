@@ -1,0 +1,18 @@
+# gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt exp_atai-100A-mod/triphones/final.mdl exp_atai-100A-mod/triphones/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-mod/test/split32/31/utt2spk scp:data_atai-100A-mod/test/split32/31/cmvn.scp scp:data_atai-100A-mod/test/split32/31/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > data_atai-100A-mod/test/decode/lat.31.gz" 
+# Started at Thu Aug  2 13:28:36 UTC 2018
+#
+gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt exp_atai-100A-mod/triphones/final.mdl exp_atai-100A-mod/triphones/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-mod/test/split32/31/utt2spk scp:data_atai-100A-mod/test/split32/31/cmvn.scp scp:data_atai-100A-mod/test/split32/31/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > data_atai-100A-mod/test/decode/lat.31.gz' 
+apply-cmvn --utt2spk=ark:data_atai-100A-mod/test/split32/31/utt2spk scp:data_atai-100A-mod/test/split32/31/cmvn.scp scp:data_atai-100A-mod/test/split32/31/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 3 utterances, errors on 0
+atai_61 тыныбек кереге тараптагы камчы менен октон издегендиги күчүктү сүрөтү <unk> 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_61 is 1.24722 over 608 frames.
+atai_611 жалгыз ченемден өнөрүнө саябан <unk> селден мындан башкасы арызда тегирич да жок абышка кырынан ушундай сөз чыгарылууда эскерип ага жоолукканда буудай <unk> кептерди <unk> 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_611 is 1.22457 over 1495 frames.
+atai_62 бурулча <unk> күчүн тартып жаш типтик берүүчү күч ок 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_62 is 0.90997 over 440 frames.
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:176) Time taken 2.51555s: real-time factor assuming 100 frames/sec is 0.0989204
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:179) Done 3 utterances, failed for 0
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is 1.17555 over 2543 frames.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Thu Aug  2 13:28:39 UTC 2018, elapsed time 3 seconds

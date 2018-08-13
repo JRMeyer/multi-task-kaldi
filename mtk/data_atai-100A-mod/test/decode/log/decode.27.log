@@ -1,0 +1,18 @@
+# gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt exp_atai-100A-mod/triphones/final.mdl exp_atai-100A-mod/triphones/graph/HCLG.fst "ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-mod/test/split32/27/utt2spk scp:data_atai-100A-mod/test/split32/27/cmvn.scp scp:data_atai-100A-mod/test/split32/27/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:|gzip -c > data_atai-100A-mod/test/decode/lat.27.gz" 
+# Started at Thu Aug  2 13:28:36 UTC 2018
+#
+gmm-latgen-faster --max-active=200 --beam=5 --lattice-beam=3 --acoustic-scale=0.083333 --allow-partial=true --word-symbol-table=exp_atai-100A-mod/triphones/graph/words.txt exp_atai-100A-mod/triphones/final.mdl exp_atai-100A-mod/triphones/graph/HCLG.fst 'ark,s,cs:apply-cmvn  --utt2spk=ark:data_atai-100A-mod/test/split32/27/utt2spk scp:data_atai-100A-mod/test/split32/27/cmvn.scp scp:data_atai-100A-mod/test/split32/27/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:|gzip -c > data_atai-100A-mod/test/decode/lat.27.gz' 
+add-deltas ark:- ark:- 
+apply-cmvn --utt2spk=ark:data_atai-100A-mod/test/split32/27/utt2spk scp:data_atai-100A-mod/test/split32/27/cmvn.scp scp:data_atai-100A-mod/test/split32/27/feats.scp ark:- 
+LOG (apply-cmvn[5.4.224~1-d4d9]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 3 utterances, errors on 0
+atai_557 алар үйгө жакындаганда комуздун кооздук анда <unk> чыкты акыл атын тилинен тартып күүгө курган тузду атай кемин албай көздүн кылымда тап саясатын беченек кермеге баштады 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_557 is 0.98157 over 1280 frames.
+atai_558 бул эмне кекеч чоңдук 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_558 is 0.93927 over 234 frames.
+atai_559 комуз кол менен чектелбей торгойдун бетер билинет сайроочу аңгыча кыркын тийген чиркейлер корунун таноосуна өтүп кеткен билим аттуу чыгып тышкы чегинде үйдүн артында көлөкө жаткан ала мойнок эт турак алып бир чигитти 
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:DecodeUtteranceLatticeFaster():decoder-wrappers.cc:286) Log-like per frame for utterance atai_559 is 1.00326 over 1703 frames.
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:176) Time taken 2.76802s: real-time factor assuming 100 frames/sec is 0.0860435
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:179) Done 3 utterances, failed for 0
+LOG (gmm-latgen-faster[5.4.224~1-d4d9]:main():gmm-latgen-faster.cc:181) Overall log-likelihood per frame is 0.989975 over 3217 frames.
+# Accounting: time=3 threads=1
+# Ended (code 0) at Thu Aug  2 13:28:39 UTC 2018, elapsed time 3 seconds
