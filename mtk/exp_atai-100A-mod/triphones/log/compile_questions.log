@@ -1,7 +1,0 @@
-compile-questions data_atai-100A-mod/lang/topo exp_atai-100A-mod/triphones/questions.int exp_atai-100A-mod/triphones/questions.qst 
-LOG (compile-questions[5.4.224~1-d4d9]:ProcessTopo():compile-questions.cc:51) Max # pdf classes is 5
-LOG (compile-questions[5.4.224~1-d4d9]:main():compile-questions.cc:127) Setting questions for phonetic-context position 0
-LOG (compile-questions[5.4.224~1-d4d9]:main():compile-questions.cc:127) Setting questions for phonetic-context position 1
-LOG (compile-questions[5.4.224~1-d4d9]:main():compile-questions.cc:127) Setting questions for phonetic-context position 2
-LOG (compile-questions[5.4.224~1-d4d9]:main():compile-questions.cc:139) Setting questions for hmm-position [hmm-position ranges from 0 to 4]
-LOG (compile-questions[5.4.224~1-d4d9]:main():compile-questions.cc:143) Wrote questions to exp_atai-100A-mod/triphones/questions.qst
