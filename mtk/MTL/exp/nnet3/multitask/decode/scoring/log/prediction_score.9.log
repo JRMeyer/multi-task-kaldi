@@ -1,5 +1,0 @@
-# cat MTL/exp/nnet3/multitask/decode/scoring/9.tra | utils/int2sym.pl -f 2- exp_atai-100A-org/triphones/graph/words.txt | sed s:SIL::g | compute-wer --text --mode=present ark:MTL/exp/nnet3/multitask/decode/scoring/test_true_transcripts.txt ark,p:- >& MTL/exp/nnet3/multitask/decode/wer_9 
-# Started at Fri Jul 27 03:41:50 UTC 2018
-#
-# Accounting: time=0 threads=1
-# Ended (code 0) at Fri Jul 27 03:41:50 UTC 2018, elapsed time 0 seconds

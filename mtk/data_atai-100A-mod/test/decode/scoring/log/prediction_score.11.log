@@ -1,5 +1,0 @@
-# cat data_atai-100A-mod/test/decode/scoring/11.tra | utils/int2sym.pl -f 2- exp_atai-100A-mod/triphones/graph/words.txt | sed s:SIL::g | compute-wer --text --mode=present ark:data_atai-100A-mod/test/decode/scoring/test_true_transcripts.txt ark,p:- >& data_atai-100A-mod/test/decode/wer_11 
-# Started at Thu Aug  2 13:28:42 UTC 2018
-#
-# Accounting: time=1 threads=1
-# Ended (code 0) at Thu Aug  2 13:28:43 UTC 2018, elapsed time 1 seconds

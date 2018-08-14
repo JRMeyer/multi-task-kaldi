@@ -1,7 +1,0 @@
-# nnet3-subset-egs --n=7500 ark:MTL/exp/atai-100E-mod/nnet3/egs/train_all.egs ark:MTL/exp/atai-100E-mod/nnet3/egs/train_combine.egs 
-# Started at Wed Jul 25 04:20:59 UTC 2018
-#
-nnet3-subset-egs --n=7500 ark:MTL/exp/atai-100E-mod/nnet3/egs/train_all.egs ark:MTL/exp/atai-100E-mod/nnet3/egs/train_combine.egs 
-LOG (nnet3-subset-egs[5.4.217~1-8ae5]:main():nnet3-subset-egs.cc:91) Selected a subset of 999 out of 999 neural-network training examples 
-# Accounting: time=0 threads=1
-# Ended (code 0) at Wed Jul 25 04:20:59 UTC 2018, elapsed time 0 seconds

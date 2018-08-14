@@ -1,2 +1,0 @@
-cluster-phones exp_atai-100A-mod/triphones/treeacc data_atai-100A-mod/lang/phones/sets.int exp_atai-100A-mod/triphones/questions.int 
-LOG (cluster-phones[5.4.224~1-d4d9]:main():cluster-phones.cc:129) Wrote questions to exp_atai-100A-mod/triphones/questions.int

@@ -1,7 +1,0 @@
-# vector-sum MTL/exp/nnet3/multitask/atai-100A-mod/post.final.1.vec MTL/exp/nnet3/multitask/atai-100A-mod/post.final.vec 
-# Started at Fri Jul 27 03:25:33 UTC 2018
-#
-vector-sum MTL/exp/nnet3/multitask/atai-100A-mod/post.final.1.vec MTL/exp/nnet3/multitask/atai-100A-mod/post.final.vec 
-LOG (vector-sum[5.4.217~1-8ae5]:TypeThreeUsage():vector-sum.cc:175) Summed 1 vectors; wrote sum to MTL/exp/nnet3/multitask/atai-100A-mod/post.final.vec
-# Accounting: time=0 threads=1
-# Ended (code 0) at Fri Jul 27 03:25:33 UTC 2018, elapsed time 0 seconds

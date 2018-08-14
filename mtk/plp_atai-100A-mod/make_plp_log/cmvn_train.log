@@ -1,2 +1,0 @@
-compute-cmvn-stats --spk2utt=ark:data_atai-100A-mod/train/spk2utt scp:data_atai-100A-mod/train/feats.scp ark,scp:plp_atai-100A-mod/cmvn_train.ark,plp_atai-100A-mod/cmvn_train.scp 
-LOG (compute-cmvn-stats[5.4.217~1-8ae5]:main():compute-cmvn-stats.cc:171) Done accumulating CMVN stats for 100 utterances; 0 had errors.
