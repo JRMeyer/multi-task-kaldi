@@ -1,3 +1,0 @@
-gmm-mixup --mix-up=1000 exp_atai-100A-mod/triphones/1.mdl exp_atai-100A-mod/triphones/1.occs exp_atai-100A-mod/triphones/1.mdl 
-LOG (gmm-mixup[5.4.224~1-d4d9]:SplitByCount():am-diag-gmm.cc:116) Split 672 states with target = 1000, power = 0.2, perturb_factor = 0.01 and min_count = 20, split #Gauss from 672 to 1000
-LOG (gmm-mixup[5.4.224~1-d4d9]:main():gmm-mixup.cc:103) Written model to exp_atai-100A-mod/triphones/1.mdl

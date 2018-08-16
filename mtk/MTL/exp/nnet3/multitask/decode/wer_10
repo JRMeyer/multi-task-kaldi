@@ -1,4 +1,0 @@
-compute-wer --text --mode=present ark:MTL/exp/nnet3/multitask/decode/scoring/test_true_transcripts.txt ark,p:- 
-%WER 94.18 [ 7649 / 8122, 21 ins, 5121 del, 2507 sub ]
-%SER 100.00 [ 511 / 511 ]
-Scored 511 sentences, 0 not present in hyp.
