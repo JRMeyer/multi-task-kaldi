@@ -1,3 +1,0 @@
-cluster-phones exp_atai-100E-mod/triphones/treeacc data_atai-100E-mod/lang/phones/sets.int exp_atai-100E-mod/triphones/questions.int 
-WARNING (cluster-phones[5.4.217~1-8ae5]:AutomaticallyObtainQuestions():build-tree.cc:702) AutomaticallyObtainQuestions: no stats available for phone set: 9 
-LOG (cluster-phones[5.4.217~1-8ae5]:main():cluster-phones.cc:129) Wrote questions to exp_atai-100E-mod/triphones/questions.int

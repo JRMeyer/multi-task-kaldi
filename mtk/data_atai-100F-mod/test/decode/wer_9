@@ -1,4 +1,0 @@
-compute-wer --text --mode=present ark:data_atai-100F-mod/test/decode/scoring/test_true_transcripts.txt ark,p:- 
-%WER 80.64 [ 6565 / 8141, 531 ins, 689 del, 5345 sub ]
-%SER 99.80 [ 510 / 511 ]
-Scored 511 sentences, 0 not present in hyp.
