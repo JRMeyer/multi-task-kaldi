@@ -365,8 +365,9 @@ if [ "$decode_test" -eq "1" ]; then
     echo "hidden_dim=$hidden_dim"  >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
     echo "num_epochs=$num_epochs"  >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
     echo "task2weight=$task2weight" >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
+
     echo ""  >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
-    
+
     echo "test_data_dir=$test_data_dir" >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
     echo "graph_dir=$graph_dir" >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
     echo "decode_dir=$decode_dir" >> WER_nnet3_multitask${cat_tasks}${cat_typos}.txt;
