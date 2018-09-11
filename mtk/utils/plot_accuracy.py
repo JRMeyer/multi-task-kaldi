@@ -63,16 +63,16 @@ for i in range(1, int(args.numTasks)):
     
     train = [ [*x] for x in zip(* sorted(data["train"][output], key=itemgetter(0))) ]
     valid = [ [*x] for x in zip(* sorted(data["valid"][output], key=itemgetter(0))) ]
-    plt.plot(train[0], train[1], 'C'+str(2*i), label='English Train '+str(task))
-    plt.plot(valid[0], valid[1], 'C'+str((2*i)+1), label='English Valid '+str(task))
+    plt.plot(train[0], train[1], 'C'+str(2*i), label='Clusters Train')
+    plt.plot(valid[0], valid[1], 'C'+str((2*i)+1), label='Clusters Dev.')
 
 
 output="'output-0'"
         
 train = [ [*x] for x in zip(* sorted(data["train"][output], key=itemgetter(0))) ]
 valid = [ [*x] for x in zip(* sorted(data["valid"][output], key=itemgetter(0))) ]
-plt.plot(train[0], train[1], 'C0', label='Kyrgyz Train')
-plt.plot(valid[0], valid[1], 'C1', label='Kyrgyz Valid')
+plt.plot(train[0], train[1], 'C0', label='Training Data')
+plt.plot(valid[0], valid[1], 'C1', label='Validation Data')
         
         
 
