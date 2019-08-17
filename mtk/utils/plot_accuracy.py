@@ -4,7 +4,7 @@
 #
 #
 
-# takes as input the output from format_acc.sh script
+# takes as input the output from mtk/utils/format_accuracy_for_plot.sh script
 
 # train 'output-1' 993 0.584804
 # train 'output-0' 993 0.465945
